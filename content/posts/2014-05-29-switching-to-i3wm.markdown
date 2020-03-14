@@ -22,6 +22,6 @@ Screen locking is done using xscreensaver using start+l (as it was with my openb
 
 Here are some screenshots of my full setup (2 x Dell P2414H Monitors).
 
-<p class="text-center"><a href="http://equk.co.uk/media/images/2014/May/2014_05_26.jpg" target="_blank"><img src="http://equk.co.uk/media/images/2014/May/2014_05_26_250px.jpg" border="0" alt=""></a> <a href="http://equk.co.uk/media/images/2014/May/2014_05_27.jpg" target="_blank"><img src="http://equk.co.uk/media/images/2014/May/2014_05_27_250px.jpg" border="0" alt=""></a></p>
+<p class="text-center"><a href="/media/images/2014/May/2014_05_26.jpg" target="_blank"><img src="/media/images/2014/May/2014_05_26_250px.jpg" border="0" alt=""></a> <a href="/media/images/2014/May/2014_05_27.jpg" target="_blank"><img src="/media/images/2014/May/2014_05_27_250px.jpg" border="0" alt=""></a></p>
 
 All configs can be found on <a href="https://github.com/equk/linux" target="_blank">my github</a>.
