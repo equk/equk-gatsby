@@ -1,0 +1,13 @@
+.pagination {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.pagination a {
+  @extend .button;
+  @extend .is-light;
+  box-shadow: 0 2px darken(whitesmoke,5%);
+}

@@ -1,0 +1,194 @@
+//*-----------------------------------------
+//* Topbar Component
+//*-----------------------------------------
+
+.top {
+  margin-bottom: 50px;
+  z-index: 1;
+}
+.topbar {
+  display: flex;
+  background: #fff;
+  border-bottom: 1px solid darken(whitesmoke, 10%);
+  left: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 30;
+  align-items: stretch;
+  height: 55px;
+
+  .navbar {
+    @extend .is-white;
+  }
+
+  .site-title.navbar-item {
+    font-weight: 400;
+  }
+
+  span.cursor {
+    display: inline-block;
+    width: 15px;
+    height: 2rem;
+    margin-left: 5px;
+    -webkit-animation: cursor 3s;
+    animation: cursor 3s;
+    border: 1px solid $text;
+    opacity: 0;
+  }
+  span.cursor:hover,
+  span.cursor:focus {
+    -webkit-animation: cursor 3s infinite;
+    animation: cursor 3s infinite;
+    background: $text;
+  }
+}
+
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+#navMenu.navbar-menu a.navbar-item {
+  -webkit-transition: ease 0.7s;
+  transition: ease 0.7s;
+}
+
+#navMenu.navbar-menu a.navbar-item:hover,
+#navMenu.navbar-menu a.navbar-item:focus {
+  background: darken(#fff, 5%);
+  border-bottom: 2px solid $primary;
+}
+#navMenu.navbar-menu a.navbar-item {
+  border-bottom: 2px solid #fff;
+  &[aria-current="page"] {
+    border-bottom: 2px solid $primary;
+  }
+}
+
+//*-----------------------------------------
+//* Hero Component
+//*-----------------------------------------
+.hero {
+  overflow: hidden;
+}
+.hero-body {
+  background-size: cover;
+  background-image: url("../../../static/media/images/poker_keys.jpg");
+  background-position: center bottom;
+  position: relative;
+}
+
+.hero-body::before {
+  content: "";
+  background: -webkit-linear-gradient(-45deg, #081123, #22185b);
+  background-color: darken(#22185b,10%);
+  background: linear, 135deg, #081123 0, #22185b 100%;
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+}
+
+h1.site-title {
+  margin: 0 !important;
+  padding: 0;
+  a {
+    color: $text;
+  }
+  font-family: $code-family;
+  a:focus,
+  a:hover {
+    color: $primary;
+  }
+}
+
+h2.blog-subtitle,
+h1.blog-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2.blog-subtitle {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 0;
+  margin-top: 0 !important;
+  color: $primary;
+}
+
+h1.blog-title {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.125;
+  color: #fff;
+  margin: 0;
+  a {
+    color: #fff;
+  }
+}
+//*-----------------------------------------
+//* Social Box Icons
+//*-----------------------------------------
+.hero-social {
+  font-size: 37px;
+  text-align: center;
+}
+.hero-social .fa {
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  text-align: center;
+  margin-left: 5px;
+}
+.hero-social a .fa-twitter {
+  background-color: #55acee;
+}
+.hero-social a .fa-facebook {
+  background-color: #3b5998;
+}
+.hero-social a .fa-google-plus {
+  background-color: #d34836;
+}
+.hero-social a .fa-tumblr {
+  background-color: #36465d;
+}
+.hero-social a .fa-github {
+  background-color: #333;
+}
+
+//*-----------------------------------------
+//* Progress Bar Component
+//*-----------------------------------------
+.progress-bar {
+  z-index: 99;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, #fd0),
+    color-stop(100%, $primary)
+  );
+  background-image: -webkit-linear-gradient(left, #fd0 0, $primary 100%);
+  background-image: linear-gradient(to right, #fd0 0, $primary 100%);
+}

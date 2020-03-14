@@ -1,0 +1,10 @@
+[build]
+  publish = "public"
+  command = "yarn build"
+[build.environment]
+  YARN_VERSION = "1.22.4"
+  YARN_FLAGS = "--no-ignore-optional"
+[[headers]]
+    for = "/*.woff2"
+    [headers.values]
+        Cache-Control = "public, s-max-age=2592000"

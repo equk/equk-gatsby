@@ -2,8 +2,6 @@
 
 My Personal Blog - [equk.co.uk](https://equk.co.uk)
 
-Build using Gatsby
-
 ## :warning: not a starter template or theme
 
 This is my own personal blog and shouldn't be used as a starter template or theme.

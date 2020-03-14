@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /*.png$
+Disallow: /*.gif$
+Disallow: /*.jpg$
+Disallow: /media
+
+User-agent: Twitterbot
+Allow: /media
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.jpg$

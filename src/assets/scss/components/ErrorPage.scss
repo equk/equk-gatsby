@@ -1,0 +1,55 @@
+//*-----------------------------------------
+//* Error Page
+//*-----------------------------------------
+/* purgecss start ignore */
+.error-page {
+  padding: 1rem;
+  color: #47494e;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-weight: 100 !important;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  .imgBlock {
+    flex: 0 0 62.5%;
+    width: 62.5%;
+    padding-right: 152px;
+  }
+  .imgEle {
+    width: 430px;
+    height: 360px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-image: url("/errors/404.svg");
+  }
+  .error {
+    max-width: 450px;
+  }
+  .title {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    color: #47494e;
+    margin-bottom: 8px;
+  }
+  .description {
+    color: #7f828b;
+    line-height: 21px;
+    margin-bottom: 10px;
+  }
+  .error-page a {
+    color: #7f828b !important;
+    text-decoration: none;
+  }
+  .logo {
+    position: fixed;
+    left: 12px;
+    bottom: 12px;
+  }
+}
+/* purgecss end ignore */

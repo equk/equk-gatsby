@@ -1,0 +1,51 @@
+//*-----------------------------------------
+//* Responsive Styles
+//*-----------------------------------------
+/* purgecss start ignore */
+@media (max-width: 767px) {
+  .hide-sm {
+    display: none !important;
+  }
+  .hide-for-small {
+    display: none !important;
+  }
+  .page-full-content,
+  .post-full-content,
+  .post-comments {
+    overflow-x: hidden;
+  }
+  .page-full-header,
+  .post-full-header {
+    padding: 2rem 0;
+  }
+  h1.content-title {
+    font-size: 2rem !important;
+  }
+  footer {
+    .footer {
+      .footer-title,
+      .footer-links,
+      .footer-social,
+      .copyright,
+      .powered-by {
+        text-align: center !important;
+      }
+    }
+  }
+  .post-full-content,
+  .page-full-content {
+    padding: 0 1rem;
+    .gatsby-image-wrapper {
+      min-height: 200px;
+    }
+    .post-footer {
+      .author {
+        text-align: center;
+        .authorimage {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+/* purgecss end ignore */

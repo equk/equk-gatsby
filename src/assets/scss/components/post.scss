@@ -1,0 +1,222 @@
+//*-----------------------------------------
+//* Posts
+//*-----------------------------------------
+
+.viewport {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.content {
+  margin: 0 auto;
+}
+
+.post-full-header,
+.page-full-header {
+  margin: 0 auto;
+  padding: 6vw 3vw 3vw;
+  max-width: 1040px;
+  text-align: center;
+}
+
+.page-full-content,
+.post-full-content,
+.post-comments {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+.post-feature-image,
+.page-feature-image {
+  margin-bottom: 3em;
+  box-shadow: 5px 5px 20px rgba(39, 44, 49, 0.6),
+    1px 3px 8px rgba(39, 44, 49, 0.3);
+}
+.post-feature-image,
+.page-feature-image {
+  max-height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+h1.content-title {
+  margin: 0 !important;
+  font-size: 3rem !important;
+  text-align: center;
+}
+
+h1.page-title {
+  margin-top: 0.4em;
+  margin-bottom: 1.2em;
+  font-size: 3rem !important;
+  text-align: center;
+}
+
+.post-date {
+  text-align: center;
+  margin-top: 0.4em;
+  margin-bottom: 1.2em;
+  color: $gray;
+}
+
+.content-body pre {
+  background: #011627;
+  color: #fff;
+}
+
+a i.fa-github-alt {
+  color: #111;
+}
+
+//*-----------------------------------------
+//* Images
+//*-----------------------------------------
+/* purgecss start ignore */
+.content-body img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.inline {
+  display: inline-block;
+}
+
+img.border {
+  border: 1px solid $text;
+}
+
+.width-full .image {
+  border-radius: 0;
+  clear: both;
+  display: block;
+  margin-left: 50%;
+  max-width: none;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100vw;
+}
+//*-----------------------------------------
+//* Wide Elements
+//*-----------------------------------------
+@media only screen and (min-width: 785px) {
+  .content-body img[src$="#wide"],
+  .width-wide .image {
+    margin-left: calc(360px - 47vw);
+    margin-right: calc(360px - 47vw);
+    max-width: none;
+    width: 94vw;
+  }
+  span.gatsby-resp-image-wrapper,
+  blockquote,
+  pre,
+  article.message {
+    -webkit-transform: translateX(-120px);
+    transform: translateX(-120px);
+    max-width: none;
+    width: 960px;
+  }
+}
+//*-----------------------------------------
+//* Task Lists
+//*-----------------------------------------
+li.task-list-item {
+  list-style: none;
+  margin-left: 0px;
+}
+//*-----------------------------------------
+//* Git Commit Log
+//*-----------------------------------------
+p.git-commit {
+  margin: 0 !important;
+  margin-bottom: 0.2em !important;
+}
+.git-commit {
+  font-family: $code-family;
+  font-size: 0.8em;
+  border-radius: 3px;
+  display: inline-block;
+  padding: 0.3em 0.7em;
+  white-space: nowrap;
+  background: darken(#fff, 5%);
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid darken(#fff, 10%);
+  border-right: 1px solid darken(#fff, 10%);
+  i {
+    color: #0d1;
+    font-size: 1.1em;
+  }
+}
+//*-----------------------------------------
+//* Post Footer
+//*-----------------------------------------
+.post-footer {
+  @extend .columns;
+  border-top: 1px solid #e7e9ee !important;
+  padding-top: 10px;
+  border-bottom: 1px solid #e7e9ee !important;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  overflow: hidden;
+  .authorimage {
+    height: 70px;
+    width: 70px;
+    background: $grey;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    img {
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+    }
+  }
+  .author,
+  .footer-tag {
+    @extend .column;
+    padding: 0;
+    line-height: 1.3;
+  }
+
+  .author h4 {
+    font-weight: 400;
+  }
+
+  .author p.bio,
+  .author h4 {
+    margin: 0 !important;
+  }
+
+  .author p.bio {
+    font-size: 1.1rem;
+  }
+  .tags {
+    font-size: 1rem;
+    text-align: right;
+    li.taglist-item {
+      text-transform: none;
+    }
+  }
+  .post-meta {
+    color: $gray;
+    letter-spacing: 2px;
+    margin-bottom: 1.42857em;
+    text-transform: uppercase;
+  }
+  .post-meta {
+    margin-bottom: 0;
+    time {
+      font-size: 1rem;
+    }
+  }
+}
+/* purgecss end ignore */
