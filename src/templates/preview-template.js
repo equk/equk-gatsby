@@ -32,4 +32,28 @@ PreviewTemplate.propTypes = {
   image: PropTypes.string,
 }
 
+export const PagePreviewTemplate = ({ title, body, image }) => (
+  <div className="container">
+    <article className="content">
+      <header className="page-full-header">
+        <h1 className="content-title">{title}</h1>
+      </header>
+      {image && (
+        <div className="post-feature-image">
+          <img src={image} alt="" />
+        </div>
+      )}
+      <section className="page-full-content">
+        <div className="content-body">{body}</div>
+      </section>
+    </article>
+  </div>
+)
+
+PagePreviewTemplate.propTypes = {
+  body: PropTypes.node.isRequired,
+  title: PropTypes.string,
+  image: PropTypes.string,
+}
+
 export default PreviewTemplate
