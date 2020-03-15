@@ -5,13 +5,7 @@
 @import "prism/prism-tomorrow.css";
 @import "prism/language-tabs.css";
 @import "fa/fork-awesome.scss";
-@import "bulma/utilities/all";
-@import "bulma/base/all";
-@import "bulma/elements/all";
-@import "bulma/form/all";
-@import "bulma/components/all";
-@import "bulma/grid/all";
-@import "bulma/layout/all";
+@import "~bulma";
 @import "components/feed";
 @import "components/pagination";
 @import "components/post";
