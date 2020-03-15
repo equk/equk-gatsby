@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import moment from 'moment'
 
-const PreviewTemplate = ({ title, date, body }) => (
+const PreviewTemplate = ({ title, date, body, image }) => (
   <div className="container">
     <article className="content">
       <header className="post-full-header">
@@ -13,6 +13,11 @@ const PreviewTemplate = ({ title, date, body }) => (
           </div>
         </div>
       </header>
+      {image && (
+        <div className="post-feature-image">
+          <img src={image} alt="" />
+        </div>
+      )}
       <section className="post-full-content">
         <div className="content-body">{body}</div>
       </section>
@@ -24,6 +29,7 @@ PreviewTemplate.propTypes = {
   body: PropTypes.node.isRequired,
   title: PropTypes.string,
   date: PropTypes.string,
+  image: PropTypes.string,
 }
 
 export default PreviewTemplate
