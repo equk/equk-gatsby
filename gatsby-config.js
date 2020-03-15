@@ -133,16 +133,6 @@ module.exports = {
       },
     },
     /**
-     *  Netlify CMS Plugins
-     */
-    'gatsby-plugin-netlify',
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/index.js`,
-      },
-    },
-    /**
      *  Google Tag
      */
     /*
@@ -252,5 +242,15 @@ module.exports = {
         ],
       },
     },
+    /**
+     *  Netlify CMS Plugins
+     */
+    {
+      resolve: 'gatsby-plugin-netlify-cms',
+      options: {
+        modulePath: `${__dirname}/src/cms/index.js`,
+      },
+    },
+    'gatsby-plugin-netlify',
   ],
 }
