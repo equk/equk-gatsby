@@ -40,6 +40,7 @@ I have made the site open source and available on github for others to learn fro
 - [x] Uses GraphQL
 - [x] Husky Git Hooks
 - [x] Checks js,jsx,ts,tsx pre-commit
+- [x] Postbuild script
 
 ### eslint config
 
@@ -65,6 +66,14 @@ I have made the site open source and available on github for others to learn fro
 ### netlify cms
 
 - [x] `static/admin/config.yml` - netlify cms config
+
+# Notes
+
+Added a postbuild script to fix netlify cms as importing css in the cms component from `gatsby-plugin-netlify-cms` causes CSS processing to run twice making CSS bundle twice the size & breaking deploys in netlify.
+
+    error UNHANDLED EXCEPTION Callback was already called.
+
+The postbuild script copies built css to `/admin/cms.css`
 
 # Contact
 
