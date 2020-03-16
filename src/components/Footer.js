@@ -37,11 +37,43 @@ const Footer = () => {
           <div className="columns">
             <div className="copyright">{copyright}</div>
             <div className="powered-by">
-              Powered By:
-              <img src="/media/logos/react.svg" alt="react" />
-              React
-              <img src="/media/logos/graphql.svg" alt="graphql" /> GraphQL
-              <img src="/media/logos/gatsby.svg" alt="gatsby" /> Gatsby
+              Powered by
+              <a
+                href="https://reactjs.org/"
+                title="React"
+                target="_blank"
+                aria-label="go to react"
+                rel="noopener noreferrer"
+              >
+                <img src="/media/logos/reactsq.svg" alt="react" />
+              </a>
+              <a
+                href="https://graphql.org/"
+                title="GraphQL"
+                target="_blank"
+                aria-label="go to gatsby"
+                rel="noopener noreferrer"
+              >
+                <img src="/media/logos/graphql.svg" alt="graphql" />
+              </a>
+              <a
+                href="https://gatsbyjs.org/"
+                title="Built using Gatsby"
+                target="_blank"
+                aria-label="go to gatsby"
+                rel="noopener noreferrer"
+              >
+                <img src="/media/logos/gatsby.svg" alt="gatsby" />
+              </a>
+              <a
+                href="https://www.netlify.com/"
+                title="Hosted by Netlify"
+                target="_blank"
+                aria-label="go to netlify"
+                rel="noopener noreferrer"
+              >
+                <img src="/media/logos/netlify.svg" alt="netlify" />
+              </a>
             </div>
           </div>
         </div>
