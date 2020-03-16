@@ -26,6 +26,12 @@ I have made the site open source and available on github for others to learn fro
 - [x] Github Pages
 - [x] Netlify
 
+### Google Lighthouse
+
+![](./static/media/images/equk_lighthouse.png)
+
+Performance: 100%    Accessibility: 100%     Best Practices: 100%    SEO: 100%   PWA
+
 ## development features
 
 - [x] ESLint with plugins
