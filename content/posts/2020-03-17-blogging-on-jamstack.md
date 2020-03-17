@@ -1,7 +1,7 @@
 ---
 template: post
 title: Blogging on JAMstack
-draft: true
+draft: false
 date: 2020-03-16T21:55:35.656Z
 tags:
   - github
@@ -84,4 +84,4 @@ cache-control: public,s-max-age=2592000
 ```
 All scripts & configs mentioned in this article are available on github.
 
-<a class="github" href="https://github.com/equk/" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
