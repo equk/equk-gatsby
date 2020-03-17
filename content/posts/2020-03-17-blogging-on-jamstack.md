@@ -62,10 +62,10 @@ I also decided to setup browser caching for fonts in the `netlify.toml` config a
 [[headers]]
     for = "/*.woff2"
     [headers.values]
-        Cache-Control = "public, s-max-age=2592000"
+        Cache-Control = "public, max-age=2592000"
 ```
 
-The defaults for netlify hosting is to have no browser caching of anything.<br /> There are various reasons for this (more information can be found on the netlify blog: <a href="https://www.netlify.com/blog/2017/02/23/better-living-through-caching/" target="_blank" aria-label="go to netlify blogpost" rel="noopener noreferrer">Better Living Through Caching</a> ).
+The default for netlify hosting is to have no browser caching of anything.<br /> There are various reasons for this (more information can be found on the netlify blog: <a href="https://www.netlify.com/blog/2017/02/23/better-living-through-caching/" target="_blank" aria-label="go to netlify blogpost" rel="noopener noreferrer">Better Living Through Caching</a> ).
 
 Looking at the headers for a netlify site
 
@@ -81,7 +81,7 @@ With the config above you can see this changes on `woff2` fonts.
 HTTP/2 200
 content-type: font/woff2
 server: Netlify
-cache-control: public,s-max-age=2592000
+cache-control: public,max-age=2592000
 ```
 All scripts & configs mentioned in this article are available on github.
 
