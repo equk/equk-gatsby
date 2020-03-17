@@ -15,12 +15,12 @@ slug: netgear-dg834g-modem
 
 You can get these routers for little money and they are perfect for sitting in front of a firewall system with little hassle. (perfect for cisco, openwrt, iptables, pfsense etc)
 
-_\*this also works with DG934G routers as you can reflash them to DG834v3, loads on ebay branded Sky for *£5-10*_
+_this also works with DG934G routers as you can reflash them to DG834v3, loads on ebay branded Sky for *£5-10*_
 
-![dg834g setup cgi](../images/2011/dg834g_modem.jpg)
+![dg834g setup cgi](/media/images/2011/dg834g_modem.jpg)
 
 All you need to do is access a hidden option screen.
-Open up the configuration in a browser and change ‘setup.cgi?next_file=start.htm’ to 'setup.cgi?next_file=mode.htm’
+Open up the configuration in a browser and change `setup.cgi?next_file=start.htm` to `setup.cgi?next_file=mode.htm`
 You can then select Modem and Apply.
 
 Now setup the firewall that is behind the DG834G to connect via PPPoE on port1.
