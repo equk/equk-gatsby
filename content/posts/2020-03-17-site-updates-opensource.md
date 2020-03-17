@@ -1,7 +1,7 @@
 ---
 template: post
 title: Site Updates & Opensource
-draft: true
+draft: false
 date: 2020-03-17T11:09:16.393Z
 tags:
   - javascript
@@ -137,4 +137,4 @@ Main cms component `src/cms/index.js`
 
 The source for the site is available on github.
 
-<a class="github" href="https://github.com/equk/" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+<a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
