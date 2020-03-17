@@ -1,6 +1,7 @@
 ---
 template: post
 title: Blogging on JAMstack
+slug: blogging-on-jamstack
 draft: false
 date: 2020-03-16T21:55:35.656Z
 tags:
