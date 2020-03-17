@@ -5,7 +5,22 @@
 @import "prism/prism-tomorrow.css";
 @import "prism/language-tabs.css";
 @import "fa/fork-awesome.scss";
-@import "~bulma";
+@import "~bulma/sass/utilities/all";
+@import "~bulma/sass/base/all";
+@import "~bulma/sass/elements/box";
+@import "~bulma/sass/elements/button";
+@import "~bulma/sass/elements/container";
+@import "~bulma/sass/elements/content";
+@import "~bulma/sass/elements/icon";
+@import "~bulma/sass/elements/image";
+@import "~bulma/sass/elements/notification";
+@import "~bulma/sass/elements/progress";
+@import "~bulma/sass/elements/table";
+@import "~bulma/sass/elements/title";
+@import "~bulma/sass/form/all";
+@import "~bulma/sass/components/all";
+@import "~bulma/sass/grid/all";
+@import "~bulma/sass/layout/all";
 @import "components/feed";
 @import "components/pagination";
 @import "components/post";
@@ -176,16 +191,6 @@ a.github:hover {
   background-image:linear-gradient(180deg, #f0f3f6, #e6ebf1 90%);
   border-color:#a5a9ac;
   border-color:rgba(27,31,35,0.35);
-}
-
-// overrides
-
-.number {
-  all: unset;
-}
-
-.table {
-  background-color: transparent;
 }
 
 /* purgecss end ignore */
