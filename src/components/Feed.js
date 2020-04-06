@@ -6,7 +6,7 @@ import { kebabCase } from 'lodash'
 
 const Feed = ({ edges }) => (
   <div className="post-feed">
-    {edges.map(edge => (
+    {edges.map((edge) => (
       <div className="post" key={edge.node.fields.slug}>
         <div className="post-meta">
           <time className="published" dateTime={moment(edge.node.frontmatter.date).format('MMMM D, YYYY')}>
@@ -24,7 +24,7 @@ const Feed = ({ edges }) => (
             {edge.node.frontmatter.tags ? (
               <div className="tags-container">
                 <ul className="taglist">
-                  {edge.node.frontmatter.tags.map(tag => (
+                  {edge.node.frontmatter.tags.map((tag) => (
                     <li key={`${tag}tag`}>
                       <Link to={`/tag/${kebabCase(tag)}/`}>{tag}</Link>
                     </li>

@@ -20,11 +20,11 @@ if (!fs.existsSync(publicFolder)) {
   process.exit(1)
 }
 
-const css = fs.readdirSync(publicFolder).filter(fn => fn.endsWith('.css'))
+const css = fs.readdirSync(publicFolder).filter((fn) => fn.endsWith('.css'))
 
 if (css.length === 1) {
   console.log(`INFO: copying ${publicFolder + css[0]} to ${outFile}`)
-  fs.copyFile(publicFolder + css[0], outFile, err => {
+  fs.copyFile(publicFolder + css[0], outFile, (err) => {
     if (err) throw err
     console.log(`${publicFolder + css[0]} was copied to ${outFile}`)
   })

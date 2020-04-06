@@ -59,7 +59,7 @@ const onCreateNode = ({ node, actions }) => {
      * Create Tag URLs Using /tagslug
      */
     if (node.frontmatter.tags) {
-      const tagSlugs = node.frontmatter.tags.map(tag => `/tag/${_.kebabCase(tag)}/`)
+      const tagSlugs = node.frontmatter.tags.map((tag) => `/tag/${_.kebabCase(tag)}/`)
       createNodeField({ node, name: 'tagSlugs', value: tagSlugs })
     }
   }

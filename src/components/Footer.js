@@ -14,7 +14,7 @@ const Footer = () => {
               <h1>EQUK</h1>
             </div>
             <div className="footer-links">
-              {menu.map(item => (
+              {menu.map((item) => (
                 <Link to={item.path} className="footer-link">
                   {item.label}
                 </Link>
