@@ -18,8 +18,8 @@ I have made the site open source and available on github for others to learn fro
 - [x] OpenGraph & Twitter Meta Tags
 - [x] Feature Image
 - [x] RSS Feed
-- [x] Sitemap
-- [x] Disqus Comments
+- [x] ~~Disqus Comments~~
+- [x] Gitalk Comments
 - [x] Syntax Highlighting with `prismjs`
 - [x] Pagination
 - [x] Netlify CMS
