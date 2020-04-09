@@ -221,7 +221,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-purgecss',
       options: {
-        ignore: ['prism/', 'fa/', 'gitalk/'],
+        ignore: ['prism/', 'fa/', 'gitalk/', 'themes/'],
         whitelistPatterns: [
           /fa/,
           /button/,
