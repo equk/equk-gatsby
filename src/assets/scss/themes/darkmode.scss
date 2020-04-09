@@ -1,0 +1,157 @@
+//*-----------------------------------------
+//* Dark Mode
+//*-----------------------------------------
+
+body.dark-mode {
+  color: #eee;
+  background: #262831;
+  transition: background-color 0.5s ease-in;
+}
+
+body.light-mode {
+  transition: background-color 0.5s ease-in;
+}
+
+.sun-icon,
+.moon-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.toggle-darkmode:hover {
+  background-color: #eee;
+}
+
+.toggle-darkmode {
+  border: none;
+  background: #fff;
+  display: flex;
+  padding: 0.5rem;
+  margin: 0 0.25rem;
+  border-radius: 50%;
+}
+
+.navbar-item.dark-toggle {
+  padding: 0;
+}
+
+
+.dark-mode {
+  //*-----------------------------------------
+  //* Core Styles
+  //*-----------------------------------------
+
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .content h5,
+  .content h6 {
+    color: #eee;
+  }
+
+  .page-full-content,
+  .post-full-content,
+  .post-comments,
+  .post-feed {
+    background: inherit;
+  }
+
+  .post-title a {
+    color: #eee;
+  }
+
+  .post-feed .post-meta {
+    color: #ccc;
+  }
+
+  .post-date {
+    color: #eee;
+  }
+
+  strong {
+    color: #eee;
+  }
+
+  a i.fa-github-alt {
+    color: #eee;
+  }
+
+  .post-footer .post-meta {
+    color: #fff;
+  }
+
+  a {
+    color: $primary;
+    -webkit-transition: color ease 0.7s;
+    transition: color ease 0.7s;
+  }
+  a:focus,
+  a:hover {
+    color: $secondary;
+  }
+
+  a.post-title-link:hover,
+  a.post-title-link:focus {
+    color: $secondary;
+  }
+
+  //*-----------------------------------------
+  //* Footer
+  //*-----------------------------------------
+
+  .footer {
+    background-color: darken(#262831, 4%);
+    border-top: 1px solid #222;
+    color: #eee;
+  }
+
+  .footer a.footer-link {
+    color: #eee;
+  }
+
+  .footer .copyright,
+  .footer .powered-by {
+    color: #fff;
+  }
+
+  //*-----------------------------------------
+  //* Misc
+  //*-----------------------------------------
+
+  :not(pre) > code,
+  :not(pre) > code.language-text {
+    background-color: #011627 !important;
+    color: #cc99cd !important;
+  }
+
+  .git-commit {
+    color: #333;
+  }
+
+  .content blockquote {
+    background-color: #334;
+  }
+
+  //diff colors
+  .token.inserted {
+    color: #7ec699;
+  }
+
+  .gt-ico-github svg {
+    fill: #fff;
+  }
+
+  .git-commit {
+    color: #eee;
+    background: #011627;
+    border-bottom: 1px solid darken(#011627, 5%);
+    border-right: 1px solid darken(#011627, 5%);
+  }
+
+  .pagination a {
+    @extend .button;
+    @extend .is-dark;
+    box-shadow: 0 2px #011627;
+  }
+}
