@@ -1,0 +1,16 @@
+.dark-mode :not(pre) > code,
+.dark-mode :not(pre) > code.language-text {
+    background-color: #011627 !important;
+    color: #cc99cd !important;
+}
+
+:not(pre) > code,
+:not(pre) > code.language-text {
+    font-family: Fira Mono, monospace !important;
+    font-size: 0.9em !important;
+    line-height: 1.25rem !important;
+    background-color: #eef9ff !important;
+    color: #0282c9 !important;
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 0.3125rem !important;
+}
