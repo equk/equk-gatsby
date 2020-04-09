@@ -3,6 +3,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Progressbar from './Progressbar'
+import ToggleDark from './common/ToggleDark'
 
 class Topbar extends React.Component {
   constructor(props) {
@@ -68,6 +69,7 @@ class Topbar extends React.Component {
               <Link className="navbar-item" to="/projects">
                 Projects
               </Link>
+              <ToggleDark />
             </div>
           </nav>
         </div>
