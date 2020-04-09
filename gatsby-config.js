@@ -239,6 +239,8 @@ module.exports = {
           /is-link/,
           /columns/,
           /column/,
+          /dark-mode/,
+          /light-mode/,
         ],
       },
     },
