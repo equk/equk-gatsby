@@ -31,6 +31,7 @@
 @import "helpers";
 @import "responsive";
 @import "typography";
+@import "themes/darkmode.scss";
 
 
 //*-----------------------------------------
@@ -162,6 +163,7 @@ a.post-title-link:focus {
 
 a.github {
   @extend .button;
+  color: #111;
   background-color: #eff3f6;
   background-image: -webkit-linear-gradient(top, #fafbfc, #eff3f6 90%);
   background-image: -moz-linear-gradient(top, #fafbfc, #eff3f6 90%);
@@ -177,6 +179,7 @@ a.github {
 
 a.github:focus,
 a.github:hover {
+  color: #111;
   background-color:#e6ebf1;
   background-image:-webkit-linear-gradient(top, #f0f3f6, #e6ebf1 90%);
   background-image:-moz-linear-gradient(top, #f0f3f6, #e6ebf1 90%);
@@ -232,4 +235,19 @@ a.github:hover {
 .message {
   font-size: inherit;
 }
+
+//diff colors
+.token.inserted {
+  color: #7ec699;
+}
+
+// transition fixes
+
+.page-full-content,
+.post-full-content,
+.post-comments,
+.post-feed {
+  background: inherit;
+}
+
 /* purgecss end ignore */
