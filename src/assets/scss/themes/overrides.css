@@ -14,3 +14,7 @@
     padding: 0.2rem 0.4rem !important;
     border-radius: 0.3125rem !important;
 }
+
+.dark-mode .content blockquote {
+    background-color: #334;
+}
