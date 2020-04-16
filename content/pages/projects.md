@@ -26,13 +26,13 @@ description: projects
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> torjail - sandboxed torbrowser
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> inspect http request headers using go `net/http`
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> unsplash json api search using `vanilla javascript`
-<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> linux audio device switcher with ladspa multiband eq
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> linux audio device switcher with `ladspa` multiband eq
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> nodejs api server template using `express`
 <br/><i class="fa fa-code"></i> Chromium OS & Cloudready on `QEMU`
-<br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> BT HomeHub 5a OpenWrt
-<br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> Acer Chromebook C7/C710 Coreboot
-<br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> Android Testing Tools
-<br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> ARM64 Bootloader Testing
+<br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> BT HomeHub 5a `OpenWrt`
+<br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> Acer Chromebook C7/C710 `Coreboot`
+<br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> Android Testing Tools (ROM Patching)
+<br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> ARM64 Bootloader Testing (`U-Boot`)
 <br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> <i class="fa fa-github"></i> BlackWidow Macro Keys In Linux
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Cloudflare Iptables
 <br/><i class="fa fa-microchip"></i> <i class="fa fa-code"></i> Netgear wnr2200 `OpenWrt` USB Patches & `extroot`
@@ -40,8 +40,8 @@ description: projects
 <br/><i class="fa fa-code"></i> <i class="fa fa-linux"></i> Mail CLI Admin Tools (`python` & `mysql`)
 <br/><i class="fa fa-code"></i> <i class="fa fa-linux"></i> Archlinux package migration scripts
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Google Chrome Ramdisk Cache
-<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Windows Firewall Blocklists
-<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Windows 10 Tweak Tools
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Windows Firewall Blocklists (`Powershell`)
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Windows 10 Tweak Tools (`Powershell`)
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Linux Logout GUI Using `python` `tkinter` (tk-logout)
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Web App Using `lastfm` API In `php` (lastfm-feed)
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Wordpress Security Modules
@@ -137,9 +137,9 @@ bootblock                      0xff700    bootblock    1952
 Built google/parrot (Parrot)
 ```
 
-For more info on coreboot, <a href="http://www.coreboot.org/Welcome_to_coreboot" target="_blank">visit their wiki here</a>
+For more info on coreboot, <a href="https://doc.coreboot.org/" target="_blank">visit the coreboot docs</a>.
 
-I have a <a href="https://github.com/equk/c710" target="_blank">repo on <i class="fa fa-github-alt"></i> github for my linux configs and scripts specific to the c710.</a>
+I have a <a href="https://github.com/equk/c710" target="_blank">repo on <i class="fa fa-github-alt"></i> github for my linux configs specific to the c710.</a>
 
 ### Android Testing Tools
 
@@ -158,9 +158,9 @@ This tool makes the job of security testing easier & also helps in the creation 
 
 <p class="text-center"><img class="border" src="/media/images/2016/05/aarm64_serial_001.jpg"></p>
 
-Testing U-BOOT related security on specific ARM64 implementations & debugging using serial interface.
+Testing `U-Boot` related security on specific ARM64 implementations & debugging using serial interface.
 
-It is possible read & write to U-BOOT from within android without any need for root on many of these devices (not just development boards).
+It is possible read & write to `U-Boot` from within android without any need for root on many of these devices (not just development boards).
 It is also possible to inject custom scripts & binaries directly to the bootloader.
 
 <p class="text-center"><a href="https://twitter.com/equilibriumuk/status/717669326489313280" target="_blank"><img class="border" src="/media/images/2016/05/arm64_cpuinfo.jpg"></a></p>
