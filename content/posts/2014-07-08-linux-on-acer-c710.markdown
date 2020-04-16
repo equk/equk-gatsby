@@ -14,7 +14,15 @@ slug: linux-on-acer-c710/
 
 Running linux on the <a href="https://play.google.com/store/devices/details/Acer_C7_Chromebook?id=chromebook_acer_c710" target="_blank">Acer C710 Chromebook</a> is easy once you have decided which <a href="http://www.coreboot.org/Payloads" target="_blank">payload</a> to use with <a href="http://www.coreboot.org/" target="_blank">coreboot</a>.
 
-Here are some system specific configurations for the c710.
+## Coreboot
+
+You will need to build or download a custom Coreboot firmware image.
+
+### Building Coreboot
+
+Information on building Coreboot can be found on <a href="https://www.coreboot.org/Build_HOWTO" target="_blank">the wiki</a>.
+
+## Specific Configuration
 
 **Synaptics Tweaks**
 
