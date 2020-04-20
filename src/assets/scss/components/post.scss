@@ -121,7 +121,7 @@ img.border {
   article.message {
     -webkit-transform: translateX(-120px);
     transform: translateX(-120px);
-    max-width: none;
+    max-width: none !important;
     width: 960px;
   }
 }
