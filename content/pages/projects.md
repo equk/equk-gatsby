@@ -113,31 +113,7 @@ Coreboot opensource firmware image, allowing the chromebook to boot into linux u
 Building coreboot is pretty easy, the instructions on the wiki are quite clear.<br/>
 Just make sure you know what you are doing as you could brick your chromebook.
 
-```bash
-Performing operation on 'COREBOOT' region...
-Name                           Offset     Type         Size
-cbfs master header             0x0        cbfs header  32
-cpu_microcode_blob.bin         0x80       microcode    22528
-config                         0x5900     raw          248
-revision                       0x5a40     raw          569
-cmos_layout.bin                0x5cc0     cmos_layout  1412
-fallback/dsdt.aml              0x6280     raw          12867
-payload_config                 0x9540     raw          1563
-payload_revision               0x9bc0     raw          233
-(empty)                        0x9d00     null         25176
-fallback/romstage              0xff80     stage        68868
-fallback/payload               0x20d00    payload      61118
-(empty)                        0x2fc00    null         664
-mrc.cache                      0x2fec0    mrc_cache    65536
-fallback/ramstage              0x3ff00    stage        69806
-pci8086,0106.rom               0x51000    optionrom    65536
-(empty)                        0x61080    null         648792
-bootblock                      0xff700    bootblock    1952
-
-Built google/parrot (Parrot)
-```
-
-For more info on coreboot, <a href="https://doc.coreboot.org/" target="_blank">visit the coreboot docs</a>.
+For more info on building coreboot read my blog post [Building Coreboot in 2020](/2020/04/19/building-coreboot-2020)
 
 I have a <a href="https://github.com/equk/c710" target="_blank">repo on <i class="fa fa-github-alt"></i> github for my linux configs specific to the c710.</a>
 
