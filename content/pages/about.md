@@ -87,11 +87,30 @@ I am open to new work opportunities, please contact me using the details below.
 
 ## Contact
 
-<i class="fa fa-envelope"></i> **email:** `equilibriumuk AT protonmail DOT com`<br />
-<i class="fa fa-key-modern"></i> **gpg:** <a href="https://pgp.mit.edu/pks/lookup?op=get&search=0x0E53A3C22664D113" target="_blank">0E53 A3C2 2664 D113</a><br />
-<i class="fa fa-github-alt"></i> **github:** <a href="https://github.com/equk/" target="_blank">equk</a><br />
-<i class="fa fa-twitter"></i> **twitter:** <a href="https://twitter.com/equilibriumuk/" target="_blank">equilibriumuk</a><br />
-<i class="fa fa-keybase"></i> **keybase:** <a href="https://keybase.io/equilibriumuk/" target="_blank">equilibriumuk</a>
+<table>
+    <tbody>
+        <tr>
+            <td><i class="fa fa-envelope"></i> <strong>email</strong></td>
+            <td><code class="language-text">equilibriumuk AT protonmail DOT com</code></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-key-modern"></i> <strong>gpg</strong></td>
+            <td><a href="https://pgp.mit.edu/pks/lookup?op=get&amp;search=0x0E53A3C22664D113" target="_blank">0E53 A3C2 2664 D113</a></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-github-alt"></i> <strong>github</strong></td>
+            <td><a href="https://github.com/equk/" target="_blank">equk</a></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-twitter"></i> <strong>twitter</strong></td>
+            <td><a href="https://twitter.com/equilibriumuk/" target="_blank">equilibriumuk</a></td>
+        </tr>
+        <tr>
+            <td><i class="fa fa-keybase"></i> <strong>keybase</strong></td>
+            <td><a href="https://keybase.io/equilibriumuk/" target="_blank">equilibriumuk</a></td>
+        </tr>
+    </tbody>
+</table>
 
 ---
 
