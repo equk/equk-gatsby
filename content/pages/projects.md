@@ -10,6 +10,7 @@ description: projects
 <br/><i class="fa fa-code"></i> Software
 <br/><i class="fa fa-github"></i> Opensource
 
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> install firefox on windows 10 using `powershell`
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> postscreen whitelist/blacklist using `spf`
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> extract mailserver list from `spf`
 <br/><i class="fa fa-code"></i> torbrowser update checker ( golang `net/http` )
@@ -40,8 +41,8 @@ description: projects
 <br/><i class="fa fa-code"></i> <i class="fa fa-linux"></i> Mail CLI Admin Tools (`python` & `mysql`)
 <br/><i class="fa fa-code"></i> <i class="fa fa-linux"></i> Archlinux package migration scripts
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Google Chrome Ramdisk Cache
-<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Windows Firewall Blocklists (`Powershell`)
-<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Windows 10 Tweak Tools (`Powershell`)
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Windows Firewall Blocklists (`powershell`)
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Windows 10 Tweak Tools (`powershell`)
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Linux Logout GUI Using `python` `tkinter` (tk-logout)
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Web App Using `lastfm` API In `php` (lastfm-feed)
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> Wordpress Security Modules
