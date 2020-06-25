@@ -70,18 +70,28 @@ Currently looking into `Deno` which looks like it could replace nodejs in time.
 
 ## Work
 
-I currently work as a Fullstack Developer & Linux Systems Administrator for a small web app development company.
+I currently work as a Fullstack Developer & Linux Systems Administrator for a development company.
 
 <p class="text-center">
-<img class="inline nodejs_logo" src="/media/images/2019/06/nodejs.svg" alt="nodejs" width="40px">
-<img class="inline vuejs_logo" src="/media/images/2019/06/vuejs.svg" alt="vuejs" width="50px">
-<img class="inline reactjs_logo" src="/media/logos/reactsq.svg" alt="reactjs" width="50px">
-<img class="inline graphql_logo" src="/media/images/2019/06/graphql.svg" alt="graphql" width="40px">
+<img class="inline nodejs_logo" src="/media/logos/nodejs.svg" alt="nodejs" width="70px">
+<img class="inline vuejs_logo" src="/media/logos/vue.svg" alt="vuejs" width="80px">
+<img class="inline reactjs_logo" src="/media/logos/reactsq.svg" alt="reactjs" width="80px">
+<img class="inline graphql_logo" src="/media/logos/graphql.svg" alt="graphql" width="70px">
 </p>
 
-We mainly use `vuejs` & `react` with rest or graphql for web apps.<br />
+We mainly use `vuejs` & `react` with rest or `graphql` for web apps.<br />
 Most backend tooling & services are based on `golang`, `python` or `nodejs`.<br />
-_Main services: VPNs (IPSec & Wireguard), Mailservers, Webservers_
+
+<p class="text-center">
+<img class="inline javascript_logo" src="/media/logos/javascript.svg" alt="javascript" width="80px">
+<img class="inline golang_logo" src="/media/logos/golang.svg" alt="golang" width="90px">
+<img class="inline python_logo" src="/media/logos/python.svg" alt="python" width="80px">
+<img class="inline docker_logo" src="/media/logos/docker.png" alt="docker" width="100px">
+<img class="inline git_logo" src="/media/logos/git.svg" alt="git" width="80px">
+</p>
+
+Our servers run services using `docker` containers & `git` for continuous deployment.<br />
+_Main services: VPNs (IPSec & Wireguard), Mail, Web, API, Monitoring_
 
 I am open to new work opportunities, please contact me using the details below.
 
