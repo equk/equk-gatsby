@@ -54,7 +54,7 @@ description: projects
 
 ---
 
-### Postfix Postscreen Whitelist
+## Postfix Postscreen Whitelist
 
 CLI app to automate whitelisting (or blacklisting) of known email servers by iterating over `spf` records.
 
@@ -67,7 +67,7 @@ Built to work with domains that have email servers spanning over multiple `spf` 
 ```
 App whitelists `IPV4` & `IPV6` ranges using `CIDR` blocks.
 
-### BT HomeHub 5a OpenWrt
+## BT HomeHub 5a OpenWrt
 
 <a href="/2016/10/04/unlocking-bt-homehub-5a/">
 
@@ -78,7 +78,7 @@ App whitelists `IPV4` & `IPV6` ranges using `CIDR` blocks.
 Hardware modifications to allow connection & booting over UART<br />
 Custom firmware built from development/testing branch of OpenWrt
 
-### Raspberry Pi Zero
+## Raspberry Pi Zero
 
 <p class="text-center"><img class="border" src="/media/images/2016/06/rasp_zero_banner.jpg"></p>
 
@@ -105,7 +105,7 @@ I'm using the Raspberry Pi Zero as it has low power usage & has the GPIO require
 These little boards can be useful for flashing & debugging hardware.
 <br />They also work well for testing RF security using an expansion board (RFID RC522).
 
-### Acer Chromebook C7/C710 Coreboot
+## Acer Chromebook C7/C710 Coreboot
 
 Coreboot opensource firmware image, allowing the chromebook to boot into linux using different payloads eg: seabios, grub2, tianocore (UEFI).
 
@@ -118,7 +118,7 @@ For more info on building coreboot read my blog post [Building Coreboot in 2020]
 
 I have a <a href="https://github.com/equk/c710" target="_blank">repo on <i class="fa fa-github-alt"></i> github for my linux configs specific to the c710.</a>
 
-### Android Testing Tools
+## Android Testing Tools
 
 Tools to help with testing, debugging & reverse engineering of android devices.
 
@@ -131,7 +131,7 @@ Tools to help with testing, debugging & reverse engineering of android devices.
 The ROM extraction script allows the ability to dump a full ROM to external storage, the script segments the storage into sections making it easier to look at applications & system.
 This tool makes the job of security testing easier & also helps in the creation of custom ROM patches. (eg: enable google widevine patch)
 
-### ARM64 Bootloader Security Testing
+## ARM64 Bootloader Security Testing
 
 <p class="text-center"><img class="border" src="/media/images/2016/05/aarm64_serial_001.jpg"></p>
 
@@ -145,7 +145,7 @@ It is also possible to inject custom scripts & binaries directly to the bootload
 Some simple examples of this are injecting scripts into `preboot` or `bootcmd`.
 Both result in scripts being run before the target OS.
 
-### BlackWidow Macro Keys In Linux
+## BlackWidow Macro Keys In Linux
 
 <a href="/2016/01/23/blackwidow-macro-keys-in-linux/"><img src="/media/images/2016/01/bwidow_header_white.jpg" alt="bwidow_header"></a>
 
@@ -176,7 +176,7 @@ Source code is available on <a href="https://github.com/equk/blackwidow_macro" t
 
 <br />
 
-### torjail - sandboxed torbrowser
+## torjail - sandboxed torbrowser
 
 Download, verify & run torbrowser in a sandbox utilizing seccomp policies and Xephyr.
 
@@ -200,7 +200,7 @@ Source code available on <a href="https://github.com/equk/torjail" target="_blan
 
 <br />
 
-### Netgear wnr2200 OpenWrt
+## Netgear wnr2200 OpenWrt
 
 <a href="/2015/07/13/netgear-wnr2200-openwrt-usb-support/"><img src="/media/images/2015/07/wnr2200_head.jpg" alt="wnr2200_img"></a>
 
@@ -208,13 +208,13 @@ Custom Patch to allow usb storage<br />
 Custom script to initialize usb at boot to allow overlay pivot<br />
 Custom build of OpenWrt
 
-### mail console
+## mail console
 
 Extension of mail server cli tools, designed to be easier to use with the possibility of expanding it to include live mail server statistics.
 
 <p class="text-center"><img src="/media/images/2015/07/mail_console_v01.gif"></p>
 
-### Windows Powershell Tools
+## Windows Powershell Tools
 
 <p class="text-center"><img class="border" src="/media/images/2015/09/powershell_banner.jpg" alt="powershell banner"></p>
 
@@ -229,7 +229,7 @@ Some examples:
 - [x] Windows 10 Disable Services
 - [x] Windows 10 Disable Scheduled Tasks
 
-### mail server cli tools
+## mail server cli tools
 
 Command Line Tools for administering my mailserver stack.
 Written in python, allows a admin to create/delete mailboxes, domains, subdomains & aliases.
@@ -260,127 +260,3 @@ Email Aliases
 ===============
 a: admin@debian.test ==> postmaster@debian.test
 ```
-
-<br />
-
-### mail server stack
-
-Low memory mail server stack with anti-spam features.
-
-main features:
-
-- [x] anti-spam
-- [x] IMAPS, SMTP (TLS, SASL)
-- [x] salted passwords
-- [x] web based mail with password reset ability
-- [x] daily statistics of mails and spam detection
-- [x] mariadb + xtradb storage
-- [x] SPF + DKIM (signing and checking)
-- [x] DMARC
-
-Currently running a server with over 50 mailboxes and 2 domains, 1500+ blocked/dropped spam emails/day using around 130mb of RAM
-
-<p class="text-center"><img src="/media/images/2014/Feb/mail_mem_15feb_24hr.png" alt="mail_mem_15feb"></p>
-
-_Database layout:_
-
-<p class="text-center"><img src="/media/images/2015/04/mailadm_database.jpg"></p>
-
-<br />
-
-### minimal nodejs stack
-
-<p class="text-center"><img src="/media/images/2014/Mar/nodejs_logo_w_128.png" alt=""></p>
-
-nodejs stack for small webapps
-
-site features:
-
-- [x] nginx reverse proxy
-- [x] waf
-- [x] disqus commenting
-- [x] static caching on nginx
-
-design / editing features:
-
-- [x] handlebars templating
-- [x] sass styles
-- [x] grunt automation
-- [x] livereload editing
-- [x] css minimize
-- [x] live js testing
-
-<p class="text-center"><img src="/media/images/2014/Mar/node_newrelic_22_04_2014.jpg"></p>
-
-### tk_logout
-
-Python tkinter UI for shutdown/logout/reboot
-<a href="https://equk.co.uk/2014/06/07/tk_logout-python-script-for-i3wm/">more details</a>
-
-<p class="text-center"><img class="border" alt="tk_logout" src="/media/images/2014/Jun/tk_logout_07062014.png"></p>
-
-## Past Projects
-
-### lastfm_feed
-
-Simple lasftm feed using php to pull data from the lastfm api (requires a api key).
-
-<i class="fa fa-github-alt"></i> Github Repo: https://github.com/equk/lastfm_feed
-
-<img src="/media/images/2013/09/lastfm_feed.png" alt="lastfm_feed_screenshot">
-
-### wordpress security modules
-
-Mainly consisting of hooks to secure wordpress.
-Features include file permissions checking, server optimizations, secure redirects & code fixes.
-I stopped actively developing this project when I moved to python and nodejs for website development.
-
-<img class="border" src="/media/images/2015/04/sec-panel-15-02-2012.jpg">
-
-### wordpress twitter oauth comments
-
-Allow users to use twitter oauth to comment on wordpress.
-Ended up dropping this when twitter changed their oauth api (the new changes broke a lot of things & alternatives were available)
-
-### i5700 dalvik-cache
-
-Relocate dalvik cache to free space on Samsung i5700
-
-The script makes the system put dalvik cache into the /cache partition which is 80mb and gets used by various processes for caching & OTA updates (prob don't have those anymore anyway).
-The script also removes old system dumps to free space on each reboot of the phone.
-
-<i class="fa fa-github-alt"></i> Github Repo: https://github.com/equk/i5700/tree/master/dalvik-cache
-
-### mac osx backup
-
-Script which backs up a users data using rsync and then notifies when finished using growl.
-
-<p class="text-center"><img class="border" src="/media/images/2015/04/osx_backup.png" alt="osx_backup"></p>
-
-```bash
-::  Starting Sync Process to: /Volumes/-snip-
-::  Backing up Documents Folder
-::  Documents Sync Complete
-::  log saved to /-snip-/log.txt
-::  Backing up Pictures Folder
-::  Pictures Sync Complete
-::  log saved to /-snip-/log2.txt
-```
-
-### wordpress picasa gallery
-
-<img src="/media/images/2015/04/picasa190x50.gif" alt="picasa_logo">
-
-Link to picasa using API key.
-Allowed users to click a picasa logo within wordpress and view all albums and photo's. They could then add a single image or a gallery to the blog posts or pages.
-
-### small wordpress modules
-
-- force HTML5 over HTTPS for youtube embeds (was made when wordpress had HTTP+FLASH embeds)
-- php .htaccess editor within backend
-- SEO Tools (dynamic meta tags & titles etc based on page/post content)
-- Custom Colour Schemes for themes
-- htaccess tweaks - enable gzip compression etc
-- force HTTPS for vimeo embeds
-- IP restricted backend (with cloudflare support)
-- share buttons with automatic url shortening (useful for twitter)
