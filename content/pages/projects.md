@@ -52,7 +52,15 @@ description: projects
 <br/><i class="fa fa-code"></i> Wordpress Picasa Gallery
 <br/><i class="fa fa-code"></i> Wordpress Modules
 
----
+<article class="message is-dark">
+  <div class="message-header">
+    <p><i class="fa-lg fa fa-github"></i> Github</p>
+  </div>
+  <div class="message-body">
+    <p class="text-center">Opensource projects listed above can be found on my <a href="https://github.com/equk" target="_blank" aria-label="go to github" rel="noopener noreferrer">Github</a>.</p>
+    <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color py"></span> Python <span class="language-color php"></span> PHP <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color ps"></span> Powershell</p>
+  </div>
+</article>
 
 ## Postfix Postscreen Whitelist
 
