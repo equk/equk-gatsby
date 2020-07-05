@@ -49,49 +49,46 @@ I am always looking to learn new things & am normally breaking or experimenting 
         <li>Reverse Engineering</li>
         <li>Electronics Modification</li>
         <li>Programming</li>
+        <li>Kubernetes</li>
         <li>Cryptography</li>
         <li>Rust</li>
         </ul>
     </div>
     <div class="column">
         <ul>
-        <li>Golang</li>
+        <li>Go</li>
         <li>Nodejs</li>
-        <li>Graphql</li>
+        <li>GraphQL</li>
         <li>Vuejs</li>
+        <li>Docker</li>
         <li>Javascript</li>
         <li>React</li>
         </ul>
     </div>
 </div>
 
-Currently looking into `Deno` which looks like it could replace nodejs in time.
-<br />It uses the Google V8 Javascript engine like node but it is built in `rust` with `tokio` & does not depend on `npm`.
-
 ## Work
 
-I currently work as a Fullstack Developer & Linux Systems Administrator for a development company.
+I currently work as a Fullstack Developer & Linux Systems Administrator for a development company. (IaC, PaaS, FaaS, GitOps, DevOps)
 
 <p class="text-center">
-<img class="inline nodejs_logo" src="/media/logos/nodejs.svg" alt="nodejs" width="70px">
 <img class="inline vuejs_logo" src="/media/logos/vue.svg" alt="vuejs" width="80px">
 <img class="inline reactjs_logo" src="/media/logos/reactsq.svg" alt="reactjs" width="80px">
 <img class="inline graphql_logo" src="/media/logos/graphql.svg" alt="graphql" width="70px">
+<img class="inline nodejs_logo" src="/media/logos/nodejs.svg" alt="nodejs" width="70px">
+</p>
+<p class="text-center">
+<img class="inline golang_logo" src="/media/logos/golang.svg" alt="golang" width="90px">
+<img class="inline python_logo" src="/media/logos/python.svg" alt="python" width="80px">
+<img class="inline kubernetes_logo" src="/media/logos/kubernetes.svg" alt="kubernetes" width="80px">
+<img class="inline docker_logo" src="/media/logos/docker.png" alt="docker" width="100px">
+<img class="inline git_logo" src="/media/logos/git.svg" alt="git" width="80px">
 </p>
 
 We mainly use `vuejs` & `react` with rest or `graphql` for web apps.<br />
 Most backend tooling & services are based on `golang`, `python` or `nodejs`.<br />
 
-<p class="text-center">
-<img class="inline javascript_logo" src="/media/logos/javascript.svg" alt="javascript" width="80px">
-<img class="inline golang_logo" src="/media/logos/golang.svg" alt="golang" width="90px">
-<img class="inline python_logo" src="/media/logos/python.svg" alt="python" width="80px">
-<img class="inline docker_logo" src="/media/logos/docker.png" alt="docker" width="100px">
-<img class="inline git_logo" src="/media/logos/git.svg" alt="git" width="80px">
-</p>
-
-Our servers run services using `docker` containers & `git` for continuous deployment.<br />
-_Main services: VPNs (IPSec & Wireguard), Mail, Web, API, Monitoring_
+We run a range of services using `docker`, `kubernetes` & `git`.
 
 I am open to new work opportunities, please contact me using the details below.
 
