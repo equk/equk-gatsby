@@ -1,3 +1,5 @@
+/* dark-mode overrides */
+
 .dark-mode :not(pre) > code,
 .dark-mode :not(pre) > code.language-text {
     background-color: #011627 !important;
@@ -34,4 +36,139 @@
     color: #cc0f35 !important;
     background-color: #feecf0 !important;
     border: 1px solid #ffd2dc;
+}
+
+.content-body img.inline,
+img.inline {
+    display: inline-block;
+}
+
+/* 05-07-2020 - diff */
+
+.is-family-primary,
+.is-family-sans-serif,
+.is-family-secondary {
+    font-family: BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+        Helvetica Neue, Helvetica, Arial, sans-serif !important;
+}
+.is-family-code,
+.is-family-monospace {
+    font-family: monospace !important;
+}
+
+img.inline {
+    display: inline-block;
+}
+img.border {
+    border: 1px solid #2c3e50;
+}
+
+@media only screen and (min-width: 785px) {
+    .content-body img[src$="#wide"],
+    .width-wide .image {
+        margin-left: calc(22.5rem - 47vw);
+        margin-right: calc(22.5rem - 47vw);
+        max-width: none;
+        width: 94vw;
+    }
+    article.message,
+    blockquote,
+    pre,
+    span.gatsby-resp-image-wrapper {
+        -webkit-transform: translateX(-120px);
+        transform: translateX(-120px);
+        max-width: none !important;
+        width: 60rem;
+    }
+}
+li.task-list-item {
+    list-style: none;
+    margin-left: 0;
+}
+
+.error-page .logo {
+    position: fixed;
+    left: 12px;
+    bottom: 12px;
+}
+.text-center {
+    text-align: center !important;
+}
+
+code,
+pre {
+    font-family: Fira Mono, monospace;
+}
+:not(pre) > code[class*="language-"],
+code,
+pre,
+pre[class*="language-"] {
+    background: #011627;
+}
+
+.content blockquote {
+    background-color: #eef9ff;
+    border-left: 5px solid #7fd1fe;
+    padding: 1.25em 1.5em;
+}
+
+:not(pre) > code,
+:not(pre) > code.language-text {
+    font-family: Fira Mono, monospace !important;
+    font-size: 0.9em !important;
+    line-height: 1.25rem !important;
+    background-color: #eef9ff !important;
+    color: #0282c9 !important;
+    padding: 0.2rem 0.4rem !important;
+    border-radius: 0.3125rem !important;
+}
+pre {
+    font-family: Fira Mono, monospace;
+    font-size: 0.9em;
+    white-space: pre;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    padding: 0.25rem 0.5rem;
+}
+
+.btn:focus,
+.btn:hover,
+a.github:focus,
+a.github:hover {
+    background-color: #e6ebf1;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f0f3f6), color-stop(90%, #e6ebf1));
+    background-image: linear-gradient(180deg, #f0f3f6, #e6ebf1 90%);
+    border-color: #a5a9ac;
+    border-color: rgba(27, 31, 35, 0.35);
+}
+
+.language-color.js {
+    background-color: #f1e05a;
+}
+.language-color.ps {
+    background-color: #012456;
+}
+.language-color.py {
+    background-color: #3572a5;
+}
+.language-color.go {
+    background-color: #00add8;
+}
+.language-color.php {
+    background-color: #4f5d95;
+}
+.language-color.sh {
+    background-color: #89e051;
+}
+.language-color.c {
+    background-color: #555;
+}
+.message {
+    font-size: inherit;
+}
+.token.inserted {
+    color: #7ec699;
 }
