@@ -2,7 +2,7 @@ module.exports = {
   extends: ['airbnb', 'prettier', 'prettier/react', 'plugin:compat/recommended'],
   parser: 'babel-eslint',
   parserOptions: {
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
   },
   env: {
     browser: true,
@@ -21,13 +21,7 @@ module.exports = {
     'no-await-in-loop': 0,
     'no-return-assign': ['error', 'except-parens'],
     'no-restricted-syntax': [2, 'ForInStatement', 'LabeledStatement', 'WithStatement'],
-    'no-unused-vars': [
-      1,
-      {
-        ignoreSiblings: true,
-        argsIgnorePattern: 'res|next|^err',
-      },
-    ],
+    'no-unused-vars': ['error', { vars: 'all', args: 'after-used', ignoreRestSiblings: true }],
     'prefer-const': [
       'error',
       {
