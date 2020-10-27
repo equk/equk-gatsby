@@ -86,7 +86,6 @@ The postbuild script copies built css to `/admin/cms.css`
 ## Dependencies on Hold
 
 - [ ] `autoprefixer` 10.0.1 requires PostCSS 8 or higher
-- [ ] `gatsby-remark-relative-images` 2.0.2 breaks gatsby imports
 
 # Contact
 
