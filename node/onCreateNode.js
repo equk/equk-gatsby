@@ -1,6 +1,5 @@
 const _ = require('lodash')
 const moment = require('moment')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
 
 /**
  * This is the main function for creating nodes using the onCreateNode
@@ -18,8 +17,6 @@ let slugVal = ''
 
 const onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
-
-  fmImagesToRelative(node)
 
   if (node.internal.type === 'MarkdownRemark') {
     /**
