@@ -75,11 +75,18 @@ Performance: 100%    Accessibility: 100%     Best Practices: 100%    SEO: 100%  
 
 # Notes
 
+## Postbuild
+
 Added a postbuild script to fix netlify cms as importing css in the cms component from `gatsby-plugin-netlify-cms` causes CSS processing to run twice making CSS bundle twice the size & breaking deploys in netlify.
 
     error UNHANDLED EXCEPTION Callback was already called.
 
 The postbuild script copies built css to `/admin/cms.css`
+
+## Dependencies on Hold
+
+- [ ] `autoprefixer` 10.0.1 requires PostCSS 8 or higher
+- [ ] `gatsby-remark-relative-images` 2.0.2 breaks gatsby imports
 
 # Contact
 
