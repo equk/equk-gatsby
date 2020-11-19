@@ -90,6 +90,15 @@ Most backend tooling & services are based on `golang`, `python` or `nodejs`.<br 
 
 We run a range of services using `docker`, `kubernetes` & `git`.
 
+<p class="text-center">
+<img class="inline prometheus_logo" src="/media/logos/prometheus.svg" alt="prometheus" width="80px">
+<img class="inline elastic_logo" src="/media/logos/elastic.png" alt="elastic" width="80px">
+<img class="inline grafana_logo" src="/media/logos/grafana.svg" alt="grafana" width="80px">
+</p>
+
+Our servers are monitored using `prometheus`, `grafana`, `elastic stack`.<br />
+Other services we host: `email`, `vpn`, `ci/cd`
+
 I am open to new work opportunities, please contact me using the details below.
 
 ## Contact
@@ -146,4 +155,4 @@ The sourcecode can be found on github & the site is hosted on netlify.
 - [x] JAMstack with Netlify CMS
 - [x] Netlify Continuous Deployment
 
-Up to date information on the current site features can be found in my blog post [Site Updates & Opensource](/2020/03/17/site-updates-opensource)
+Up to date information can be found in my blog post [Site Updates & Opensource](/2020/03/17/site-updates-opensource)
