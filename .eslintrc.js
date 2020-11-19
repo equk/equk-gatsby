@@ -100,9 +100,11 @@ module.exports = {
     ],
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
+    'no-unsanitized/method': 'error',
+    'no-unsanitized/property': 'error',
   },
   settings: {
     polyfills: ['fetch', 'promises', 'url', 'object-assign'],
   },
-  plugins: ['html', 'prettier', 'react-hooks'],
+  plugins: ['html', 'prettier', 'react-hooks', 'no-unsanitized'],
 }
