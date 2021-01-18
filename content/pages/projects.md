@@ -10,6 +10,10 @@ description: projects
 <br/><i class="fa fa-code"></i> Software
 <br/><i class="fa fa-github"></i> Opensource
 
+<br/><i class="fa fa-code"></i> linux `wine` launcher with automatic `vulkan` acceleration
+<br/><i class="fa fa-code"></i> linux `wine` game/app installer
+<br/><i class="fa fa-code"></i> linux server monitoring daemon (golang `prometheus`)
+<br/><i class="fa fa-code"></i> linux vps error reporting (golang `prometheus`)
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> install firefox on windows 10 using `powershell`
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> postscreen whitelist/blacklist using `spf`
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> extract mailserver list from `spf`
@@ -61,6 +65,20 @@ description: projects
     <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color py"></span> Python <span class="language-color php"></span> PHP <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color ps"></span> Powershell</p>
   </div>
 </article>
+
+## Linux Wine Launcher
+
+Allows automated installation of windows applications or games on linux by setting up a custom wine prefix/env with required libraries & features.
+
+- [x] creates `WINEPREFIX` for each app
+- [x] downloads & installs libraries (eg: `vulkan`)
+- [x] per app configuration
+- [x] optional features: `vulkan`, FPS overlay, RAM usage, logging
+- [x] support for `WINEESYNC`
+- [x] pre-defined installer for specific apps/games
+
+Created as an alternative to GUI apps which have a lot of dependencies.<br/>
+There are some GUI tools which do the same but are dependant on gnome-desktop & do not work on tiling window managers like i3.
 
 ## Postfix Postscreen Whitelist
 
