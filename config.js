@@ -4,7 +4,7 @@ module.exports = {
   url: 'https://equk.co.uk',
   title: "equk's blog",
   subtitle: 'writings of a coder + sysadmin',
-  copyright: '© 2020 equk.co.uk All rights reserved.',
+  copyright: '© 2021 equk.co.uk all rights reserved.',
   disqusShortname: 'equk',
   postsPerPage: 9,
   googleAnalyticsId: '',
