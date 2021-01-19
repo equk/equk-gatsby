@@ -19,7 +19,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 })
 
-rl.question('Post Title:', function (title) {
+rl.question('Post Title:', (title) => {
   const author = 'equilibriumuk'
   const dateNow = new Date()
   const year = dateNow.getFullYear()
