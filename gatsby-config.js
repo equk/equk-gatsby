@@ -248,6 +248,8 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/index.js`,
       },
     },
-    'gatsby-plugin-netlify',
+    // disabled due to bug with webpack
+    // ref: https://github.com/gatsbyjs/gatsby/issues/29974
+    // 'gatsby-plugin-netlify',
   ],
 }
