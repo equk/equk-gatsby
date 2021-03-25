@@ -26,3 +26,18 @@
   to = "/rss.xml"
   status = 301
   force = true
+[[redirects]]
+  from = "/github"
+  to = "https://github.com/equk"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/gh"
+  to = "https://github.com/equk"
+  status = 301
+  force = true
+[[redirects]]
+  from = "/twitter"
+  to = "https://twitter.com/equilibriumuk"
+  status = 301
+  force = true
