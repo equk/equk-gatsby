@@ -9,7 +9,7 @@
     "postb": "node postbuild.js",
     "github": "yarn clean && gatsby build --prefix-paths && gh-pages -d public",
     "update": "yarn upgrade-interactive --latest",
-    "clean": "rimraf .cache public",
+    "clean": "gatsby clean",
     "buildc": "yarn clean && gatsby build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "newpost": "node newpost.js",
