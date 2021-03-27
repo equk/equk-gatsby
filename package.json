@@ -5,7 +5,7 @@
   "main": "n/a",
   "scripts": {
     "dev": "gatsby develop",
-    "build": "gatsby build && yarn postb",
+    "build": "gatsby build",
     "postb": "node postbuild.js",
     "github": "yarn clean && gatsby build --prefix-paths && gh-pages -d public",
     "update": "yarn upgrade-interactive --latest",
