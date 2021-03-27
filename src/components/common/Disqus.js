@@ -1,3 +1,5 @@
+/* eslint-disable import/no-unresolved */
+/* to use this install react-disqus-comments */
 import React from 'react'
 import PropTypes from 'prop-types'
 import ReactDisqusComments from 'react-disqus-comments'
