@@ -53,7 +53,6 @@
     "invariant": "^2.2.4",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
-    "netlify-cms-app": "^2.14.32",
     "node-sass": "^5.0.0",
     "normalize-scss": "^7.0.1",
     "postcss-pxtorem": "6.0.0",
