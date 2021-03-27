@@ -242,12 +242,14 @@ module.exports = {
     /**
      *  Netlify CMS Plugins
      */
-    {
-      resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        modulePath: `${__dirname}/src/cms/index.js`,
-      },
-    },
+    // disabling plugin and am using prebuilt netlify-cms
+    // (this means previews are basic but speeds up build & deploy times)
+    // {
+    //   resolve: 'gatsby-plugin-netlify-cms',
+    //   options: {
+    //     modulePath: `${__dirname}/src/cms/index.js`,
+    //   },
+    // },
     // disabled due to bug with webpack
     // ref: https://github.com/gatsbyjs/gatsby/issues/29974
     // 'gatsby-plugin-netlify',
