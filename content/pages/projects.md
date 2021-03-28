@@ -62,7 +62,7 @@ description: projects
   </div>
   <div class="message-body">
     <p class="text-center">Opensource projects listed above can be found on my <a href="https://github.com/equk" target="_blank" aria-label="go to github" rel="noopener noreferrer">Github</a>.</p>
-    <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color py"></span> Python <span class="language-color php"></span> PHP <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color ps"></span> Powershell</p>
+    <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color py"></span> Python <span class="language-color php"></span> PHP <span class="language-color rust"></span> Rust <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color ps"></span> Powershell</p>
   </div>
 </article>
 
