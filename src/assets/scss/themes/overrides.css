@@ -166,9 +166,28 @@ a.github:hover {
 .language-color.c {
     background-color: #555;
 }
+.language-color.rust {
+    background-color: #dea584;
+}
 .message {
     font-size: inherit;
 }
 .token.inserted {
     color: #7ec699;
+}
+
+.bio-img {
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.2), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.2), 0 0px 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.about-intro {
+    background-color: #f8fafb !important;
+}
+
+.about-name strong,
+.dark-mode .about-name strong {
+    font-size: 1.5em;
+    color: #363636;
 }
