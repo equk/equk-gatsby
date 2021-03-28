@@ -4,9 +4,59 @@ template: "page"
 slug: "about"
 ---
 
-**I am a Fullstack Developer & Linux Systems Administrator from the UK.**
+<div class="box about-intro">
+  <article class="media">
+    <div class="media-left">
+      <div class="image is-128x128">
+        <img src="/users/equilibriumuk.jpg" alt="equilibriumuk" class="bio-img">
+      </div>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p class="about-name">
+          <strong>equilibriumuk</strong>
+          <br />
+          Fullstack Developer & Site Reliability Engineer<br />
+          <br />
+          <span class="language-color js"></span> Javascript <span class="language-color rust"></span> Rust <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color py"></span> Python
+        </p>
+      </div>
+    </div>
+  </article>
+</div>
 
-My interests include programming, information security, operating systems & computer hardware.
+<br />
+
+## Interests
+
+<div class="columns">
+    <div class="column">
+        <ul>
+        <li>Cybersecurity</li>
+        <li>Reverse Engineering</li>
+        <li>Electronics</li>
+        <li>Programming</li>
+        <li>Machine Learning</li>
+        <li>Cryptography</li>
+        <li>Rust</li>
+        </ul>
+    </div>
+    <div class="column">
+        <ul>
+        <li>Go</li>
+        <li>Nodejs</li>
+        <li>GraphQL</li>
+        <li>Vuejs</li>
+        <li>Docker</li>
+        <li>Javascript</li>
+        <li>React</li>
+        </ul>
+    </div>
+</div>
+
+I am always looking to learn new things & am normally breaking or experimenting with something new.
+
+Currently working on some `rust` based projects.
 
 ## Linux
 
@@ -26,7 +76,7 @@ The main servers I work on are based on Debian, Ubuntu and freebsd.<br />
 I use Alpinelinux for development & testing (qemu + docker).
 
 I also have a number of <a href="/projects">projects</a> based on Windows & Mac OS.<br />
-_(including <a href="/tags/powershell">powershell</a> scripts which can be deployed across domains using Group Policies)_
+_(including <a href="/tag/powershell">powershell</a> scripts which can be deployed across domains using Group Policies)_
 
 <article class="message is-dark">
   <div class="message-header">
@@ -34,42 +84,14 @@ _(including <a href="/tags/powershell">powershell</a> scripts which can be deplo
   </div>
   <div class="message-body">
     <p class="text-center">I work with a lot of opensource software & release many of my own projects opensource to help others.</p>
-    <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color py"></span> Python <span class="language-color php"></span> PHP <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color ps"></span> Powershell</p>
+    <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color py"></span> Python <span class="language-color php"></span> PHP <span class="language-color rust"></span> Rust <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color ps"></span> Powershell</p>
   </div>
 </article>
 
-## Interests
-
-I am always looking to learn new things & am normally breaking or experimenting with something new.
-
-<div class="columns">
-    <div class="column">
-        <ul>
-        <li>Infosec</li>
-        <li>Reverse Engineering</li>
-        <li>Electronics Modification</li>
-        <li>Programming</li>
-        <li>Kubernetes</li>
-        <li>Cryptography</li>
-        <li>Rust</li>
-        </ul>
-    </div>
-    <div class="column">
-        <ul>
-        <li>Go</li>
-        <li>Nodejs</li>
-        <li>GraphQL</li>
-        <li>Vuejs</li>
-        <li>Docker</li>
-        <li>Javascript</li>
-        <li>React</li>
-        </ul>
-    </div>
-</div>
 
 ## Work
 
-I currently work as a Fullstack Developer & Linux Systems Administrator for a development company. (IaC, PaaS, FaaS, GitOps, DevOps)
+I currently work as a Fullstack Developer & Site Reliability Engineer for a development company. (IaC, PaaS, FaaS, GitOps, DevOps)
 
 <p class="text-center">
 <img class="inline vuejs_logo" src="/media/logos/vue.svg" alt="vuejs" width="80px">
@@ -85,7 +107,7 @@ I currently work as a Fullstack Developer & Linux Systems Administrator for a de
 <img class="inline git_logo" src="/media/logos/git.svg" alt="git" width="80px">
 </p>
 
-We mainly use `vuejs` & `react` with rest or `graphql` for web apps.<br />
+We mainly use `vuejs` & `react` with `rest` & `graphql` for web apps.<br />
 Most backend tooling & services are based on `golang`, `python` or `nodejs`.<br />
 
 We run a range of services using `docker`, `kubernetes` & `git`.
