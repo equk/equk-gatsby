@@ -1,5 +1,5 @@
 import React from 'react'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import PropTypes from 'prop-types'
 
 const Page = ({ title, children, image }) => (
@@ -10,7 +10,7 @@ const Page = ({ title, children, image }) => (
       </header>
       {image && (
         <div className="post-feature-image">
-          <Img fluid={image.childImageSharp.fluid} />
+          <GatsbyImage image={image.childImageSharp.gatsbyImageData} />
         </div>
       )}
       <section className="page-full-content">
