@@ -45,5 +45,14 @@
       }
     }
   }
+  .media {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    .media-left {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
 }
 /* purgecss end ignore */
