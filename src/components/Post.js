@@ -1,7 +1,7 @@
 /* eslint-disable react/no-danger */
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import moment from 'moment'
 import Comments from './common/Comments'
 import Tags from './common/Tags'
@@ -26,7 +26,7 @@ const Post = ({ post }) => {
         </header>
         {image && (
           <div className="post-feature-image">
-            <Img fluid={image.childImageSharp.fluid} />
+            <GatsbyImage image={image.childImageSharp.gatsbyImageData} />
           </div>
         )}
         <section className="post-full-content">
