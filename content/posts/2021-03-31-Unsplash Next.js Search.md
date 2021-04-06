@@ -13,7 +13,7 @@ tags:
   - react
   - github
   - async
-image: ../../static/media/images/2021/unsplash-nextjs-top.jpg
+image:
 ---
 
 <p class="text-center"><img class="inline" src="/media/images/nextjs-logo.svg" alt="nextjs_logo" width="30%"><br/><img class="inline" src="/media/images/2019/05/unsplash.svg" alt="unsplash-logo" width="13%"></p>
@@ -22,10 +22,6 @@ This is a working example of a next.js app using state to render an array of ima
 The project also uses the `fetch()` api which provides asynchronous requests with the use of promises.<br/>
 The design & layout is based on my previous vanillajs project `unsplash-js-search`.<br/>
 My <a href="/2018/08/01/unsplash-javascript-search/" target="_blank">blog post for unsplash-js-search</a> has more information regarding design aspects & working with the unsplash api.
-
-All code for this project is on github.
-
-<a class="github" href="https://github.com/equk/unsplash-nextjs" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> unsplash-nextjs</a>
 
 ## Main Features
 
@@ -51,6 +47,22 @@ Add unsplash developer key to `.env.local` file in the base directory of the pro
 ```bash
 NEXT_PUBLIC_API_CLIENTID = "insert-api-key-here";
 ```
+
+The source for this project is available on github.
+
+<a class="github" href="https://github.com/equk/unsplash-nextjs" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> unsplash-nextjs</a>
+
+---
+
+## Cascading Grid
+
+I decided to improve the look of the image results with a cascading grid which places elements based on vertical space.
+
+![unsplash_nextjs_grid](../../static/media/images/2021/unsplash-nextjs-grid.jpg)
+
+This allows the images to be viewed using the original aspect ratio.
+
+*Cascading Grid Feature Added Apr 6, 2021*
 
 The source for this project is available on github.
 
