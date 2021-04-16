@@ -79,8 +79,8 @@ After doing all of the above everything seems ok ?<br/>
 *Possibly but if you check the console you may find errors with react components referencing `global`.*
 
 <article class="message is-danger">
-  <div class="message-body">
-  If you use 'global' in any plugins or components they will fail with 'global is not defined' due to gatsby-plugin-image.
+  <div class="message-body"><p>⚠️ Warning</p>
+  <p>If you use 'global' in any plugins or components they will fail with 'global is not defined' due to gatsby-plugin-image.</p>
   </div>
 </article>
 
@@ -91,6 +91,16 @@ window.global = window
 ```
 
 Everything should now be working, including plugins & components referencing `global`.
+
+<article class="message is-info">
+  <div class="message-body">
+  <p>📦 Update</p>
+  <p>The global bug is now fixed in <code class="language-text">gatsby-plugin-image@1.2.1</code><br />
+  There should be no need to define <code class="language-text">window.global</code> in <code class="language-text">gatsby-browser.js</code>.</p>
+  <p><i class="fa fa-code-fork git-fork"></i> <a href="https://github.com/gatsbyjs/gatsby/commit/a5869e3d26ed0a45f7543ffaf45da9ca4b89ff45#diff-de69e0ec64bc53d10152bc6147ae6c5b76e4a1269bb6d79d578246a1e79bb1c2" target="_blank" rel="noopener noreferrer">gatsbyjs/gatsby@<tt>a5869e3</tt></a>
+  </p>
+  </div>
+</article>
 
 The source for the site is available on github.
 
