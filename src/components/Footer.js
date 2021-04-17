@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="container">
           <div className="columns">
             <div className="footer-title">
-              <h1>EQUK</h1>
+              <p>EQUK</p>
             </div>
             <div className="footer-links">
               {menu.map((item) => (
