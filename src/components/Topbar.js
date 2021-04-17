@@ -42,12 +42,12 @@ class Topbar extends React.Component {
         <div className="topbar">
           <nav className="navbar container" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
-              <h1 className="site-title navbar-item">
+              <p className="site-title navbar-item">
                 <Link className="title-link" to="/">
                   equk
                 </Link>
                 <span className="cursor" />
-              </h1>
+              </p>
               <div
                 className={`navbar-burger burger ${navBarActiveClass}`}
                 data-target="navMenu"
