@@ -15,7 +15,7 @@ const Layout = ({ children, title, description }) => (
       <meta name="twitter:creator" content="@equilibriumuk" />
       <meta property="og:description" content={description} />
       <meta property="og:title" content={title} />
-      <meta property="og:site_name" content={title} />
+      <meta property="og:site_name" content="equk.co.uk" />
       <meta content="https://equk.co.uk/media/social.png" property="og:image" />
       <meta content="1024" property="og:image:width" />
       <meta content="512" property="og:image:height" />
