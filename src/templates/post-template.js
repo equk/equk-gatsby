@@ -5,9 +5,9 @@ import { Layout, Topbar, Footer, Post } from '../components'
 import { useSiteMetadata } from '../hooks'
 
 const PostTemplate = ({ data }) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata()
-  const { title: postTitle, description: postDescription } = data.markdownRemark.frontmatter
-  const metaDescription = postDescription !== null ? postDescription : siteSubtitle
+  const { title: siteTitle } = useSiteMetadata()
+  const { title: postTitle } = data.markdownRemark.frontmatter
+  const metaDescription = data.markdownRemark.excerpt
 
   return (
     <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
@@ -25,9 +25,9 @@ PostTemplate.propTypes = {
         slug: PropTypes.string.isRequired,
         tagSlugs: PropTypes.arrayOf(PropTypes.string),
       }),
+      excerpt: PropTypes.string.isRequired,
       frontmatter: PropTypes.shape({
         date: PropTypes.string.isRequired,
-        description: PropTypes.any,
         image: PropTypes.any,
         tags: PropTypes.arrayOf(PropTypes.string),
         title: PropTypes.string.isRequired,
@@ -42,6 +42,7 @@ export const query = graphql`
   query PostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      excerpt(pruneLength: 150)
       html
       fields {
         slug
@@ -49,7 +50,6 @@ export const query = graphql`
       }
       frontmatter {
         date
-        description
         tags
         title
         image {
