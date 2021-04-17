@@ -6,11 +6,11 @@ import { Layout, Topbar, Footer, Page } from '../components'
 import { useSiteMetadata } from '../hooks'
 
 const PageTemplate = ({ data }) => {
-  const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata()
+  const { title: siteTitle } = useSiteMetadata()
   const { html: pageBody } = data.markdownRemark
   const { image: pageImage } = data.markdownRemark.frontmatter
-  const { title: pageTitle, description: pageDescription } = data.markdownRemark.frontmatter
-  const metaDescription = pageDescription !== null ? pageDescription : siteSubtitle
+  const { title: pageTitle } = data.markdownRemark.frontmatter
+  const metaDescription = data.markdownRemark.excerpt
 
   return (
     <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription}>
@@ -26,9 +26,9 @@ const PageTemplate = ({ data }) => {
 PageTemplate.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
+      excerpt: PropTypes.string.isRequired,
       frontmatter: PropTypes.shape({
         date: PropTypes.any,
-        description: PropTypes.string,
         image: PropTypes.shape({
           childImageSharp: PropTypes.shape({
             id: PropTypes.string,
@@ -46,11 +46,11 @@ export const query = graphql`
   query PageBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      excerpt(pruneLength: 150)
       html
       frontmatter {
         title
         date
-        description
         image {
           childImageSharp {
             gatsbyImageData(layout: FULL_WIDTH)
