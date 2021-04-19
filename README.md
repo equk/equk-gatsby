@@ -25,6 +25,7 @@ I have made the site open source and available on github for others to learn fro
 - [x] Netlify CMS
 - [x] Github Pages
 - [x] Netlify
+- [x] Subresource Integrity (SRI)
 
 ### Google Lighthouse
 
@@ -74,14 +75,6 @@ Performance: 100%    Accessibility: 100%     Best Practices: 100%    SEO: 100%  
 - [x] `static/admin/config.yml` - netlify cms config
 
 # Notes
-
-## Postbuild
-
-Added a postbuild script to fix netlify cms as importing css in the cms component from `gatsby-plugin-netlify-cms` causes CSS processing to run twice making CSS bundle twice the size & breaking deploys in netlify.
-
-    error UNHANDLED EXCEPTION Callback was already called.
-
-The postbuild script copies built css to `/admin/cms.css`
 
 ## Dependencies on Hold
 
