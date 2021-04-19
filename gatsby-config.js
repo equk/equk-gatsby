@@ -205,7 +205,7 @@ module.exports = {
         display: 'standalone',
         icon: siteConfig.logo,
         icon_options: {
-          purpose: 'maskable',
+          purpose: 'any maskable',
         },
       },
     },
