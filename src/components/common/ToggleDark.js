@@ -10,9 +10,9 @@ const ToggleDark = () => {
     <div className="navbar-item dark-toggle">
       <button className="toggle-darkmode" onClick={darkMode.toggle} type="submit">
         {darkMode.value ? (
-          <img src={sun} className="sun-icon" alt="sun-icon" />
+          <img src={sun} className="sun-icon" alt="sun-icon" width="25px" height="25px" />
         ) : (
-          <img src={moon} className="moon-icon" alt="moon-icon" />
+          <img src={moon} className="moon-icon" alt="moon-icon" width="25px" height="25px" />
         )}
       </button>
     </div>
