@@ -204,6 +204,9 @@ module.exports = {
         theme_color: siteConfig.themeColor,
         display: 'standalone',
         icon: siteConfig.logo,
+        icon_options: {
+          purpose: 'maskable',
+        },
       },
     },
     'gatsby-plugin-offline',
