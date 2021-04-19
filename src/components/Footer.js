@@ -45,7 +45,7 @@ const Footer = () => {
                 aria-label="go to react"
                 rel="noopener noreferrer"
               >
-                <img src="/media/logos/reactsq.svg" alt="react" />
+                <img src="/media/logos/reactsq.svg" alt="react" width="27px" height="20px" />
               </a>
               <a
                 href="https://graphql.org/"
@@ -54,7 +54,7 @@ const Footer = () => {
                 aria-label="go to gatsby"
                 rel="noopener noreferrer"
               >
-                <img src="/media/logos/graphql.svg" alt="graphql" />
+                <img src="/media/logos/graphql.svg" alt="graphql" width="25px" height="20px" />
               </a>
               <a
                 href="https://gatsbyjs.org/"
@@ -63,7 +63,7 @@ const Footer = () => {
                 aria-label="go to gatsby"
                 rel="noopener noreferrer"
               >
-                <img src="/media/logos/gatsby.svg" alt="gatsby" />
+                <img src="/media/logos/gatsby.svg" alt="gatsby" width="25px" height="20px" />
               </a>
               <a
                 href="https://www.netlify.com/"
@@ -72,7 +72,7 @@ const Footer = () => {
                 aria-label="go to netlify"
                 rel="noopener noreferrer"
               >
-                <img src="/media/logos/netlify.svg" alt="netlify" />
+                <img src="/media/logos/netlify.svg" alt="netlify" width="25px" height="20px" />
               </a>
             </div>
           </div>
