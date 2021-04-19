@@ -128,6 +128,17 @@ module.exports = {
       },
     },
     /**
+     *  Subresource Integrity (SRI)
+     */
+    {
+      resolve: 'gatsby-plugin-sri',
+      options: {
+        hash: 'sha512',
+        extensions: ['js'],
+        crossorigin: true,
+      },
+    },
+    /**
      *  Google Tag
      */
     /*
