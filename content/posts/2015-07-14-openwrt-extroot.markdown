@@ -74,4 +74,4 @@ For more info regarding this <a href="/2015/07/13/netgear-wnr2200-openwrt-usb-su
 
 Below is an example of the mounts in luci.
 
-<p class="text-center"><img src="/media/images/2015/07/usb_overlay_mount.jpg"></p>
+<p class="text-center"><img src="/media/images/2015/07/usb_overlay_mount.jpg" alt=""></p>

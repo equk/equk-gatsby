@@ -38,35 +38,45 @@ You can use tools to automate the creation of express apps but I decided to do i
 
 add
 
-    var exphbs = require('express3-handlebars');
+```js
+var exphbs = require('express3-handlebars');
+```
 
 replace
 
-    app.set('view engine', 'jade');
+```js
+app.set('view engine', 'jade');
+```
 
 with
 
-    app.engine('handlebars', exphbs({defaultLayout: 'main'}));
-    app.set('view engine', 'handlebars');
+```js
+app.engine('handlebars', exphbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
+```
 
 remove or comment out default routes
 
-    var routes = require('./routes');
-    var user = require('./routes/user');
+```js
+var routes = require('./routes');
+var user = require('./routes/user');
 
-    app.get('/', routes.index);
-    app.get('/users', user.list);
+app.get('/', routes.index);
+app.get('/users', user.list);
+```
 
 add new routes
 
-    app.get('/', function (req, res) {
-        res.render('home');
-    });
+```js
+app.get('/', function (req, res) {
+    res.render('home');
+});
+```
 
-You should now be able to start the app with " node app ".<br>The example views are basic but you can easily add in 'partials' to extend layouts.
+You should now be able to start the app with `node app`.<br>The example views are basic but you can easily add in 'partials' to extend layouts.
 
 This can also be extended to include other modules like sass etc.<br> I personally have extended it to use grunt + sass + livereload just to make is easier for designing sites.
 
 _**UPDATE:** 22nd March 2014_
 
-I have now switched from express3-handlebars to express-hbs (the module ghost uses).
+I have now switched from `express3-handlebars` to `express-hbs`.

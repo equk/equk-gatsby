@@ -11,7 +11,7 @@ title: Cloudflare iptables
 slug: cloudflare-iptables/
 ---
 
-<p class="text-center"><img width="360px" src="/media/images/2015/06/cf-logo-v-rgb_m.png"></p>
+<p class="text-center"><img width="360px" src="/media/images/2015/06/cf-logo-v-rgb_m.png" alt=""></p>
 
 This is a simple script for people who are running servers behind cloudflare.
 

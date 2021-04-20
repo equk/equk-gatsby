@@ -10,7 +10,7 @@ title: Firefox Tweaks & Scripts
 slug: firefox-scripts/
 ---
 
-<p class="text-center"><img src="/media/images/2015/05/firefox_wordmark-logo.png"></p>
+<p class="text-center"><img src="/media/images/2015/05/firefox_wordmark-logo.png" alt=""></p>
 
 
 ### about:config tweaks

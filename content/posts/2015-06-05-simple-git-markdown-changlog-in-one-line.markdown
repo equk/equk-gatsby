@@ -11,7 +11,7 @@ title: Simple git markdown changlog in one line
 slug: simple-git-markdown-changlog-in-one-line/
 ---
 
-<p class="text-center"><img width="360px" src="/media/images/2015/06/gitscm-logo.png"></p>
+<p class="text-center"><img width="360px" src="/media/images/2015/06/gitscm-logo.png" alt=""></p>
 
 This is a really simple script but first I want to say that I have seen 20+ scripts which do the exact same thing but have 150+ lines of code.
 I've seen this in nodejs, ruby & even python.

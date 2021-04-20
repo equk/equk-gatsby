@@ -25,7 +25,7 @@ The size of the SLC cache differs according to the size of the SSD (120GB has 5G
 The speeds advertised are 550MB/s Sequential Read and 500MB/s Sequential Write across all of the available sizes.
 
 
-<p class="text-center"><img src="/media/images/2014/Nov/sandisk_ultra_ii_atto_read.jpg"></p>
+<p class="text-center"><img src="/media/images/2014/Nov/sandisk_ultra_ii_atto_read.jpg" alt=""></p>
 
 On benchmarking the drives perform to the spec.
 The write speeds are phenomenal for such affordable drives, although the lifetime of the drive may be lower than a MLC drive.

@@ -106,7 +106,7 @@ Custom firmware built from development/testing branch of OpenWrt
 
 ## Raspberry Pi Zero
 
-<p class="text-center"><img class="border" src="/media/images/2016/06/rasp_zero_banner.jpg"></p>
+<p class="text-center"><img class="border" src="/media/images/2016/06/rasp_zero_banner.jpg" alt="rasp_zero"></p>
 
 I'm using the Raspberry Pi Zero as it has low power usage & has the GPIO required.
 <br /><a href="http://blog.pimoroni.com/raspberry-pi-3/" target="_blank">The Raspberry Pi Zero draws 120mA under load which is a huge difference to the Raspberry Pi 3 which draws 750mA</a>
@@ -159,14 +159,14 @@ This tool makes the job of security testing easier & also helps in the creation 
 
 ## ARM64 Bootloader Security Testing
 
-<p class="text-center"><img class="border" src="/media/images/2016/05/aarm64_serial_001.jpg"></p>
+<p class="text-center"><img class="border" src="/media/images/2016/05/aarm64_serial_001.jpg" alt="arm64_serial"></p>
 
 Testing `U-Boot` related security on specific ARM64 implementations & debugging using serial interface.
 
 It is possible read & write to `U-Boot` from within android without any need for root on many of these devices (not just development boards).
 It is also possible to inject custom scripts & binaries directly to the bootloader.
 
-<p class="text-center"><a href="https://twitter.com/equilibriumuk/status/717669326489313280" target="_blank"><img class="border" src="/media/images/2016/05/arm64_cpuinfo.jpg"></a></p>
+<p class="text-center"><a href="https://twitter.com/equilibriumuk/status/717669326489313280" target="_blank"><img class="border" src="/media/images/2016/05/arm64_cpuinfo.jpg" alt="arm64_cpuinfo"></a></p>
 
 Some simple examples of this are injecting scripts into `preboot` or `bootcmd`.
 Both result in scripts being run before the target OS.
@@ -238,7 +238,7 @@ Custom build of OpenWrt
 
 Extension of mail server cli tools, designed to be easier to use with the possibility of expanding it to include live mail server statistics.
 
-<p class="text-center"><img src="/media/images/2015/07/mail_console_v01.gif"></p>
+<p class="text-center"><img src="/media/images/2015/07/mail_console_v01.gif" alt="mail_console"></p>
 
 ## Windows Powershell Tools
 

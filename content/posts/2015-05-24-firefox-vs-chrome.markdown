@@ -10,7 +10,7 @@ title: Firefox vs Chrome
 slug: firefox-vs-chrome/
 ---
 
-<p class="text-center"><img src="/media/images/2014/Nov/google_chrome_ico_128.png"> <img src="/media/images/2014/Nov/firefox_ico_128.png"></p>
+<p class="text-center"><img src="/media/images/2014/Nov/google_chrome_ico_128.png" alt=""> <img src="/media/images/2014/Nov/firefox_ico_128.png" alt=""></p>
 
 I decided to switch to firefox for a week to try it as my main browser. (I used to use firefox years ago)
 Here are a few things I've noticed.

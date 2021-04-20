@@ -11,7 +11,7 @@ slug: uk-isps-providing-cdn-for-google/
 
 I read a post this morning regarding virgin media using their own hosted cdn servers for google.com (and related domains/subdomains)
 
-<a href="https://jackpearce.com/virgin-media-why-are-you-manipulating-my-traffic/" target="_blank">Virgin Media, why are you manipulating my traffic?</a>
+<a href="https://www.reddit.com/r/privacy/comments/22bxxg/virgin_media_why_are_you_manipulating_my_traffic/" target="_blank">Virgin Media, why are you manipulating my traffic?</a>
 
 The end of the article seems to say that if you use opendns dnscrypt it fixes the problem. **(it doesn't)**
 

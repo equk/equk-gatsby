@@ -79,4 +79,4 @@ View the project on <a href="https://github.com/equk/unsplash-react" target="_bl
 
 <p class="text-right"><em>References: <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" target="_blank">fetch()</a> / <a href="http://reactjs.org/" target="_blank">reactjs</a>  / <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise" target="_blank">promises</a>  /  <a href="https://unsplash.com/developers" target="_blank">Unsplash API</a></em></p>
 
-<div class="width-full"><img src="/media/images/2018/08/unsplash_js_banner.jpg" class="image"></div>
+<div class="width-full"><img src="/media/images/2018/08/unsplash_js_banner.jpg" class="image" alt="unsplash_js"></div>
