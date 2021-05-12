@@ -10,6 +10,7 @@ description: projects
 <br/><i class="fa fa-code"></i> Software
 <br/><i class="fa fa-github"></i> Opensource
 
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> unsplash json api search using `next.js`
 <br/><i class="fa fa-code"></i> linux `wine` launcher with automatic `vulkan` acceleration
 <br/><i class="fa fa-code"></i> linux `wine` game/app installer
 <br/><i class="fa fa-code"></i> linux server monitoring daemon (golang `prometheus`)
@@ -150,9 +151,9 @@ Tools to help with testing, debugging & reverse engineering of android devices.
 
 **Main Components**
 
-- bootloader dumping tool (boot.bin)
-- device tree extraction script (dtb.img)
-- Android ROM extraction script
+- [x] bootloader dumping tool (boot.bin)
+- [x] device tree extraction script (dtb.img)
+- [x] Android ROM extraction script
 
 The ROM extraction script allows the ability to dump a full ROM to external storage, the script segments the storage into sections making it easier to look at applications & system.
 This tool makes the job of security testing easier & also helps in the creation of custom ROM patches. (eg: enable google widevine patch)
@@ -230,9 +231,9 @@ Source code available on <a href="https://github.com/equk/torjail" target="_blan
 
 <a href="/2015/07/13/netgear-wnr2200-openwrt-usb-support/"><img src="/media/images/2015/07/wnr2200_head.jpg" alt="wnr2200_img"></a>
 
-Custom Patch to allow usb storage<br />
-Custom script to initialize usb at boot to allow overlay pivot<br />
-Custom build of OpenWrt
+- [x] Custom Patch to allow usb storage
+- [x] Custom script to initialize usb at boot to allow overlay pivot
+- [x] Custom build of OpenWrt
 
 ## mail console
 
@@ -258,15 +259,21 @@ Some examples:
 ## mail server cli tools
 
 Command Line Tools for administering my mailserver stack.
-Written in python, allows a admin to create/delete mailboxes, domains, subdomains & aliases.
-Also has the ability to do a password reset on users mailboxes using urandom. (passwords are saved with salted hash & users can change with web interface once logged in)
+
+- [x] SQL Database
+- [x] Mailbox Management
+- [x] Domain Management
+- [x] Mail Alias Management
+- [x] Subdomain Management
+- [x] Password Recovery Using urandom
+- [x] Passwords Stored Using Salted Hash
 
 ```bash
 ./query.py
 *****************************************************************
         ./query.py - equk.co.uk
 *****************************************************************
-    Copyright (C) 2014  Bradley Walden
+    Copyright (C) 2014  equk.co.uk
 *****************************************************************
     This tool will query the postfix MySQL database
 *****************************************************************
