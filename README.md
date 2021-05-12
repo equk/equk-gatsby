@@ -79,6 +79,8 @@ Performance: 100%    Accessibility: 100%     Best Practices: 100%    SEO: 100%  
 ## Dependencies on Hold
 
 - [ ] `gatsby-plugin-purgecss`: `^5.0.0`
+- [ ] `gatsby-plugin-sitemap`: `^3.3.0`
+- [ ] `node-sass`: `^5.0.0`
 - [ ] `husky`: `^4.3.8`
 
 # Contact
