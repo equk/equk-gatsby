@@ -139,6 +139,10 @@ module.exports = {
       },
     },
     /**
+     *  PNPM Webpack
+     */
+    'gatsby-plugin-pnpm',
+    /**
      *  Google Tag
      */
     /*
