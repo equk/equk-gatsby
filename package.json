@@ -105,5 +105,10 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint --cache --ext .js,.jsx,.ts,.tsx"
+  },
+  "pnpm": {
+    "overrides": {
+      "sanitize-html@<2.3.0": "^2.3.1"
+    }
   }
 }
