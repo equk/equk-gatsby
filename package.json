@@ -7,10 +7,9 @@
     "dev": "gatsby develop",
     "build": "gatsby build",
     "postb": "node postbuild.js",
-    "github": "yarn clean && gatsby build --prefix-paths && gh-pages -d public",
-    "update": "yarn upgrade-interactive --latest",
+    "github": "pnpm clean && gatsby build --prefix-paths && gh-pages -d public",
     "clean": "gatsby clean",
-    "buildc": "yarn clean && gatsby build",
+    "buildc": "pnpm clean && gatsby build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "newpost": "node newpost.js",
     "serve": "gatsby serve"
