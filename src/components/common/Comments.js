@@ -10,7 +10,7 @@ const Comments = ({ postSlug }) => {
   useEffect(() => {
     const GitTalkInstance = new Gitalk({
       clientID: '4f0178686cd10054851a',
-      clientSecret: 'c9e33988e09afb94c00e85011841332a654a52aa',
+      clientSecret: 'b8a008819fe065c2923218f1c287ab5da3a2ba35',
       repo: 'equk-comments',
       owner: 'equk',
       admin: ['equk'],
