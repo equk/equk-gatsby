@@ -7,8 +7,7 @@ pre[class*="language-"]::before {
   border-radius: 0 0 4px 4px;
   color: #000000;
   font-size: 0.75rem;
-  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono,
-    Courier New, monospace;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
   letter-spacing: 0.075em;
   line-height: 1;
   padding: 0.25rem 0.5rem;
@@ -92,7 +91,12 @@ pre[class="language-flow"]::before {
 }
 pre[class="language-go"]::before {
   content: "go";
-  background: #00ADD8;
+  background: #00add8;
+  color: #fff;
+}
+pre[class="language-lua"]::before {
+  content: "lua";
+  background: #000080;
   color: #fff;
 }
 
@@ -148,5 +152,8 @@ pre[class="language-flow"]::after {
   background: #e8bd36;
 }
 pre[class="language-go"]::after {
-  background: #00ADD8;
+  background: #00add8;
+}
+pre[class="language-lua"]::after {
+  background: #000080;
 }
