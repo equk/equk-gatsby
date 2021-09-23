@@ -52,7 +52,7 @@ This is a small thing but it should not be forced onto users.
 
 In addition a default install also has Pocket Recommendations (Adverts) on new tabs (introduced in Firefox 77).
 
-![Firefox 77 Pocket](../../static/media/images/2021/ffox_77_pocket.png)
+<p class="text-center"><img src="/media/images/2021/ffox_77_pocket.png" alt="ffox_77_pocket"></p>
 
 This feature <a href="https://twitter.com/equilibriumuk/status/1310892618679816192/photo/1" aria-label="equilibriumuk on twitter" target="_blank" rel="noopener noreferrer">is still active with pocket disabled</a>.
 
@@ -60,15 +60,26 @@ This feature <a href="https://twitter.com/equilibriumuk/status/13108926186798161
 
 Huge zoomed urlbar introduced in Firefox 75
 
-![Firefox 75 Search](../../static/media/images/2021/ffox_75_search.png)
+<p class="text-center"><img src="/media/images/2021/ffox_75_search.png" alt="firefox-75-search"></p>
 
 Tabs that look like webapp buttons introduced in Firefox 89
 
 Huge bookmarks dropdown with rounded corners introduced in Firefox 92
 
-![Firefox 92 Menus](../../static/media/images/2021/ffox_92_menus.png)
+<p class="text-center"><img src="/media/images/2021/ffox_newtab.png" alt="firefox-linux"></p>
 
 Comparing the two screenshots above you can see that tabs went from square with a color accent above to show active tab to being a rounded button with no color & a smaller close button.
+
+#### Mozilla Remove Compact Option
+
+Mozilla want to remove the compact layout in firefox & so far have removed the option from the browser, stating they will not support it.<br />
+*There is a thread on bugzilla showing there are no real benefits in doing this*
+
+<i class="fa fa-link"></i> <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1693028" target="_blank" rel="noopener noreferrer">Bugzilla: Remove compact mode inside Density menu of customize palette</a>
+
+The OP does a good job of showing how bad their UX is without even realizing suggesting the customize option is *'fairly hard to discover'*.
+
+They also seem to assume the use of compact mode directly relates to desktop resolution despite not showing any evidence for this.
 
 ## Conclusion
 
