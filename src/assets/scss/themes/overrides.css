@@ -195,3 +195,8 @@ a.github:hover {
 .yt-red {
     color: #ff0000;
 }
+
+.message-body i {
+    padding: 0 10px;
+    font-size: 1.2em;
+}
