@@ -1,7 +1,7 @@
 const path = require('path')
 const _ = require('lodash')
-const createTagsPages = require('./pagination/createTagsPages.js')
-const createPostsPages = require('./pagination/createPostsPages.js')
+const createTagsPages = require('./pagination/createTagsPages')
+const createPostsPages = require('./pagination/createPostsPages')
 
 /**
  * This is the main function for creating pages using the createPages
@@ -25,7 +25,7 @@ const createPages = async ({ graphql, actions }) => {
    */
   createPage({
     path: '/404',
-    component: path.resolve('./src/templates/not-found-template.js'),
+    component: path.resolve('./src/templates/not-found-template.tsx'),
   })
 
   /**
@@ -65,13 +65,13 @@ const createPages = async ({ graphql, actions }) => {
     if (_.get(edge, 'node.frontmatter.template') === 'page') {
       createPage({
         path: edge.node.fields.slug,
-        component: path.resolve('./src/templates/page-template.js'),
+        component: path.resolve('./src/templates/page-template.tsx'),
         context: { slug: edge.node.fields.slug },
       })
     } else {
       createPage({
         path: edge.node.fields.slug,
-        component: path.resolve('./src/templates/post-template.js'),
+        component: path.resolve('./src/templates/post-template.tsx'),
         context: { slug: edge.node.fields.slug },
       })
     }
