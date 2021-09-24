@@ -1,8 +1,14 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 
-const Pagination = ({ prevPagePath, nextPagePath, hasNextPage, hasPrevPage }) => (
+interface PaginationProps {
+  prevPagePath?: string
+  nextPagePath?: string
+  hasNextPage?: boolean
+  hasPrevPage?: boolean
+}
+
+const Pagination = ({ prevPagePath, nextPagePath, hasNextPage, hasPrevPage }: PaginationProps) => (
   <nav className="pagination" role="navigation">
     <div>
       {hasPrevPage && (
@@ -20,12 +26,5 @@ const Pagination = ({ prevPagePath, nextPagePath, hasNextPage, hasPrevPage }) =>
     </div>
   </nav>
 )
-
-Pagination.propTypes = {
-  prevPagePath: PropTypes.string,
-  nextPagePath: PropTypes.string,
-  hasNextPage: PropTypes.bool,
-  hasPrevPage: PropTypes.bool,
-}
 
 export default Pagination

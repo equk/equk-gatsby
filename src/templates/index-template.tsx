@@ -1,10 +1,31 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Layout, Topbar, Footer, Feed, Page, Hero, Pagination } from '../components'
 import { useSiteMetadata } from '../hooks'
 
-const IndexTemplate = ({ data, pageContext }) => {
+interface IndexTemplateProps {
+  pageContext: any
+  data?: {
+    allMarkdownRemark?: {
+      edges?: {
+        node?: {
+          fields?: {
+            slug: string
+            tagSlugs?: string[]
+          }
+          frontmatter?: {
+            date: string
+            description?: any
+            tags?: string[]
+            title: string
+          }
+        }
+      }[]
+    }
+  }
+}
+
+const IndexTemplate = ({ data, pageContext }: IndexTemplateProps) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata()
 
   const { currentPage, hasNextPage, hasPrevPage, prevPagePath, nextPagePath } = pageContext
@@ -30,30 +51,6 @@ const IndexTemplate = ({ data, pageContext }) => {
       </div>
     </Layout>
   )
-}
-
-IndexTemplate.propTypes = {
-  pageContext: PropTypes.object.isRequired,
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            fields: PropTypes.shape({
-              slug: PropTypes.string.isRequired,
-              tagSlugs: PropTypes.arrayOf(PropTypes.string),
-            }),
-            frontmatter: PropTypes.shape({
-              date: PropTypes.string.isRequired,
-              description: PropTypes.any,
-              tags: PropTypes.arrayOf(PropTypes.string),
-              title: PropTypes.string.isRequired,
-            }),
-          }),
-        })
-      ),
-    }),
-  }),
 }
 
 export const query = graphql`

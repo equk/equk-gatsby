@@ -1,13 +1,16 @@
 /* eslint-disable react/no-danger */
 import React from 'react'
-import PropTypes from 'prop-types'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import moment from 'moment'
 import Comments from './common/Comments'
 import Tags from './common/Tags'
 import { useSiteMetadata } from '../hooks'
 
-const Post = ({ post }) => {
+interface PostProps {
+  post: any
+}
+
+const Post = ({ post }: PostProps) => {
   const { html } = post
   const { tagSlugs, slug } = post.fields
   const { tags, title, date, image } = post.frontmatter
@@ -59,10 +62,6 @@ const Post = ({ post }) => {
       </div>
     </div>
   )
-}
-
-Post.propTypes = {
-  post: PropTypes.object.isRequired,
 }
 
 export default Post

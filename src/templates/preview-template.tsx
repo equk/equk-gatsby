@@ -1,8 +1,14 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import moment from 'moment'
 
-const PreviewTemplate = ({ title, date, body, image }) => (
+interface PreviewTemplateProps {
+  body: React.ReactNode
+  title?: string
+  date?: string
+  image?: string
+}
+
+const PreviewTemplate = ({ title, date, body, image }: PreviewTemplateProps) => (
   <div className="container">
     <article className="content">
       <header className="post-full-header">
@@ -25,14 +31,13 @@ const PreviewTemplate = ({ title, date, body, image }) => (
   </div>
 )
 
-PreviewTemplate.propTypes = {
-  body: PropTypes.node.isRequired,
-  title: PropTypes.string,
-  date: PropTypes.string,
-  image: PropTypes.string,
+interface PagePreviewTemplateProps {
+  body: React.ReactNode
+  title?: string
+  image?: string
 }
 
-export const PagePreviewTemplate = ({ title, body, image }) => (
+export const PagePreviewTemplate = ({ title, body, image }: PagePreviewTemplateProps) => (
   <div className="container">
     <article className="content">
       <header className="page-full-header">
@@ -49,11 +54,5 @@ export const PagePreviewTemplate = ({ title, body, image }) => (
     </article>
   </div>
 )
-
-PagePreviewTemplate.propTypes = {
-  body: PropTypes.node.isRequired,
-  title: PropTypes.string,
-  image: PropTypes.string,
-}
 
 export default PreviewTemplate

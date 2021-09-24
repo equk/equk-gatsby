@@ -1,8 +1,13 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import PropTypes from 'prop-types'
 
-const Layout = ({ children, title, description }) => (
+interface LayoutProps {
+  children?: React.ReactNode
+  title: string
+  description?: string
+}
+
+const Layout = ({ children, title, description }: LayoutProps) => (
   <div className="page-wrapper">
     <Helmet>
       <html lang="en" />
@@ -29,11 +34,5 @@ const Layout = ({ children, title, description }) => (
     {children}
   </div>
 )
-
-Layout.propTypes = {
-  children: PropTypes.node,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.string,
-}
 
 export default Layout

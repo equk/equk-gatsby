@@ -1,8 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
-const Tags = ({ tags, tagSlugs }) => (
+interface TagsProps {
+  tags?: unknown[]
+  tagSlugs?: unknown[]
+}
+
+const Tags = ({ tags, tagSlugs }: TagsProps) => (
   <div className="tags">
     <ul className="taglist">
       {tagSlugs &&
@@ -16,10 +20,5 @@ const Tags = ({ tags, tagSlugs }) => (
     </ul>
   </div>
 )
-
-Tags.propTypes = {
-  tags: PropTypes.array,
-  tagSlugs: PropTypes.array,
-}
 
 export default Tags

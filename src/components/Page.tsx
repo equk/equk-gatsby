@@ -1,8 +1,13 @@
 import React from 'react'
 import { GatsbyImage } from 'gatsby-plugin-image'
-import PropTypes from 'prop-types'
 
-const Page = ({ title, children, image }) => (
+interface PageProps {
+  children?: React.ReactNode
+  title: string
+  image?: any
+}
+
+const Page = ({ title, children, image }: PageProps) => (
   <div className="container">
     <article className="content">
       <header className="page-full-header">
@@ -19,11 +24,5 @@ const Page = ({ title, children, image }) => (
     </article>
   </div>
 )
-
-Page.propTypes = {
-  children: PropTypes.node,
-  title: PropTypes.string.isRequired,
-  image: PropTypes.any,
-}
 
 export default Page

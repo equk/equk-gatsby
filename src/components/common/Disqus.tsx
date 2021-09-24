@@ -1,11 +1,15 @@
 /* eslint-disable import/no-unresolved */
 /* to use this install react-disqus-comments */
 import React from 'react'
-import PropTypes from 'prop-types'
 import ReactDisqusComments from 'react-disqus-comments'
 import { useSiteMetadata } from '../../hooks'
 
-const DisqComments = ({ postTitle, postSlug }) => {
+interface DisqCommentsProps {
+  postTitle?: string
+  postSlug?: string
+}
+
+const DisqComments = ({ postTitle, postSlug }: DisqCommentsProps) => {
   const { url, disqusShortname } = useSiteMetadata()
   const postURL = `${url}/${postSlug}`
 
@@ -16,11 +20,6 @@ const DisqComments = ({ postTitle, postSlug }) => {
       )}
     </div>
   )
-}
-
-DisqComments.propTypes = {
-  postTitle: PropTypes.string,
-  postSlug: PropTypes.string,
 }
 
 export default DisqComments
