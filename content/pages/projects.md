@@ -10,6 +10,7 @@ description: projects
 <br/><i class="fa fa-code"></i> Software
 <br/><i class="fa fa-github"></i> Opensource
 
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> brave browser profiles
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> unsplash json api search using `next.js`
 <br/><i class="fa fa-code"></i> linux `wine` launcher with automatic `vulkan` acceleration
 <br/><i class="fa fa-code"></i> linux `wine` game/app installer
