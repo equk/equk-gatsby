@@ -36,7 +36,7 @@ slug: "about"
         <li>Reverse Engineering</li>
         <li>Electronics</li>
         <li>Programming</li>
-        <li>Machine Learning</li>
+        <li>Blockchain</li>
         <li>Cryptography</li>
         <li>Rust</li>
         </ul>
@@ -55,8 +55,6 @@ slug: "about"
 </div>
 
 I am always looking to learn new things & am normally breaking or experimenting with something new.
-
-Currently working on some `rust` based projects.
 
 ## Linux
 
@@ -133,7 +131,7 @@ I am open to new work opportunities, please contact me using the details below.
         </tr>
         <tr>
             <td><i class="fa fa-key-modern"></i> <strong>gpg</strong></td>
-            <td><a href="https://pgp.mit.edu/pks/lookup?op=get&amp;search=0x0E53A3C22664D113" target="_blank">0E53 A3C2 2664 D113</a></td>
+            <td><a href="https://keybase.io/equilibriumuk/pgp_keys.asc?fingerprint=25fc07669118b3b9b79beae40e53a3c22664d113" target="_blank">0E53 A3C2 2664 D113</a></td>
         </tr>
         <tr>
             <td><i class="fa fa-github-alt"></i> <strong>github</strong></td>
@@ -155,7 +153,7 @@ I am open to new work opportunities, please contact me using the details below.
 ## About This Site
 
 This site is powered by React & GraphQL using Gatsby.<br />
-The sourcecode can be found on github & the site is hosted on netlify.
+The source code can be found on github & the site is hosted on netlify.
 
 <img class="inline reactjs_logo" src="/media/logos/reactsq.svg" alt="reactjs-logo" width="90px">
 <img class="inline graphql_logo" src="/media/images/2019/06/graphql.svg" alt="graphql-logo" width="80px">
