@@ -1,5 +1,5 @@
 module.exports = {
-  extends: ['airbnb', 'prettier', 'plugin:compat/recommended'],
+  extends: ['airbnb', 'prettier', 'plugin:compat/recommended', 'plugin:@typescript-eslint/recommended'],
   parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 2021,
@@ -8,7 +8,7 @@ module.exports = {
     },
     requireConfigFile: false,
     babelOptions: {
-      presets: ['@babel/preset-react'],
+      presets: ['@babel/preset-typescript', '@babel/preset-react'],
     },
   },
   env: {
@@ -70,7 +70,7 @@ module.exports = {
     'react/jsx-filename-extension': [
       1,
       {
-        extensions: ['.js', '.jsx'],
+        extensions: ['.js', '.jsx', '.tsx'],
       },
     ],
     radix: 0,
@@ -109,9 +109,15 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'no-unsanitized/method': 'error',
     'no-unsanitized/property': 'error',
+    '@typescript-eslint/no-var-requires': 0,
   },
   settings: {
     polyfills: ['fetch', 'promises', 'url', 'object-assign'],
+    'import/resolver': {
+      node: {
+        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+      },
+    },
   },
-  plugins: ['html', 'prettier', 'react-hooks', 'no-unsanitized'],
+  plugins: ['html', 'prettier', 'react-hooks', 'no-unsanitized', '@typescript-eslint'],
 }
