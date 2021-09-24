@@ -1,10 +1,35 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Layout, Topbar, Footer, Feed, Page, Hero, Pagination } from '../components'
 import { useSiteMetadata } from '../hooks'
 
-const TagTemplate = ({ data, pageContext }) => {
+interface TagTemplateProps {
+  pageContext: any
+  data?: {
+    allMarkdownRemark?: {
+      edges?: {
+        node?: {
+          fields?: {
+            slug: string
+          }
+          frontmatter?: {
+            date: string
+            description?: any
+            title: string
+          }
+        }
+      }[]
+    }
+    site?: {
+      siteMetadata?: {
+        subtitle?: string
+        title?: string
+      }
+    }
+  }
+}
+
+const TagTemplate = ({ data, pageContext }: TagTemplateProps) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata()
 
   const { tag, currentPage, prevPagePath, nextPagePath, hasPrevPage, hasNextPage } = pageContext
@@ -34,34 +59,6 @@ const TagTemplate = ({ data, pageContext }) => {
       </div>
     </Layout>
   )
-}
-
-TagTemplate.propTypes = {
-  pageContext: PropTypes.object.isRequired,
-  data: PropTypes.shape({
-    allMarkdownRemark: PropTypes.shape({
-      edges: PropTypes.arrayOf(
-        PropTypes.shape({
-          node: PropTypes.shape({
-            fields: PropTypes.shape({
-              slug: PropTypes.string.isRequired,
-            }),
-            frontmatter: PropTypes.shape({
-              date: PropTypes.string.isRequired,
-              description: PropTypes.any,
-              title: PropTypes.string.isRequired,
-            }),
-          }),
-        })
-      ),
-    }),
-    site: PropTypes.shape({
-      siteMetadata: PropTypes.shape({
-        subtitle: PropTypes.string,
-        title: PropTypes.string,
-      }),
-    }),
-  }),
 }
 
 export const query = graphql`

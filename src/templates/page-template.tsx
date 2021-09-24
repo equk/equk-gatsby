@@ -1,11 +1,29 @@
 /* eslint-disable react/no-danger */
 import React from 'react'
-import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Layout, Topbar, Footer, Page } from '../components'
 import { useSiteMetadata } from '../hooks'
 
-const PageTemplate = ({ data }) => {
+interface PageTemplateProps {
+  data?: {
+    markdownRemark?: {
+      excerpt: string
+      frontmatter?: {
+        date?: any
+        image?: {
+          childImageSharp?: {
+            id?: string
+          }
+        }
+        title: string
+      }
+      html: string
+      id: string
+    }
+  }
+}
+
+const PageTemplate = ({ data }: PageTemplateProps) => {
   const { title: siteTitle } = useSiteMetadata()
   const { html: pageBody } = data.markdownRemark
   const { image: pageImage } = data.markdownRemark.frontmatter
@@ -21,25 +39,6 @@ const PageTemplate = ({ data }) => {
       <Footer />
     </Layout>
   )
-}
-
-PageTemplate.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      excerpt: PropTypes.string.isRequired,
-      frontmatter: PropTypes.shape({
-        date: PropTypes.any,
-        image: PropTypes.shape({
-          childImageSharp: PropTypes.shape({
-            id: PropTypes.string,
-          }),
-        }),
-        title: PropTypes.string.isRequired,
-      }),
-      html: PropTypes.string.isRequired,
-      id: PropTypes.string.isRequired,
-    }),
-  }),
 }
 
 export const query = graphql`

@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react'
-import PropTypes from 'prop-types'
 import Gitalk from 'gitalk'
 import { useSiteMetadata } from '../../hooks'
 
-const Comments = ({ postSlug }) => {
+interface CommentsProps {
+  postSlug?: string
+}
+
+const Comments = ({ postSlug }: CommentsProps) => {
   const { url } = useSiteMetadata()
   const postURL = `${url}/${postSlug}`
 
@@ -26,10 +29,6 @@ const Comments = ({ postSlug }) => {
       <div id="gitalk-container" />
     </div>
   )
-}
-
-Comments.propTypes = {
-  postSlug: PropTypes.string,
 }
 
 export default Comments

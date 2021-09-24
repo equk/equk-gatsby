@@ -1,10 +1,29 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import { Layout, Topbar, Footer, Post } from '../components'
 import { useSiteMetadata } from '../hooks'
 
-const PostTemplate = ({ data }) => {
+interface PostTemplateProps {
+  data?: {
+    markdownRemark?: {
+      fields?: {
+        slug: string
+        tagSlugs?: string[]
+      }
+      excerpt: string
+      frontmatter?: {
+        date: string
+        image?: any
+        tags?: string[]
+        title: string
+      }
+      html: string
+      id: string
+    }
+  }
+}
+
+const PostTemplate = ({ data }: PostTemplateProps) => {
   const { title: siteTitle } = useSiteMetadata()
   const { title: postTitle } = data.markdownRemark.frontmatter
   const metaDescription = data.markdownRemark.excerpt
@@ -16,26 +35,6 @@ const PostTemplate = ({ data }) => {
       <Footer />
     </Layout>
   )
-}
-
-PostTemplate.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      fields: PropTypes.shape({
-        slug: PropTypes.string.isRequired,
-        tagSlugs: PropTypes.arrayOf(PropTypes.string),
-      }),
-      excerpt: PropTypes.string.isRequired,
-      frontmatter: PropTypes.shape({
-        date: PropTypes.string.isRequired,
-        image: PropTypes.any,
-        tags: PropTypes.arrayOf(PropTypes.string),
-        title: PropTypes.string.isRequired,
-      }),
-      html: PropTypes.string.isRequired,
-      id: PropTypes.string.isRequired,
-    }),
-  }),
 }
 
 export const query = graphql`

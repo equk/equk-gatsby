@@ -1,10 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
 import moment from 'moment'
 import { kebabCase } from 'lodash'
 
-const Feed = ({ edges }) => (
+interface FeedProps {
+  edges: any
+}
+
+const Feed = ({ edges }: FeedProps) => (
   <div className="post-feed">
     {edges.map((edge) => (
       <div className="post" key={edge.node.fields.slug}>
@@ -38,9 +41,5 @@ const Feed = ({ edges }) => (
     ))}
   </div>
 )
-
-Feed.propTypes = {
-  edges: PropTypes.object.isRequired,
-}
 
 export default Feed
