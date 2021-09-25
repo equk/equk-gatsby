@@ -110,6 +110,7 @@ module.exports = {
     'no-unsanitized/method': 'error',
     'no-unsanitized/property': 'error',
     '@typescript-eslint/no-var-requires': 0,
+    '@typescript-eslint/explicit-module-boundary-types': 0,
   },
   settings: {
     polyfills: ['fetch', 'promises', 'url', 'object-assign'],
