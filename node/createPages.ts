@@ -1,7 +1,7 @@
 const path = require('path')
 const _ = require('lodash')
-const createTagsPages = require('./pagination/createTagsPages')
-const createPostsPages = require('./pagination/createPostsPages')
+const { createTagsPages } = require('./pagination/createTagsPages')
+const { createPostsPages } = require('./pagination/createPostsPages')
 
 /**
  * This is the main function for creating pages using the createPages
@@ -17,7 +17,7 @@ const createPostsPages = require('./pagination/createPostsPages')
  *
  */
 
-const createPages = async ({ graphql, actions }) => {
+export const createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
   /**
@@ -81,5 +81,3 @@ const createPages = async ({ graphql, actions }) => {
   await createTagsPages(graphql, actions)
   await createPostsPages(graphql, actions)
 }
-
-export default createPages

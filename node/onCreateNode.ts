@@ -15,7 +15,7 @@ const moment = require('moment')
 
 let slugVal = ''
 
-const onCreateNode = ({ node, actions }) => {
+export const onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === 'MarkdownRemark') {
@@ -61,5 +61,3 @@ const onCreateNode = ({ node, actions }) => {
     }
   }
 }
-
-export default onCreateNode
