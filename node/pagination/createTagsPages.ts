@@ -1,5 +1,5 @@
-const _ = require('lodash')
-const path = require('path')
+// const _ = require('lodash')
+// const path = require('path')
 const siteConfig = require('../../config.js')
 
 module.exports = async (graphql, actions) => {
