@@ -1,7 +1,7 @@
 const pxtorem = require('postcss-pxtorem')
 const autoprefixer = require('autoprefixer')
 
-module.exports = [
+export const postCssPlugins = [
   pxtorem({
     rootValue: 16,
     unitPrecision: 5,
