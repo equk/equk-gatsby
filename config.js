@@ -1,6 +1,6 @@
 const path = require('path')
 
-module.exports = {
+export const siteConfig = {
   url: 'https://equk.co.uk',
   title: "equk's blog",
   subtitle: 'writings of a coder + sysadmin',

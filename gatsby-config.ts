@@ -1,15 +1,17 @@
-import siteConfig from './config.js'
-import postCssPlugins from './postcss-config.js'
+import { siteConfig } from './config.js'
+import { postCssPlugins } from './postcss-config.js'
 
-module.exports = {
+const { url, title, subtitle, copyright, disqusShortname, menu, author, backgroundColor, themeColor, logo } = siteConfig
+
+export default {
   siteMetadata: {
-    url: siteConfig.url,
-    title: siteConfig.title,
-    subtitle: siteConfig.subtitle,
-    copyright: siteConfig.copyright,
-    disqusShortname: siteConfig.disqusShortname,
-    menu: siteConfig.menu,
-    author: siteConfig.author,
+    url,
+    title,
+    subtitle,
+    copyright,
+    disqusShortname,
+    menu,
+    author,
   },
   plugins: [
     /**
@@ -149,7 +151,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
-        trackingIds: [siteConfig.googleAnalyticsId],
+        trackingIds: [googleAnalyticsId],
         gtagConfig: {
           anonymize_ip: true,
           cookie_expires: 3600,
@@ -201,13 +203,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: siteConfig.title,
-        short_name: siteConfig.title,
+        name: title,
+        short_name: title,
         start_url: '/',
-        background_color: siteConfig.backgroundColor,
-        theme_color: siteConfig.themeColor,
+        background_color: backgroundColor,
+        theme_color: themeColor,
         display: 'standalone',
-        icon: siteConfig.logo,
+        icon: logo,
         icon_options: {
           purpose: 'any maskable',
         },
