@@ -62,4 +62,4 @@ const onCreateNode = ({ node, actions }) => {
   }
 }
 
-module.exports = onCreateNode
+export default onCreateNode

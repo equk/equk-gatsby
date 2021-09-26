@@ -1,7 +1,7 @@
 const path = require('path')
 const siteConfig = require('../../config.js')
 
-module.exports = async (graphql, actions) => {
+export default async (graphql, actions) => {
   const { createPage } = actions
 
   const result = await graphql(`
