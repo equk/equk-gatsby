@@ -1,4 +1,4 @@
-import { siteConfig } from '../../config.js'
+import { siteConfig } from '../../config'
 
 const _ = require('lodash')
 const path = require('path')
