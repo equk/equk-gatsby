@@ -1,28 +1,22 @@
 {
     "compilerOptions": {
+        "module": "CommonJS",
         "target": "ESNext",
         "lib": [
-            "dom",
-            "es6"
+            "DOM",
+            "ESNext"
         ],
-        "module": "commonjs",
+        "strict": true,
         "moduleResolution": "node",
         "sourceMap": true,
         "jsx": "preserve",
         "allowJs": true,
         "noEmit": true,
-        "noUnusedLocals": true,
-        "forceConsistentCasingInFileNames": true,
-        "noUnusedParameters": true,
-        "noImplicitReturns": true,
-        "noImplicitThis": true,
-        "noImplicitAny": false,
         "skipLibCheck": true,
-        "declaration": true,
-        "declarationMap": true,
-        "allowSyntheticDefaultImports": true,
-        "strict": false,
         "esModuleInterop": true,
+        "noImplicitAny": false,
+        "forceConsistentCasingInFileNames": true,
+        "allowSyntheticDefaultImports": true,
     },
     "exclude": [
         "node_modules",
