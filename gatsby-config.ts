@@ -1,5 +1,5 @@
 import { siteConfig } from './config'
-import { postCssPlugins } from './postcss-config.js'
+import { postCssPlugins } from './postcss-config'
 
 const { url, title, subtitle, copyright, disqusShortname, menu, author, backgroundColor, themeColor, logo } = siteConfig
 
