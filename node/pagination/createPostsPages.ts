@@ -1,4 +1,4 @@
-import { siteConfig } from '../../config.js'
+import { siteConfig } from '../../config'
 
 const path = require('path')
 
