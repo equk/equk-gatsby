@@ -1,6 +1,7 @@
+import { siteConfig } from '../../config.js'
+
 const _ = require('lodash')
 const path = require('path')
-const siteConfig = require('../../config.js')
 
 export const createTagsPages = async (graphql, actions) => {
   const { createPage } = actions
