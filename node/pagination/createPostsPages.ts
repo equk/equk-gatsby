@@ -1,5 +1,6 @@
+import { siteConfig } from '../../config.js'
+
 const path = require('path')
-const siteConfig = require('../../config.js')
 
 export const createPostsPages = async (graphql, actions) => {
   const { createPage } = actions
