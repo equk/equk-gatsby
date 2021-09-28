@@ -127,6 +127,7 @@ dependencies:
   react-helmet: 6.1.0_react@17.0.2
   scrollprogress: 3.0.2
   ts-node: 10.2.1_typescript@4.4.3
+  typescript: 4.4.3
   use-dark-mode: 2.3.1_react@17.0.2
 
 devDependencies:
@@ -163,7 +164,6 @@ devDependencies:
   prettier: 2.4.1
   react-test-renderer: 17.0.2_react@17.0.2
   rimraf: 3.0.2
-  typescript: 4.4.3
 
 packages:
 
@@ -13261,7 +13261,7 @@ packages:
     resolution: {integrity: sha512-4xfscpisVgqqDfPaJo5vkd+Qd/ItkoagnHpufr+i2QCHBsNYp+G7UAoyFl8aPtx879u38wPV65rZ8qbGZijalA==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
+    dev: false
 
   /unbox-primitive/1.0.1:
     resolution: {integrity: sha512-tZU/3NqK3dA5gpE1KtyiJUrEB0lxnGkMFHptJ7q6ewdZ8s12QrODwNbhIJStmJkd1QDXa1NRA8aF2A1zk/Ypyw==}
