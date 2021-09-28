@@ -22,7 +22,6 @@ image:
 - [x] Newtab stats & information
 - [x] Newtab background images
 - [x] Clean menus
-- [x] Ctrl+P brings up print dialog
 
 ## Firefox UX
 

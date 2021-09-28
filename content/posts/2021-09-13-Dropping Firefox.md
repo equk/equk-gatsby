@@ -79,7 +79,7 @@ Mozilla want to remove the compact layout in firefox & so far have removed the o
 
 The OP does a good job of showing how bad their UX is without even realizing suggesting the customize option is *'fairly hard to discover'*.
 
-They also seem to assume the use of compact mode directly relates to desktop resolution despite not showing any evidence for this.
+They also seem to assume the use of compact mode directly relates to desktop resolution despite not showing any reasoning or stats referencing this.
 
 ## Conclusion
 
