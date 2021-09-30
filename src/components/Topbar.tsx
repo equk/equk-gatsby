@@ -2,7 +2,6 @@
 /* eslint-disable no-unused-expressions */
 import React from 'react'
 import { Link } from 'gatsby'
-import Progressbar from './Progressbar'
 import ToggleDark from './common/ToggleDark'
 
 interface TopbarProps {}
@@ -45,7 +44,6 @@ class Topbar extends React.Component<TopbarProps, TopbarState> {
     const { navBarActiveClass } = this.state
     return (
       <div className="top">
-        <Progressbar />
         <div className="topbar">
           <nav className="navbar container" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
