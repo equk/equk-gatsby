@@ -5,11 +5,11 @@ import { Layout, Topbar, Footer, Page } from '../components'
 import { useSiteMetadata } from '../hooks'
 
 interface PageTemplateProps {
-  data?: {
-    markdownRemark?: {
+  data: {
+    markdownRemark: {
       excerpt: string
-      frontmatter?: {
-        date?: any
+      frontmatter: {
+        date: any
         image?: {
           childImageSharp?: {
             id?: string

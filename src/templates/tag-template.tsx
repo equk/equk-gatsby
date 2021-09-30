@@ -5,9 +5,9 @@ import { useSiteMetadata } from '../hooks'
 
 interface TagTemplateProps {
   pageContext: any
-  data?: {
-    allMarkdownRemark?: {
-      edges?: {
+  data: {
+    allMarkdownRemark: {
+      edges: {
         node?: {
           fields?: {
             slug: string
