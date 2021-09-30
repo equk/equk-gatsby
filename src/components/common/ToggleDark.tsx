@@ -1,7 +1,8 @@
 import React from 'react'
 import useDarkMode from 'use-dark-mode'
-import sun from '../../../static/media/icons/sun.svg'
-import moon from '../../../static/media/icons/moon.svg'
+
+const sun = '/media/icons/sun.svg'
+const moon = '/media/icons/moon.svg'
 
 const ToggleDark = () => {
   const darkMode = useDarkMode(false)
