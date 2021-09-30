@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 interface TagsProps {
-  tags?: unknown[]
-  tagSlugs?: unknown[]
+  tags: any[]
+  tagSlugs?: any[]
 }
 
 const Tags = ({ tags, tagSlugs }: TagsProps) => (
