@@ -1,5 +1,6 @@
 /* eslint-disable import/no-unresolved */
 /* to use this install react-disqus-comments */
+/*
 import React from 'react'
 import ReactDisqusComments from 'react-disqus-comments'
 import { useSiteMetadata } from '../../hooks'
@@ -23,3 +24,4 @@ const DisqComments = ({ postTitle, postSlug }: DisqCommentsProps) => {
 }
 
 export default DisqComments
+*/
