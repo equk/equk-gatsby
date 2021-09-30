@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 interface PaginationProps {
-  prevPagePath?: string
-  nextPagePath?: string
+  prevPagePath?: any
+  nextPagePath?: any
   hasNextPage?: boolean
   hasPrevPage?: boolean
 }
