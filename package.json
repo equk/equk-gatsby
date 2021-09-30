@@ -12,7 +12,8 @@
     "buildc": "pnpm clean && gatsby build",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "newpost": "node newpost.js",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "types": "tsc --noEmit"
   },
   "author": "equk <equk@users.noreply.github.com>",
   "private": true,
