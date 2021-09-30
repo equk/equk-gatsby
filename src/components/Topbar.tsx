@@ -5,7 +5,14 @@ import { Link } from 'gatsby'
 import Progressbar from './Progressbar'
 import ToggleDark from './common/ToggleDark'
 
-class Topbar extends React.Component {
+interface TopbarProps {}
+
+interface TopbarState {
+  active: boolean
+  navBarActiveClass: string
+}
+
+class Topbar extends React.Component<TopbarProps, TopbarState> {
   constructor(props) {
     super(props)
     this.state = {
