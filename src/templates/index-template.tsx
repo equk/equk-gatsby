@@ -5,8 +5,8 @@ import { useSiteMetadata } from '../hooks'
 
 interface IndexTemplateProps {
   pageContext: any
-  data?: {
-    allMarkdownRemark?: {
+  data: {
+    allMarkdownRemark: {
       edges?: {
         node?: {
           fields?: {
@@ -38,7 +38,7 @@ const IndexTemplate = ({ data, pageContext }: IndexTemplateProps) => {
       <Topbar />
       <Hero />
       <div className="index-page">
-        <Page>
+        <Page title="">
           <Feed edges={edges} />
           <Pagination
             prevPagePath={prevPagePath}

@@ -4,14 +4,14 @@ import { Layout, Topbar, Footer, Post } from '../components'
 import { useSiteMetadata } from '../hooks'
 
 interface PostTemplateProps {
-  data?: {
-    markdownRemark?: {
-      fields?: {
+  data: {
+    markdownRemark: {
+      fields: {
         slug: string
         tagSlugs?: string[]
       }
       excerpt: string
-      frontmatter?: {
+      frontmatter: {
         date: string
         image?: any
         tags?: string[]
