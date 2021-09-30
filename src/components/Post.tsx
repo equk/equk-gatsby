@@ -29,7 +29,7 @@ const Post = ({ post }: PostProps) => {
         </header>
         {image && (
           <div className="post-feature-image">
-            <GatsbyImage image={image.childImageSharp.gatsbyImageData} />
+            <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt="" />
           </div>
         )}
         <section className="post-full-content">
@@ -58,7 +58,7 @@ const Post = ({ post }: PostProps) => {
       </article>
 
       <div className="post-comments">
-        <Comments postSlug={slug} postTitle={post.frontmatter.title} />
+        <Comments postSlug={slug} />
       </div>
     </div>
   )

@@ -15,7 +15,7 @@ const Page = ({ title, children, image }: PageProps) => (
       </header>
       {image && (
         <div className="post-feature-image">
-          <GatsbyImage image={image.childImageSharp.gatsbyImageData} />
+          <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt="" />
         </div>
       )}
       <section className="page-full-content">
