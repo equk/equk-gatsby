@@ -169,6 +169,9 @@ a.github:hover {
 .language-color.rust {
     background-color: #dea584;
 }
+.language-color.ts {
+    background-color: #2b7489;
+}
 .message {
     font-size: inherit;
 }
