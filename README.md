@@ -18,7 +18,6 @@ I have made the site open source and available on github for others to learn fro
 - [x] OpenGraph & Twitter Meta Tags
 - [x] Feature Image
 - [x] RSS Feed
-- [x] ~~Disqus Comments~~
 - [x] Gitalk Comments
 - [x] Syntax Highlighting with `prismjs`
 - [x] Pagination
@@ -36,28 +35,25 @@ Performance: 100%    Accessibility: 100%     Best Practices: 100%    SEO: 100%  
 ## development features
 
 - [x] ESLint with plugins
-- [x] Uses `SASS` for styles
-- [x] Bulma flex grid
+- [x] Typescript
+- [x] `SASS` for styles
 - [x] `postcss` with plugins
 - [x] `PurgeCSS` on `build`
-- [x] Uses `gatsby-image`
-- [x] Uses react `prop-types`
-- [x] Uses react `hooks`
-- [x] Uses `react-helmet`
-- [x] Uses GraphQL
+- [x] `gatsby-image`
+- [x] react `hooks`
+- [x] `react-helmet`
+- [x] GraphQL
 - [x] Husky Git Hooks
 - [x] Checks js,jsx,ts,tsx pre-commit
 - [x] Postbuild script
 
 ### eslint config
 
-- [x] Lints JavaScript based on ES6
-- [x] Fixes issues using Prettier
-- [x] Fixes formatting errors using Prettier
-- [x] Lints + Fixes inside of html script tags
-- [x] Lints + Fixes React
-- [x] Based on airbnb rules for eslint
-- [x] Checks for react `prop-types`
+- [x] typescript
+- [x] airbnb
+- [x] prettier
+- [x] react
+- [x] react-hooks
 
 ## folder structure
 
