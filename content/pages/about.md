@@ -16,9 +16,9 @@ slug: "about"
         <p class="about-name">
           <strong>equilibriumuk</strong>
           <br />
-          Fullstack Developer & Site Reliability Engineer<br />
+          Web Developer & Site Reliability Engineer<br />
           <br />
-          <span class="language-color js"></span> Javascript <span class="language-color rust"></span> Rust <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color py"></span> Python
+          <span class="language-color js"></span> Javascript <span class="language-color ts"></span> Typescript <span class="language-color go"></span> Go <span class="language-color rust"></span> Rust <br /><span class="language-color sh"></span> Bash <span class="language-color c"></span> C <span class="language-color py"></span> Python <span class="language-color ps"></span> Powershell
         </p>
       </div>
     </div>
@@ -47,7 +47,7 @@ slug: "about"
         <li>Nodejs</li>
         <li>GraphQL</li>
         <li>Vuejs</li>
-        <li>Docker</li>
+        <li>Typescript</li>
         <li>Javascript</li>
         <li>React</li>
         </ul>
@@ -59,7 +59,7 @@ I am always looking to learn new things & am normally breaking or experimenting 
 ## Linux
 
 I use Archlinux as my desktop OS with a tiling wm.<br />
-Screenshots & info on my setup can be found on my <a href="/2019/07/24/automated-dotfiles">Automated dotfiles</a> article.<br />
+Screenshots & info on my setup can be found on my <a href="https://github.com/equk/dotfiles" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer">dotfiles repo</a> on github.<br />
 I started using linux as my desktop OS in 1997.
 
 <p class="text-center"><img class="inline" src="/media/images/2019/05/gentoo-signet.svg" alt="gentoo" width="128px">
@@ -82,7 +82,7 @@ _(including <a href="/tag/powershell">powershell</a> scripts which can be deploy
   </div>
   <div class="message-body">
     <p class="text-center">I work with a lot of opensource software & release many of my own projects opensource to help others.</p>
-    <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color py"></span> Python <span class="language-color php"></span> PHP <span class="language-color rust"></span> Rust <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color ps"></span> Powershell</p>
+    <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color py"></span> Python <span class="language-color ts"></span> Typescript <span class="language-color rust"></span> Rust <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color ps"></span> Powershell</p>
   </div>
 </article>
 
@@ -100,7 +100,7 @@ I currently work as a Fullstack Developer & Site Reliability Engineer for a deve
 <p class="text-center">
 <img class="inline golang_logo" src="/media/logos/golang.svg" alt="golang" width="90px">
 <img class="inline python_logo" src="/media/logos/python.svg" alt="python" width="80px">
-<img class="inline kubernetes_logo" src="/media/logos/kubernetes.svg" alt="kubernetes" width="80px">
+<img class="inline typescript_logo" src="/media/logos/typescript.svg" alt="typescript" width="80px">
 <img class="inline docker_logo" src="/media/logos/docker.png" alt="docker" width="100px">
 <img class="inline git_logo" src="/media/logos/git.svg" alt="git" width="80px">
 </p>
@@ -155,6 +155,7 @@ I am open to new work opportunities, please contact me using the details below.
 This site is powered by React & GraphQL using Gatsby.<br />
 The source code can be found on github & the site is hosted on netlify.
 
+<img class="inline typescript_logo" src="/media/logos/typescript.svg" alt="typescript-logo" width="80px">
 <img class="inline reactjs_logo" src="/media/logos/reactsq.svg" alt="reactjs-logo" width="90px">
 <img class="inline graphql_logo" src="/media/images/2019/06/graphql.svg" alt="graphql-logo" width="80px">
 <img class="inline gatsby_logo" src="/media/logos/gatsby.svg" alt="gatsby-logo" width="80px">
@@ -169,10 +170,11 @@ The source code can be found on github & the site is hosted on netlify.
 - [x] Feature Image
 - [x] RSS Feed
 - [x] Sitemap
-- [x] Disqus Comments
+- [x] Typescript Type Checking
+- [x] Gitalk Comments
 - [x] Syntax Highlighting with `prismjs`
 - [x] Pagination
 - [x] JAMstack with Netlify CMS
 - [x] Netlify Continuous Deployment
 
-Up to date information can be found in my blog post [Site Updates & Opensource](/2020/03/17/site-updates-opensource)
+More information can be found in my blog post [Site Updates & Opensource](/2020/03/17/site-updates-opensource)
