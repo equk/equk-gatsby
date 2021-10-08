@@ -16,12 +16,15 @@ It is a fundamental part of the web & provides the only real alternative to brow
 
 There are various posts on this site regarding scripts I've written for Firefox both on Linux & on Windows but recent changes have lead me to stop using Firefox completely.
 
+*updated Oct 8 2021 added information regarding Firefox Suggest*
+
 ## Negative Changes
 
 - [x] Forcing Pocket
-- [x] Pocket Recommendations (Adverts)
+- [x] Pocket Recommendations (Adverts on New Tab)
 - [x] Forcing DNS over HTTPS
 - [x] GUI That Looks Like a Webpage
+- [x] Firefox Suggest (Adverts in Address Bar)
 
 The most recent change which made me question whether to continue to try to fix things was the GUI.
 
@@ -80,6 +83,17 @@ Mozilla want to remove the compact layout in firefox & so far have removed the o
 The OP does a good job of showing how bad their UX is without even realizing suggesting the customize option is *'fairly hard to discover'*.
 
 They also seem to assume the use of compact mode directly relates to desktop resolution despite not showing any reasoning or stats referencing this.
+
+#### Mozilla Adds Firefox Suggest
+
+Mozilla have now added adverts in the address bar with Firefox Suggest (version 93.0 Oct 5 2021).
+
+<p class="text-center"><img src="/media/images/2021/ffox_93_suggest.png" alt="ffox_93_suggest"></p>
+
+This feature is enabled by default meaning users need to opt out.
+
+<i class="fa fa-link"></i> <a href="https://blog.mozilla.org/data/2021/09/15/data-and-firefox-suggest/" target="_blank" rel="noopener noreferrer">Mozilla Blog: Data and Firefox Suggest</a><br /><i class="fa fa-link"></i> <a href="https://support.mozilla.org/en-US/kb/navigate-web-faster-firefox-suggest" target="_blank" rel="noopener noreferrer">Mozilla Support: Firefox Suggest</a>
+
 
 ## Conclusion
 
