@@ -7,9 +7,6 @@ module.exports = {
       jsx: true,
     },
     requireConfigFile: false,
-    babelOptions: {
-      presets: ['@babel/preset-typescript', '@babel/preset-react'],
-    },
   },
   env: {
     browser: true,
