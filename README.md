@@ -2,9 +2,17 @@
 
 My Personal Blog - [equk.co.uk](https://equk.co.uk)
 
-Built Using Gatsby ⚛️ 📄 🚀
+<br />
 
-## :warning: not a starter template or theme
+<p align="center">
+<img src="./static/media/logos/typescript.svg" alt="typescript-logo" width="80px">
+<img src="./static/media/logos/reactsq.svg" alt="reactjs-logo" width="90px">
+<img src="./static/media/images/2019/06/graphql.svg" alt="graphql-logo" width="80px">
+<img src="./static/media/logos/gatsby.svg" alt="gatsby-logo" width="80px">
+<img src="./static/media/logos/netlify.svg" alt="netlify-logo" width="80px">
+</p>
+
+## ⚠️ not a starter template or theme
 
 This is my own personal blog and shouldn't be used as a starter template or theme.
 
