@@ -72,7 +72,6 @@ specifiers:
   react-helmet: ^6.1.0
   react-test-renderer: 17.0.2
   rimraf: 3.0.2
-  scrollprogress: ^3.0.2
   ts-node: ^10.3.0
   typescript: ^4.4.4
   use-dark-mode: ^2.3.1
@@ -117,7 +116,6 @@ dependencies:
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2
   react-helmet: 6.1.0_react@17.0.2
-  scrollprogress: 3.0.2
   ts-node: 10.3.0_typescript@4.4.4
   typescript: 4.4.4
   use-dark-mode: 2.3.1_react@17.0.2
@@ -8115,7 +8113,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.14.1
+      follow-redirects: 1.14.1_debug@3.2.7
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -12305,10 +12303,6 @@ packages:
       '@types/json-schema': 7.0.7
       ajv: 6.12.6
       ajv-keywords: 3.5.2_ajv@6.12.6
-    dev: false
-
-  /scrollprogress/3.0.2:
-    resolution: {integrity: sha1-azbBALVf4+9h/XoX3VLdax5GioE=}
     dev: false
 
   /scss-tokenizer/0.2.3:
