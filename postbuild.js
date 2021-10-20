@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-console */
 /*!
  * equk-gatsby-postbuild v1.0.0
  *

@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/* eslint-disable no-console */
 /*!
  * gatsby-new-post-cli v1.0.0
  *
