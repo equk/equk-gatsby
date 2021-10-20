@@ -12,6 +12,13 @@ module.exports = {
     node: true,
     es6: true,
   },
+  // use jsonc-eslint-parser
+  overrides: [
+    {
+      files: ['*.json', '*.json5'],
+      parser: 'jsonc-eslint-parser',
+    },
+  ],
   rules: {
     'comma-dangle': 0,
     // React
