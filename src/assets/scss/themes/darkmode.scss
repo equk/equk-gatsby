@@ -4,7 +4,7 @@
 
 body.dark-mode {
   color: #eee;
-  background: #262831;
+  background: #181820;
   transition: background-color 0.5s ease-in;
 }
 
@@ -81,6 +81,11 @@ body.light-mode {
     color: #fff;
   }
 
+  .post-footer {
+    border-top: 1px solid #333 !important;
+    border-bottom: 1px solid #333 !important;
+  }
+
   a {
     color: $primary;
     -webkit-transition: color ease 0.7s;
@@ -97,11 +102,78 @@ body.light-mode {
   }
 
   //*-----------------------------------------
+  //* Topbar
+  //*-----------------------------------------
+
+  p.site-title {
+    a {
+      color: #eee;
+    }
+    a:focus,
+    a:hover {
+      color: $primary;
+    }
+  }
+
+  .topbar {
+    background: #181818;
+    border-bottom: 1px solid #222;
+
+    .navbar {
+      background-color: #181818;
+    }
+
+    .site-title.navbar-item {
+      font-weight: 400;
+    }
+
+    span.cursor {
+      border: 1px solid #eee;
+    }
+    span.cursor:hover,
+    span.cursor:focus {
+      background: #eee;
+    }
+  }
+
+  #navMenu.navbar-menu a.navbar-item:hover,
+  #navMenu.navbar-menu a.navbar-item:focus {
+    background: lighten(#181818, 5%);
+    border-bottom: 2px solid $primary;
+  }
+  #navMenu.navbar-menu a.navbar-item {
+    border-bottom: 2px solid #181818;
+    color: #eee;
+    &[aria-current="page"] {
+      border-bottom: 2px solid $primary;
+    }
+  }
+
+  .toggle-darkmode:hover {
+    background-color: lighten(#181818, 5%);
+  }
+
+  .toggle-darkmode {
+    background: inherit;
+    img {
+      stroke: #eee;
+    }
+  }
+
+  .topbar .navbar .navbar-burger {
+    color: #eee;
+  }
+
+  .navbar-menu {
+      background-color: #181818;
+  }
+
+  //*-----------------------------------------
   //* Footer
   //*-----------------------------------------
 
   .footer {
-    background-color: darken(#262831, 4%);
+    background-color: #181818;
     border-top: 1px solid #222;
     color: #eee;
   }
@@ -154,4 +226,10 @@ body.light-mode {
     @extend .is-dark;
     box-shadow: 0 2px #011627;
   }
+
+  // message boxes
+  .message-body strong {
+    color: inherit;
+  }
+
 }
