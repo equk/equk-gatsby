@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 overrides:
-  axios@<0.21.1: ^0.21.1
+  axios@<0.21.2: ^0.21.2
   browserslist@<4.16.5: ^4.16.5
   dns-packet@<5.2.2: ^5.2.2
   sanitize-html@<2.3.1: ^2.3.2
@@ -3368,7 +3368,7 @@ packages:
     resolution: {integrity: sha512-1uIESzroqpaTzt9uX48HO+6gfnKu3RwvWdCcWSrX4csMInJfCo1yvKPNXCwXFRpJqRW25tiASb6No0YH57PXqg==}
     engines: {node: '>=4'}
 
-  /axios/0.21.1:
+  /axios/0.21.1_debug@3.2.7:
     resolution: {integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==}
     dependencies:
       follow-redirects: 1.14.1
@@ -3376,16 +3376,16 @@ packages:
       - debug
     dev: false
 
-  /axios/0.21.1_debug@3.2.7:
-    resolution: {integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==}
+  /axios/0.21.4:
+    resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
     dependencies:
-      follow-redirects: 1.14.1_debug@3.2.7
+      follow-redirects: 1.14.1
     transitivePeerDependencies:
       - debug
     dev: false
 
-  /axios/0.21.1_debug@4.3.2:
-    resolution: {integrity: sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==}
+  /axios/0.21.4_debug@4.3.2:
+    resolution: {integrity: sha512-ut5vewkiu8jjGBdqpM44XxjuCjq9LAKeHVmoVfHVzy8eHgxxq8SbAVQNovDA8mVi05kP0Ea/n/UzcSHcTJQfNg==}
     dependencies:
       follow-redirects: 1.14.1_debug@4.3.2
     transitivePeerDependencies:
@@ -4302,7 +4302,7 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       '@types/json-patch': 0.0.30
-      axios: 0.21.1_debug@4.3.2
+      axios: 0.21.4_debug@4.3.2
       contentful-sdk-core: 6.8.0
       fast-copy: 2.1.1
       lodash.isplainobject: 4.0.6
@@ -6337,18 +6337,6 @@ packages:
         optional: true
     dev: false
 
-  /follow-redirects/1.14.1_debug@3.2.7:
-    resolution: {integrity: sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==}
-    engines: {node: '>=4.0'}
-    peerDependencies:
-      debug: '*'
-    peerDependenciesMeta:
-      debug:
-        optional: true
-    dependencies:
-      debug: 3.2.7
-    dev: false
-
   /follow-redirects/1.14.1_debug@4.3.2:
     resolution: {integrity: sha512-HWqDgT7ZEkqRzBvc2s64vSZ/hfOceEol3ac/7tKwzuvEyWx3/4UegXh5oBOIotkGsObyk3xznnSRVADBgWSQVg==}
     engines: {node: '>=4.0'}
@@ -7487,7 +7475,7 @@ packages:
     resolution: {integrity: sha512-7jrUlGDtwdmvaHNVKTzG1qLLqgUdFsMPQLbPVMLVNiECmyg20TvBiRlU7t6xqUBYC/j6YwlOnqwgJuKiDmC8fA==}
     dependencies:
       autosize: 3.0.21
-      axios: 0.21.1
+      axios: 0.21.4
       date-fns: 2.16.1
       es6-promise: 4.1.1
       github-markdown-css: 2.8.0
@@ -8109,7 +8097,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.14.1_debug@3.2.7
+      follow-redirects: 1.14.1
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
