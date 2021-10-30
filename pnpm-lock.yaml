@@ -6,6 +6,7 @@ overrides:
   dns-packet@<5.2.2: ^5.2.2
   sanitize-html@<2.3.1: ^2.3.2
   trim@<1.0.0: ^1.0.1
+  immer@<9.0.6: ^9.0.6
 
 specifiers:
   '@types/react-helmet': ^6.1.4
@@ -8108,7 +8109,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dependencies:
       eventemitter3: 4.0.7
-      follow-redirects: 1.14.1
+      follow-redirects: 1.14.1_debug@3.2.7
       requires-port: 1.0.0
     transitivePeerDependencies:
       - debug
@@ -8202,8 +8203,8 @@ packages:
     engines: {node: '>=0.9.0'}
     dev: false
 
-  /immer/8.0.1:
-    resolution: {integrity: sha512-aqXhGP7//Gui2+UrEtvxZxSquQVXTpZ7KDxfCcKAF3Vysvw0CViVaW9RZ1j1xlIYqaaaipBoqdqeibkc18PNvA==}
+  /immer/9.0.6:
+    resolution: {integrity: sha512-G95ivKpy+EvVAnAab4fVa4YGYn24J1SpEktnJX7JJ45Bd7xqME/SCplFzYFmTbrkwZbQ4xJK1xMTUYBkN6pWsQ==}
     dev: false
 
   /immutability-helper/2.9.1:
@@ -11619,7 +11620,7 @@ packages:
       global-modules: 2.0.0
       globby: 11.0.1
       gzip-size: 5.1.1
-      immer: 8.0.1
+      immer: 9.0.6
       is-root: 2.1.0
       loader-utils: 2.0.0
       open: 7.4.2
