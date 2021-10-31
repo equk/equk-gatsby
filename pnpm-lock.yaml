@@ -32,7 +32,7 @@ specifiers:
   gatsby: ^4.0.2
   gatsby-link: ^4.0.0
   gatsby-plugin-catch-links: ^4.0.0
-  gatsby-plugin-feed: ^3.14.0
+  gatsby-plugin-feed: ^4.0.0
   gatsby-plugin-google-gtag: ^4.0.0
   gatsby-plugin-image: ^2.0.0
   gatsby-plugin-manifest: ^4.0.0
@@ -81,7 +81,7 @@ dependencies:
   gatsby: 4.0.2_8e3522129ef2816b3c737f17aecb3a9d
   gatsby-link: 4.0.0_react-dom@17.0.2+react@17.0.2
   gatsby-plugin-catch-links: 4.0.0_gatsby@4.0.2
-  gatsby-plugin-feed: 3.14.0_6128267c258da105183cbccabc08b5e0
+  gatsby-plugin-feed: 4.0.0_6128267c258da105183cbccabc08b5e0
   gatsby-plugin-google-gtag: 4.0.0_6128267c258da105183cbccabc08b5e0
   gatsby-plugin-image: 2.0.0_43bf7bc543d9e635fef2bf5982699e18
   gatsby-plugin-manifest: 4.0.0_gatsby@4.0.2
@@ -6651,11 +6651,11 @@ packages:
       gatsby: 4.0.2_8e3522129ef2816b3c737f17aecb3a9d
     dev: false
 
-  /gatsby-plugin-feed/3.14.0_6128267c258da105183cbccabc08b5e0:
-    resolution: {integrity: sha512-d9fkaDyPN9ol6qL8WhojFm2p4VOn+tbz1EnTMr4nhDsn3l3Fyv6XV6xUsqeCclHwIwcK4Nj3mB07l6tDaBl9uQ==}
-    engines: {node: '>=12.13.0'}
+  /gatsby-plugin-feed/4.0.0_6128267c258da105183cbccabc08b5e0:
+    resolution: {integrity: sha512-9MhoUSCxGktCkgx7ou2nEPBqFAUTi/ck8j28XhmayJDc1MXvaSRzYKdsdrrRL0WHVH46imCwYX9xJBSR/KJ2+A==}
+    engines: {node: '>=14.15.0'}
     peerDependencies:
-      gatsby: ^3.0.0-next.0
+      gatsby: ^4.0.0-next
       react: ^16.9.0 || ^17.0.0
       react-dom: ^16.9.0 || ^17.0.0
     dependencies:
@@ -6664,7 +6664,7 @@ packages:
       common-tags: 1.8.0
       fs-extra: 10.0.0
       gatsby: 4.0.2_8e3522129ef2816b3c737f17aecb3a9d
-      gatsby-plugin-utils: 1.14.0_gatsby@4.0.2
+      gatsby-plugin-utils: 2.0.0_gatsby@4.0.2
       lodash.merge: 4.6.2
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -6892,17 +6892,6 @@ packages:
       gatsby: 4.0.2_8e3522129ef2816b3c737f17aecb3a9d
     transitivePeerDependencies:
       - supports-color
-    dev: false
-
-  /gatsby-plugin-utils/1.14.0_gatsby@4.0.2:
-    resolution: {integrity: sha512-lYzr9R9yTH/PzgRTWB878yB1xBlJULvyosEoF8LnE62+UyuPXxv+e/frfwZCeCoqsqstuciR0yaMELIPYMna+Q==}
-    engines: {node: '>=12.13.0'}
-    peerDependencies:
-      gatsby: ^3.0.0-next.0
-    dependencies:
-      '@babel/runtime': 7.15.4
-      gatsby: 4.0.2_8e3522129ef2816b3c737f17aecb3a9d
-      joi: 17.4.2
     dev: false
 
   /gatsby-plugin-utils/2.0.0_gatsby@4.0.2:
