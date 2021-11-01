@@ -96,7 +96,7 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": "eslint --cache --ext .js,.jsx,.ts,.tsx"
+    "*.{js,jsx,ts,tsx,json}": "eslint --cache --ext .js,.jsx,.ts,.tsx,.json"
   },
   "pnpm": {
     "overrides": {
