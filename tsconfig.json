@@ -1,26 +1,19 @@
 {
-    "compilerOptions": {
-        "module": "CommonJS",
-        "target": "ESNext",
-        "lib": [
-            "DOM",
-            "ESNext"
-        ],
-        "strict": true,
-        "moduleResolution": "node",
-        "sourceMap": true,
-        "jsx": "preserve",
-        "allowJs": true,
-        "noEmit": true,
-        "skipLibCheck": true,
-        "esModuleInterop": true,
-        "noImplicitAny": false,
-        "forceConsistentCasingInFileNames": true,
-        "allowSyntheticDefaultImports": true,
-    },
-    "exclude": [
-        "node_modules",
-        "public",
-        ".cache"
-    ]
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "strict": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "jsx": "preserve",
+    "allowJs": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["node_modules", "public", ".cache"]
 }
