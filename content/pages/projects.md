@@ -10,6 +10,10 @@ description: projects
 <br/><i class="fa fa-code"></i> Software
 <br/><i class="fa fa-github"></i> Opensource
 
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> logout_rs - `rust` shutdown menu
+<br/><i class="fa fa-code"></i> nftables attack logging (`prometheus` & `grafana`)
+<br/><i class="fa fa-code"></i> nftables blocklist control
+<br/><i class="fa fa-code"></i> mailserver RBL lookup
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> brave browser profiles
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> unsplash json api search using `next.js`
 <br/><i class="fa fa-code"></i> linux `wine` launcher with automatic `vulkan` acceleration
