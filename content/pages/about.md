@@ -89,7 +89,7 @@ _(including <a href="/tag/powershell">powershell</a> scripts which can be deploy
 
 ## Work
 
-I currently work as a Fullstack Developer & Site Reliability Engineer for a development company. (IaC, PaaS, FaaS, GitOps, DevOps)
+I currently work as a Developer & Site Reliability Engineer for a development company.
 
 <p class="text-center">
 <img class="inline vuejs_logo" src="/media/logos/vue.svg" alt="vuejs" width="80px">
@@ -97,6 +97,9 @@ I currently work as a Fullstack Developer & Site Reliability Engineer for a deve
 <img class="inline graphql_logo" src="/media/logos/graphql.svg" alt="graphql" width="70px">
 <img class="inline nodejs_logo" src="/media/logos/nodejs.svg" alt="nodejs" width="70px">
 </p>
+
+We mainly use `vuejs` & `react` with `rest` & `graphql` for web apps.<br />
+
 <p class="text-center">
 <img class="inline golang_logo" src="/media/logos/golang.svg" alt="golang" width="90px">
 <img class="inline python_logo" src="/media/logos/python.svg" alt="python" width="80px">
@@ -105,19 +108,7 @@ I currently work as a Fullstack Developer & Site Reliability Engineer for a deve
 <img class="inline git_logo" src="/media/logos/git.svg" alt="git" width="80px">
 </p>
 
-We mainly use `vuejs` & `react` with `rest` & `graphql` for web apps.<br />
-Most backend tooling & services are based on `golang`, `python` or `nodejs`.<br />
-
-We run a range of services using `docker`, `kubernetes` & `git`.
-
-<p class="text-center">
-<img class="inline prometheus_logo" src="/media/logos/prometheus.svg" alt="prometheus" width="80px">
-<img class="inline elastic_logo" src="/media/logos/elastic.png" alt="elastic" width="80px">
-<img class="inline grafana_logo" src="/media/logos/grafana.svg" alt="grafana" width="80px">
-</p>
-
-Our servers are monitored using `prometheus`, `grafana`, `elastic stack`.<br />
-Other services we host: `email`, `vpn`, `ci/cd`
+Tooling & services are based on `golang`, `rust`, `python` or `nodejs`.
 
 I am open to new work opportunities, please contact me using the details below.
 
