@@ -43,7 +43,9 @@ img.inline {
     display: inline-block;
 }
 
-/* 05-07-2020 - diff */
+.dark-mode .message-header {
+    border-radius: 0 !important;
+}
 
 .is-family-primary,
 .is-family-sans-serif,
