@@ -71,7 +71,7 @@ I started using linux as my desktop OS in 1997.
 I started learning linux with Slackware, then went on to Gentoo (stage 1 install) & then moved on to using Archlinux.
 
 The main servers I work on are based on Debian, Ubuntu and freebsd.<br />
-I use Alpinelinux for development & testing (qemu + docker).
+I use Alpinelinux for development & testing (qemu + podman).
 
 I also have a number of <a href="/projects">projects</a> based on Windows & Mac OS.<br />
 _(including <a href="/tag/powershell">powershell</a> scripts which can be deployed across domains using Group Policies)_
@@ -89,7 +89,7 @@ _(including <a href="/tag/powershell">powershell</a> scripts which can be deploy
 
 ## Work
 
-I currently work as a Developer & Site Reliability Engineer for a development company.
+I currently work as a Developer & Site Reliability Engineer.
 
 <p class="text-center">
 <img class="inline vuejs_logo" src="/media/logos/vue.svg" alt="vuejs" width="80px">
@@ -98,17 +98,17 @@ I currently work as a Developer & Site Reliability Engineer for a development co
 <img class="inline nodejs_logo" src="/media/logos/nodejs.svg" alt="nodejs" width="70px">
 </p>
 
-We mainly use `vuejs` & `react` with `rest` & `graphql` for web apps.<br />
+Working on webapps based on `vuejs` or `react` with `rest` & `graphql`.<br />
 
 <p class="text-center">
-<img class="inline golang_logo" src="/media/logos/golang.svg" alt="golang" width="90px">
+<img class="inline rust_logo" src="/media/logos/rust.svg" alt="rust" width="90px">
 <img class="inline python_logo" src="/media/logos/python.svg" alt="python" width="80px">
 <img class="inline typescript_logo" src="/media/logos/typescript.svg" alt="typescript" width="80px">
-<img class="inline docker_logo" src="/media/logos/docker.png" alt="docker" width="100px">
-<img class="inline git_logo" src="/media/logos/git.svg" alt="git" width="80px">
+<img class="inline golang_logo" src="/media/logos/golang.svg" alt="golang" width="90px">
 </p>
 
-Tooling & services are based on `golang`, `rust`, `python` or `nodejs`.
+Tooling & services are mainly based on `golang`, `rust` & `python`.<br />
+Services are `IaC` using `oci` containers.
 
 I am open to new work opportunities, please contact me using the details below.
 
