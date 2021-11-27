@@ -37,8 +37,6 @@ slug: "about"
         <li>Electronics</li>
         <li>Programming</li>
         <li>Blockchain</li>
-        <li>Cryptography</li>
-        <li>Rust</li>
         </ul>
     </div>
     <div class="column">
@@ -48,8 +46,14 @@ slug: "about"
         <li>GraphQL</li>
         <li>Vuejs</li>
         <li>Typescript</li>
+        </ul>
+    </div>
+    <div class="column">
+        <ul>
         <li>Javascript</li>
         <li>React</li>
+        <li>Cryptography</li>
+        <li>Rust</li>
         </ul>
     </div>
 </div>
@@ -64,17 +68,15 @@ I started using linux as my desktop OS in 1997.
 
 <p class="text-center"><img class="inline" src="/media/images/2019/05/gentoo-signet.svg" alt="gentoo" width="128px">
 <img class="inline" src="/media/images/2014/Feb/arch_128.png" alt="archlinux">
-<img class="inline" src="/media/images/2017/07/alpine_logo.png" alt="alpine" width="124px">
+<img class="inline" src="/media/logos/nixos.svg" alt="nixos" width="132px">
 <img class="inline" src="/media/images/2014/Feb/debian_128.png" alt="debian">
 <img class="inline" src="/media/images/2014/Feb/freebsd_128.png" alt="freebsd"></p>
 
-I started learning linux with Slackware, then went on to Gentoo (stage 1 install) & then moved on to using Archlinux.
+I started learning linux with Slackware then went on to Gentoo (stage 1 install) & then moved on to using Archlinux.
 
-The main servers I work on are based on Debian, Ubuntu and freebsd.<br />
-I use Alpinelinux for development & testing (qemu + podman).
+Servers I work on use NixOS, Debian, Ubuntu, freebsd.<br />
 
 I also have a number of <a href="/projects">projects</a> based on Windows & Mac OS.<br />
-_(including <a href="/tag/powershell">powershell</a> scripts which can be deployed across domains using Group Policies)_
 
 <article class="message is-dark">
   <div class="message-header">
@@ -102,8 +104,8 @@ Working on webapps based on `vuejs` or `react` with `rest` & `graphql`.<br />
 
 <p class="text-center">
 <img class="inline rust_logo" src="/media/logos/rust.svg" alt="rust" width="90px">
-<img class="inline python_logo" src="/media/logos/python.svg" alt="python" width="80px">
-<img class="inline typescript_logo" src="/media/logos/typescript.svg" alt="typescript" width="80px">
+<img class="inline python_logo" src="/media/logos/python.svg" alt="python" width="70px">
+<img class="inline typescript_logo" src="/media/logos/typescript.svg" alt="typescript" width="70px">
 <img class="inline golang_logo" src="/media/logos/golang.svg" alt="golang" width="90px">
 </p>
 
