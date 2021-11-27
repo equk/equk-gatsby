@@ -13,7 +13,7 @@ tags:
 image:
 ---
 
-<p class="text-center"><img src="/media/logos/gatsby.svg" alt="gatsby logo" width="150px" class="inline"> <img src="/media/logos/pnpm.svg" alt="pnpm logo" width="200px" class="inline"></p>
+<p class="text-center"><img src="/media/logos/gatsby.svg" alt="gatsby logo" width="150px" class="inline"> <img src="/media/logos/pnpm.svg" alt="pnpm logo" width="150px" class="inline"></p>
 
 ## Why Use PNPM
 
