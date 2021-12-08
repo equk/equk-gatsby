@@ -63,8 +63,7 @@ I am always looking to learn new things & am normally breaking or experimenting 
 ## Linux
 
 I use Archlinux as my desktop OS with a tiling wm.<br />
-Screenshots & info on my setup can be found on my <a href="https://github.com/equk/dotfiles" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer">dotfiles repo</a> on github.<br />
-I started using linux as my desktop OS in 1997.
+Screenshots & info on my setup can be found on my <a href="https://github.com/equk/dotfiles" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer">dotfiles repo</a> on github.
 
 <p class="text-center"><img class="inline" src="/media/images/2019/05/gentoo-signet.svg" alt="gentoo" width="128px">
 <img class="inline" src="/media/images/2014/Feb/arch_128.png" alt="archlinux">

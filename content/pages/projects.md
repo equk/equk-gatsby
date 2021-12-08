@@ -72,6 +72,14 @@ description: projects
   </div>
 </article>
 
+## Rust Logout Menu
+
+Basic menu with shutdown options in linux.
+
+<p class="text-center"><img class="border" src="/media/images/2021/logout_rs.png" alt="logout_rs"></p>
+
+Setup do be similar to the python <a href="/2014/06/07/tk_logout-python-script-for-i3wm/" target="_blank">tk_logout script</a> I made in 2014.
+
 ## Linux Wine Launcher
 
 Allows automated installation of windows applications or games on linux by setting up a custom wine prefix/env with required libraries & features.
