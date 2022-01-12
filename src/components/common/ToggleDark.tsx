@@ -4,7 +4,7 @@ import useDarkMode from 'use-dark-mode'
 const sun = '/media/icons/sun.svg'
 const moon = '/media/icons/moon.svg'
 
-const ToggleDark = () => {
+function ToggleDark() {
   const darkMode = useDarkMode(false)
 
   return (

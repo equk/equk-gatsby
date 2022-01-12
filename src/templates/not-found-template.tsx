@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { Layout, Topbar, Page } from '../components'
 import { useSiteMetadata } from '../hooks'
 
-const NotFoundTemplate = () => {
+function NotFoundTemplate() {
   const { title, subtitle } = useSiteMetadata()
 
   return (

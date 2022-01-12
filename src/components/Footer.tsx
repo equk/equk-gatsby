@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { useSiteMetadata } from '../hooks'
 
-const Footer = () => {
+function Footer() {
   const { copyright, menu } = useSiteMetadata()
 
   return (

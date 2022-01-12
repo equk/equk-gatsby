@@ -6,7 +6,7 @@ interface PostPreviewProps {
   widgetFor: any
 }
 
-const PostPreview = ({ entry, widgetFor }: PostPreviewProps) => {
+function PostPreview({ entry, widgetFor }: PostPreviewProps) {
   const body = widgetFor('body')
   const title = entry.getIn(['data', 'title'])
   const date = entry.getIn(['data', 'date'])

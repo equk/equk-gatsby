@@ -8,28 +8,30 @@ interface PreviewTemplateProps {
   image?: string
 }
 
-const PreviewTemplate = ({ title, date, body, image }: PreviewTemplateProps) => (
-  <div className="container">
-    <article className="content">
-      <header className="post-full-header">
-        <h1 className="content-title">{title}</h1>
-        <div className="post-date">
-          <div className="meta">
-            <p className="meta__date">{moment(date).format('MMM D, YYYY')}</p>
+function PreviewTemplate({ title, date, body, image }: PreviewTemplateProps) {
+  return (
+    <div className="container">
+      <article className="content">
+        <header className="post-full-header">
+          <h1 className="content-title">{title}</h1>
+          <div className="post-date">
+            <div className="meta">
+              <p className="meta__date">{moment(date).format('MMM D, YYYY')}</p>
+            </div>
           </div>
-        </div>
-      </header>
-      {image && (
-        <div className="post-feature-image">
-          <img src={image} alt="" />
-        </div>
-      )}
-      <section className="post-full-content">
-        <div className="content-body">{body}</div>
-      </section>
-    </article>
-  </div>
-)
+        </header>
+        {image && (
+          <div className="post-feature-image">
+            <img src={image} alt="" />
+          </div>
+        )}
+        <section className="post-full-content">
+          <div className="content-body">{body}</div>
+        </section>
+      </article>
+    </div>
+  )
+}
 
 interface PagePreviewTemplateProps {
   body: React.ReactNode
@@ -37,22 +39,24 @@ interface PagePreviewTemplateProps {
   image?: string
 }
 
-export const PagePreviewTemplate = ({ title, body, image }: PagePreviewTemplateProps) => (
-  <div className="container">
-    <article className="content">
-      <header className="page-full-header">
-        <h1 className="content-title">{title}</h1>
-      </header>
-      {image && (
-        <div className="post-feature-image">
-          <img src={image} alt="" />
-        </div>
-      )}
-      <section className="page-full-content">
-        <div className="content-body">{body}</div>
-      </section>
-    </article>
-  </div>
-)
+export function PagePreviewTemplate({ title, body, image }: PagePreviewTemplateProps) {
+  return (
+    <div className="container">
+      <article className="content">
+        <header className="page-full-header">
+          <h1 className="content-title">{title}</h1>
+        </header>
+        {image && (
+          <div className="post-feature-image">
+            <img src={image} alt="" />
+          </div>
+        )}
+        <section className="page-full-content">
+          <div className="content-body">{body}</div>
+        </section>
+      </article>
+    </div>
+  )
+}
 
 export default PreviewTemplate

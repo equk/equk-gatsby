@@ -29,7 +29,7 @@ interface TagTemplateProps {
   }
 }
 
-const TagTemplate = ({ data, pageContext }: TagTemplateProps) => {
+function TagTemplate({ data, pageContext }: TagTemplateProps) {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata()
 
   const { tag, currentPage, prevPagePath, nextPagePath, hasPrevPage, hasNextPage } = pageContext

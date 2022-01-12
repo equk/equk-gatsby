@@ -25,7 +25,7 @@ interface IndexTemplateProps {
   }
 }
 
-const IndexTemplate = ({ data, pageContext }: IndexTemplateProps) => {
+function IndexTemplate({ data, pageContext }: IndexTemplateProps) {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata()
 
   const { currentPage, hasNextPage, hasPrevPage, prevPagePath, nextPagePath } = pageContext

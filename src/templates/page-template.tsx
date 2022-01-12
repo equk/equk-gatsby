@@ -23,7 +23,7 @@ interface PageTemplateProps {
   }
 }
 
-const PageTemplate = ({ data }: PageTemplateProps) => {
+function PageTemplate({ data }: PageTemplateProps) {
   const { title: siteTitle } = useSiteMetadata()
   const { html: pageBody } = data.markdownRemark
   const { image: pageImage } = data.markdownRemark.frontmatter

@@ -6,7 +6,7 @@ interface CommentsProps {
   postSlug?: string
 }
 
-const Comments = ({ postSlug }: CommentsProps) => {
+function Comments({ postSlug }: CommentsProps) {
   const { url } = useSiteMetadata()
   const postURL = `${url}/${postSlug}`
 

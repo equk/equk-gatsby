@@ -4,7 +4,7 @@ import kebabCase from 'lodash/kebabCase'
 import { Layout, Topbar, Footer, Page } from '../components'
 import { useSiteMetadata, useTagsList } from '../hooks'
 
-const TagsListTemplate = () => {
+function TagsListTemplate() {
   const { title, subtitle } = useSiteMetadata()
   const tags = useTagsList()
 

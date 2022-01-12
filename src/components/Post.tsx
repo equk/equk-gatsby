@@ -10,7 +10,7 @@ interface PostProps {
   post: any
 }
 
-const Post = ({ post }: PostProps) => {
+function Post({ post }: PostProps) {
   const { html } = post
   const { tagSlugs, slug } = post.fields
   const { tags, title, date, image } = post.frontmatter

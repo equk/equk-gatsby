@@ -23,7 +23,7 @@ interface PostTemplateProps {
   }
 }
 
-const PostTemplate = ({ data }: PostTemplateProps) => {
+function PostTemplate({ data }: PostTemplateProps) {
   const { title: siteTitle } = useSiteMetadata()
   const { title: postTitle } = data.markdownRemark.frontmatter
   const metaDescription = data.markdownRemark.excerpt

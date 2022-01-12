@@ -7,7 +7,7 @@ interface PagePreviewProps {
   widgetFor: any
 }
 
-const PagePreview = ({ entry, widgetFor }: PagePreviewProps) => {
+function PagePreview({ entry, widgetFor }: PagePreviewProps) {
   const body = widgetFor('body')
   const title = entry.getIn(['data', 'title'])
 

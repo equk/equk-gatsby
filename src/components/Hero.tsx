@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { useSiteMetadata } from '../hooks'
 
-const Hero = () => {
+function Hero() {
   const { title, subtitle } = useSiteMetadata()
   return (
     <section className="hero is-medium is-primary is-bold">
