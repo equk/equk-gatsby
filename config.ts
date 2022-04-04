@@ -10,7 +10,7 @@ export const siteConfig = {
   googleAnalyticsId: '',
   themeColor: '#dd1144',
   backgroundColor: '#ffffff',
-  logo: path.resolve(__dirname, 'src/icon/icon.png'),
+  logo: path.resolve('src/icon/icon.png'),
   menu: [
     {
       label: 'Home',
