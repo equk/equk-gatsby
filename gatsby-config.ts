@@ -1,4 +1,5 @@
 import type { GatsbyConfig } from 'gatsby'
+import path from 'path'
 import { siteConfig } from './config'
 import { postCssPlugins } from './postcss-config'
 
@@ -22,14 +23,14 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/content`,
+        path: path.resolve(`content`),
         name: 'pages',
       },
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        path: `${__dirname}/static/media`,
+        path: path.resolve(`static/media`),
         name: 'media',
       },
     },
@@ -37,7 +38,7 @@ const config: GatsbyConfig = {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'assets',
-        path: `${__dirname}/static`,
+        path: path.resolve(`static`),
       },
     },
     /**
