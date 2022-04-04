@@ -1,9 +1,10 @@
+import type { GatsbyConfig } from 'gatsby'
 import { siteConfig } from './config'
 import { postCssPlugins } from './postcss-config'
 
 const { url, title, subtitle, copyright, disqusShortname, menu, author, backgroundColor, themeColor, logo } = siteConfig
 
-export default {
+const config: GatsbyConfig = {
   siteMetadata: {
     url,
     title,
@@ -256,3 +257,5 @@ export default {
     // 'gatsby-plugin-netlify',
   ],
 }
+
+export default config
