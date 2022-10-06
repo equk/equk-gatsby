@@ -30,29 +30,29 @@ specifiers:
   eslint-plugin-react-hooks: ^4.6.0
   eslint-watch: 8.0.0
   fork-awesome: ^1.2.0
-  gatsby: ^4.11.1
-  gatsby-link: ^4.11.1
+  gatsby: ^4.24.2
+  gatsby-link: ^4.24.0
   gatsby-plugin-advanced-sitemap: ^2.1.0
-  gatsby-plugin-catch-links: ^4.11.0
-  gatsby-plugin-feed: ^4.11.1
-  gatsby-plugin-google-gtag: ^4.11.0
-  gatsby-plugin-image: ^2.11.1
-  gatsby-plugin-manifest: ^4.11.1
-  gatsby-plugin-offline: ^5.11.1
+  gatsby-plugin-catch-links: ^4.24.0
+  gatsby-plugin-feed: ^4.24.0
+  gatsby-plugin-google-gtag: ^4.24.0
+  gatsby-plugin-image: ^2.24.0
+  gatsby-plugin-manifest: ^4.24.0
+  gatsby-plugin-offline: ^5.24.0
   gatsby-plugin-pnpm: ^1.2.10
   gatsby-plugin-purgecss: ^5.0.0
-  gatsby-plugin-react-helmet: ^5.11.0
-  gatsby-plugin-sass: ^5.11.1
-  gatsby-plugin-sharp: ^4.11.1
+  gatsby-plugin-react-helmet: ^5.24.0
+  gatsby-plugin-sass: ^5.24.0
+  gatsby-plugin-sharp: ^4.24.0
   gatsby-plugin-sri: ^1.1.0
-  gatsby-remark-autolink-headers: ^5.11.1
-  gatsby-remark-images: ^6.11.1
-  gatsby-remark-katex: ^6.11.0
-  gatsby-remark-prismjs: ^6.11.0
-  gatsby-remark-responsive-iframe: ^5.11.0
-  gatsby-source-filesystem: ^4.11.1
-  gatsby-transformer-remark: ^5.11.1
-  gatsby-transformer-sharp: ^4.11.0
+  gatsby-remark-autolink-headers: ^5.24.0
+  gatsby-remark-images: ^6.24.0
+  gatsby-remark-katex: ^6.24.0
+  gatsby-remark-prismjs: ^6.24.0
+  gatsby-remark-responsive-iframe: ^5.24.0
+  gatsby-source-filesystem: ^4.24.0
+  gatsby-transformer-remark: ^5.24.0
+  gatsby-transformer-sharp: ^4.24.0
   gh-pages: 4.0.0
   gitalk: ^1.8.0
   husky: ^8.0.1
@@ -2643,7 +2643,7 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.4.6
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: false
 
   /@types/eslint/7.29.0:
@@ -2656,7 +2656,7 @@ packages:
   /@types/eslint/8.4.6:
     resolution: {integrity: sha512-/fqTbjxyFUaYNO7VcW5g+4npmqVACz1bB7RTHYuLj+PRjw9hrCwrUXVQFpChUS0JsyEFvMZ7U/PfmvWgxJhI9g==}
     dependencies:
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
     dev: false
 
@@ -5419,7 +5419,7 @@ packages:
     dev: false
 
   /es6-iterator/2.0.3:
-    resolution: {integrity: sha1-p96IkUGgWpSwhUQDstCg+/qY87c=}
+    resolution: {integrity: sha512-zw4SRzoUkd+cl+ZoE15A9o1oQd920Bb0iOJMQkQhl3jNc03YqVjAhG7scf9C5KWRU/R13Orf588uCC6525o02g==}
     dependencies:
       d: 1.0.1
       es5-ext: 0.10.62
@@ -6535,7 +6535,7 @@ packages:
     dev: false
 
   /fs-exists-cached/1.0.0:
-    resolution: {integrity: sha1-zyVVTKBQ3EmuZla0HeQiWJidy84=}
+    resolution: {integrity: sha512-kSxoARUDn4F2RPXX48UXnaFKwVU7Ivd/6qpzZL29MCDmr9sTvybv4gFCp+qaI4fM9m0z9fgz/yJvi56GAz+BZg==}
     dev: false
 
   /fs-extra/10.0.1:
@@ -13221,7 +13221,7 @@ packages:
     dev: false
 
   /unpipe/1.0.0:
-    resolution: {integrity: sha1-sr9O6FFKrmFltIF4KdIbLvSZBOw=}
+    resolution: {integrity: sha512-pjy2bYhSsufwWlKwPc+l3cN7+wuJlK6uz0YdJEOlQDbl6jo/YlPi4mb8agUkVC8BF7V8NuzeyPNqRksA3hztKQ==}
     engines: {node: '>= 0.8'}
     dev: false
 
