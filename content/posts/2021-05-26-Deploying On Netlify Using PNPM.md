@@ -52,6 +52,46 @@ I thought the easiest & cleanest way was to add `pnpm i` to `netlify.toml`.
   </div>
 </article>
 
+---
+
+### Update 2022
+
+Forcing npm to use `/dev/null` using prefix results in non-zero exit code.
+
+```
+npm ERR! code EEXIST
+npm ERR! syscall mkdir
+npm ERR! path /dev/null
+npm ERR! errno -17
+...
+Build was terminated: Build script returned non-zero exit code: 1
+```
+
+A fix is to force npm to show version info with `--version`.<br />
+This stops other npm operations & just gives cli feedback on version installed.
+
+See the updated `netlify.toml` below.
+
+```toml
+[build.environment]
+  NODE_VERSION = "16"
+  NPM_FLAGS = "--version"
+[build]
+  publish = "public"
+  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
+```
+
+If you check the build log after these changes you should now see
+
+```
+8.15.0
+NPM modules installed
+```
+
+---
+
 The source for the site is available on github.
 
 <a class="github" href="https://github.com/equk/equk-gatsby" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> equk-gatsby</a>
+
+
