@@ -4,7 +4,7 @@ export const siteConfig = {
   url: 'https://equk.co.uk',
   title: "equk's blog",
   subtitle: 'writings of a coder + sysadmin',
-  copyright: '© 2021 equk.co.uk all rights reserved.',
+  copyright: `© ${new Date().getFullYear()} equk.co.uk all rights reserved.`,
   disqusShortname: 'equk',
   postsPerPage: 9,
   googleAnalyticsId: '',
