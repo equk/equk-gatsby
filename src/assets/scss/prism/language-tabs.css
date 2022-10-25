@@ -99,6 +99,11 @@ pre[class="language-lua"]::before {
   background: #000080;
   color: #fff;
 }
+pre[class="language-ts"]::before {
+  content: "ts";
+  background: #3178c6;
+  color: #fff;
+}
 
 pre[class*="language-"]::after {
   content: "";
@@ -156,4 +161,7 @@ pre[class="language-go"]::after {
 }
 pre[class="language-lua"]::after {
   background: #000080;
+}
+pre[class="language-ts"]::after {
+  background: #3178c6;
 }
