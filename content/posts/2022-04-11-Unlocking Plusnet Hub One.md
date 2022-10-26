@@ -72,7 +72,7 @@ I recommend reading through the references below to uderstand the process before
 - [ ] A modified router to allow UBOOT over UART
 - [ ] USB Stick (FAT32)
 - [ ] Serial Interface
-- [ ] TFTP on `192.168.0.2` serving Install Image
+- [ ] TFTP on `192.168.1.2` serving Install Image
 
 Files
 
