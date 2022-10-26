@@ -16,6 +16,10 @@ title: Unlocking BT HomeHub 5a
 slug: unlocking-bt-homehub-5a
 ---
 
+_There is an updated post regarding this process_
+
+<a href="/2022/04/11/unlocking-plusnet-hub-one/" target="_blank" aria-label="read blog post new linux netbook" rel="noopener noreferrer">📝 Apr 11, 2022 - Unlocking Plusnet Hub One</a>
+
 ## Why Do This?
 
 There are various reasons for doing this, the main is to gain more control over the router allowing you to add more features.<br />
