@@ -4,3 +4,4 @@ public/
 npm-debug.log
 .eslintcache
 .gatsby-context.js
+src/gatsby-types.d.ts
