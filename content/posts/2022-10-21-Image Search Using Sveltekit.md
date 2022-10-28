@@ -14,7 +14,7 @@ tags:
 image:
 ---
 
-<p class="text-center"><img class="inline" src="/media/logos/svelte.svg" alt="sveltekit_logo" width="15%"> <img class="inline" src="/media/images/2019/05/unsplash.svg" alt="unsplash-logo" width="15%"></p>
+<p class="text-center"><img class="inline" src="/media/logos/svelte.svg" alt="sveltekit_logo" width="15%"> <img class="inline dark-logo" src="/media/images/2019/05/unsplash.svg" alt="unsplash-logo" width="15%"></p>
 
 This is a example of a sveltekit app which renders an array of images from the unsplash json api utilizing some features of sveltekit.
 
