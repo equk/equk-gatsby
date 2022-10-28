@@ -6,7 +6,7 @@ export const createPostsPages = async (graphql, actions) => {
   const { createPage } = actions
 
   const result = await graphql(`
-    {
+    query postCountQuery {
       allMarkdownRemark(filter: { frontmatter: { template: { ne: "page" }, draft: { ne: true } } }) {
         totalCount
       }
