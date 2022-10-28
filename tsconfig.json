@@ -15,5 +15,6 @@
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true
   },
-  "exclude": ["node_modules", "public", ".cache"]
+  "exclude": ["node_modules", "public", ".cache"],
+  "include": ["./src/**/*", "./gatsby-node.ts", "./gatsby-config.ts", "./node/**/*"]
 }
