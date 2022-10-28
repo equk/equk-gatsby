@@ -42,7 +42,7 @@ export const createPages = async ({ graphql, actions }) => {
    * Query for Posts & Pages
    */
   const result = await graphql(`
-    {
+    query nonDraftQuery {
       allMarkdownRemark(filter: { frontmatter: { draft: { ne: true } } }) {
         edges {
           node {
