@@ -16,7 +16,7 @@ tags:
 image:
 ---
 
-<p class="text-center"><img class="inline" src="/media/images/nextjs-logo.svg" alt="nextjs_logo" width="30%"><br/><img class="inline" src="/media/images/2019/05/unsplash.svg" alt="unsplash-logo" width="13%"></p>
+<p class="text-center"><img class="inline dark-logo" src="/media/images/nextjs-logo.svg" alt="nextjs_logo" width="30%"><br/><img class="inline dark-logo" src="/media/images/2019/05/unsplash.svg" alt="unsplash-logo" width="13%"></p>
 
 This is a working example of a next.js app using state to render an array of images utilizing the virtual DOM.<br/>
 The project also uses the `fetch()` api which provides asynchronous requests with the use of promises.<br/>
