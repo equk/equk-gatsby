@@ -8,7 +8,7 @@ export const createTagsPages = async (graphql, actions) => {
   const { postsPerPage } = siteConfig
 
   const result = await graphql(`
-    {
+    query tagCountQuery {
       allMarkdownRemark(filter: { frontmatter: { template: { ne: "page" }, draft: { ne: true } } }) {
         group(field: frontmatter___tags) {
           fieldValue
