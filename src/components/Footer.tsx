@@ -3,7 +3,9 @@ import { Link } from 'gatsby'
 import { useSiteMetadata } from '../hooks'
 
 function Footer() {
-  const { copyright, menu } = useSiteMetadata()
+  const { copyright, menu, author } = useSiteMetadata()
+  const TwitterLink = `https://twitter.com/${author.contacts.twitter}`
+  const GithubLink = `https://github.com/${author.contacts.github}`
 
   return (
     <footer>
@@ -21,15 +23,10 @@ function Footer() {
               ))}
             </div>
             <div className="footer-social">
-              <a
-                href="https://twitter.com/equilibriumuk"
-                target="_blank"
-                aria-label="go to twitter"
-                rel="noopener noreferrer"
-              >
+              <a href={TwitterLink} target="_blank" aria-label="go to twitter" rel="noopener noreferrer">
                 <i className="fa fa-twitter" />
               </a>
-              <a href="https://github.com/equk" target="_blank" aria-label="go to github" rel="noopener noreferrer">
+              <a href={GithubLink} target="_blank" aria-label="go to github" rel="noopener noreferrer">
                 <i className="fa fa-github" />
               </a>
             </div>
