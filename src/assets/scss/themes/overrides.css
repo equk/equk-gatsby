@@ -209,3 +209,7 @@ a.github:hover {
 .dark-mode img.dark-logo {
     filter: invert(1);
 }
+
+.hidden {
+    display: none;
+}
