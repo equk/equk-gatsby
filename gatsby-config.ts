@@ -74,20 +74,16 @@ const config: GatsbyConfig = {
             query: `
               {
                 allMarkdownRemark(
-                  limit: 1000,
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                  filter: { frontmatter: { template: { ne: "page" }, draft: { ne: true } } }
+                  limit: 1000
+                  sort: {frontmatter: {date: DESC}}
+                  filter: {frontmatter: {template: {ne: "page"}, draft: {ne: true}}}
                 ) {
                   edges {
                     node {
                       fields {
                         slug
                       }
-                      excerpt(
-                        format: PLAIN
-                        pruneLength: 450
-                        truncate: false
-                      )
+                      excerpt(format: PLAIN, pruneLength: 450, truncate: false)
                       frontmatter {
                         title
                         date
