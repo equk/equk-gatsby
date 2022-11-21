@@ -10,7 +10,7 @@ export const createTagsPages = async (graphql, actions) => {
   const result = await graphql(`
     query tagCountQuery {
       allMarkdownRemark(filter: { frontmatter: { template: { ne: "page" }, draft: { ne: true } } }) {
-        group(field: frontmatter___tags) {
+        group(field: { frontmatter: { tags: SELECT } }) {
           fieldValue
           totalCount
         }
