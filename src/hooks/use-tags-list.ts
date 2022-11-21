@@ -19,7 +19,7 @@ const useTagsList = () => {
     graphql`
       query TagsListQuery {
         allMarkdownRemark(filter: { frontmatter: { template: { ne: "pages" }, draft: { ne: true } } }) {
-          group(field: frontmatter___tags) {
+          group(field: { frontmatter: { tags: SELECT } }) {
             fieldValue
             totalCount
           }
