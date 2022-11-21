@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { useSiteMetadata } from '../hooks'
 
 interface LayoutProps {
   children?: React.ReactNode
@@ -8,6 +9,8 @@ interface LayoutProps {
 }
 
 function Layout({ children, title, description }: LayoutProps) {
+  const { author } = useSiteMetadata()
+  const TwitterCreator = `@${author.contacts.twitter}`
   return (
     <div className="page-wrapper">
       <Helmet>
@@ -18,7 +21,7 @@ function Layout({ children, title, description }: LayoutProps) {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:site" content="@equk_co_uk" />
-        <meta name="twitter:creator" content="@equilibriumuk" />
+        <meta name="twitter:creator" content={TwitterCreator} />
         <meta property="og:description" content={description} />
         <meta property="og:title" content={title} />
         <meta property="og:site_name" content="equk.co.uk" />

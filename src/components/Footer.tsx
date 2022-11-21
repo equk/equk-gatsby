@@ -1,9 +1,12 @@
+/* eslint-disable react/no-invalid-html-attribute */
 import React from 'react'
 import { Link } from 'gatsby'
 import { useSiteMetadata } from '../hooks'
 
 function Footer() {
-  const { copyright, menu } = useSiteMetadata()
+  const { copyright, menu, author } = useSiteMetadata()
+  const GithubLink = `https://github.com/${author.contacts.github}`
+  const MastodonLink = `https://${author.contacts.mastodon_url}`
 
   return (
     <footer>
@@ -21,15 +24,10 @@ function Footer() {
               ))}
             </div>
             <div className="footer-social">
-              <a
-                href="https://twitter.com/equilibriumuk"
-                target="_blank"
-                aria-label="go to twitter"
-                rel="noopener noreferrer"
-              >
-                <i className="fa fa-twitter" />
+              <a href={MastodonLink} target="_blank" aria-label="go to mastodon" rel="me noopener noreferrer">
+                <i className="fa fa-mastodon" />
               </a>
-              <a href="https://github.com/equk" target="_blank" aria-label="go to github" rel="noopener noreferrer">
+              <a href={GithubLink} target="_blank" aria-label="go to github" rel="noopener noreferrer">
                 <i className="fa fa-github" />
               </a>
             </div>

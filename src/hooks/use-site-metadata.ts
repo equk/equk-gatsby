@@ -31,6 +31,8 @@ const useSiteMetadata = () => {
                 github
                 rss
                 vkontakte
+                mastodon
+                mastodon_url
               }
             }
             menu {

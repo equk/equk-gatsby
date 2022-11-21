@@ -34,6 +34,8 @@ export const siteConfig = {
       telegram: '#',
       twitter: 'equilibriumuk',
       github: 'equk',
+      mastodon: '@equilibriumuk@octodon.social',
+      mastodon_url: 'octodon.social/@equilibriumuk',
       rss: '#',
       vkontakte: '#',
     },
