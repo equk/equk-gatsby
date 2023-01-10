@@ -11,7 +11,7 @@ overrides:
   postcss@<7.0.36: ^7.0.36
   got@<11.8.5: ^11.8.5
   minimatch@<3.0.5: ^3.0.5
-  loader-utils@<2.0.3: ^2.0.3
+  loader-utils@<2.0.4: ^2.0.4
 
 specifiers:
   '@types/node': ^18.11.18
@@ -3320,7 +3320,7 @@ packages:
     resolution: {integrity: sha512-YBrGyT2/uVQ/c6Rr+t6ZJXniY03YtHGMJQYal368burRGYKqhx9qGTWqcBU5s1CwYY9E/ri63RYyG1IacMZtqw==}
     engines: {node: '>=8.9'}
     dependencies:
-      loader-utils: 2.0.3
+      loader-utils: 2.0.4
       regex-parser: 2.2.11
     dev: false
 
@@ -11863,7 +11863,7 @@ packages:
       compose-function: 3.0.3
       convert-source-map: 1.7.0
       es6-iterator: 2.0.3
-      loader-utils: 2.0.3
+      loader-utils: 2.0.4
       postcss: 7.0.36
       rework: 1.0.1
       rework-visit: 1.0.0
