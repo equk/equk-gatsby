@@ -12,7 +12,7 @@ overrides:
   got@<11.8.5: ^11.8.5
   minimatch@<3.0.5: ^3.0.5
   loader-utils@<2.0.4: ^2.0.4
-  json5@<2.0.4: ^2.0.4
+  json5@<2.2.2: ^2.2.2
 
 specifiers:
   '@types/node': ^18.11.18
