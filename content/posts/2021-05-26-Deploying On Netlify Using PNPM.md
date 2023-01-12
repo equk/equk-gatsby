@@ -16,6 +16,18 @@ image:
 
 <p class="text-center"><img src="/media/logos/netlify.svg" alt="netlify logo" width="150px" class="inline"> <img src="/media/logos/pnpm.svg" alt="pnpm logo" width="150px" class="inline"></p>
 
+<article class="message is-info">
+  <div class="message-body">
+    <p>🎉 Netlify now supports pnpm using corepack (<a href="#update-oct-2022" aria-label="update oct 2022 permalink">more info below</a>)</p>
+  </div>
+</article>
+
+<article class="message is-danger">
+  <div class="message-body">
+    <p>⚠️ No workarounds are required & you can now use <code class="language-text">pnpm run build</code> directly</p>
+  </div>
+</article>
+
 After changing this website to pnpm I noticed netlify don't seem to officially support it.
 
 There are a few issue tickets relating to this & the general idea seems to be to disable npm install then run pnpm install to install dependencies on a prebuild script.
@@ -86,6 +98,22 @@ If you check the build log after these changes you should now see
 ```
 8.15.0
 NPM modules installed
+```
+
+### Update Oct 2022
+
+Netlify now supports pnpm using corepack.
+
+Update `netlify.toml` with `pnpm run build`
+
+```diff
+ [build.environment]
+   NODE_VERSION = "16"
+-  NPM_FLAGS = "--version"
+ [build]
+-  publish = "public"
+-  command = "npx pnpm i --store=node_modules/.pnpm-store && npx pnpm run build"
++  command = "pnpm run build"
 ```
 
 ---
