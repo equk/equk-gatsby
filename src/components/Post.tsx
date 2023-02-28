@@ -29,7 +29,7 @@ function Post({ post }: PostProps) {
         </header>
         {image && (
           <div className="post-feature-image">
-            <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt="" />
+            <GatsbyImage image={image.childImageSharp.gatsbyImageData} objectFit="contain" alt="" />
           </div>
         )}
         <section className="post-full-content">

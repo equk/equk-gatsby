@@ -53,7 +53,7 @@ export const query = graphql`
         title
         image {
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
+            gatsbyImageData(layout: FULL_WIDTH, aspectRatio: 2.68)
           }
         }
       }

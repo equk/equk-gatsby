@@ -16,7 +16,7 @@ function Page({ title, children, image }: PageProps) {
         </header>
         {image && (
           <div className="post-feature-image">
-            <GatsbyImage image={image.childImageSharp.gatsbyImageData} alt="" />
+            <GatsbyImage image={image.childImageSharp.gatsbyImageData} objectFit="contain" alt="" />
           </div>
         )}
         <section className="page-full-content">
