@@ -2,7 +2,7 @@
 @import "normalize-scss";
 @import "fonts";
 @import "variables";
-@import "prism/prism-tomorrow.css";
+@import "prism/prism-nord.css";
 @import "prism/language-tabs.css";
 @import "gitalk/gitalk.css";
 @import "fa/fork-awesome.scss";
@@ -119,7 +119,7 @@ article.content {
 
 :not(pre) > code,
 :not(pre) > code.language-text {
-  font-family: "Fira Mono", monospace !important;
+  font-family: "Fira Code", Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
   font-size: 0.9em !important;
   line-height: 20px !important;
   background-color: lighten($primary, 52%) !important;
@@ -131,7 +131,7 @@ article.content {
 // code font
 
 pre {
-  font-family: "Fira Mono", monospace;
+  font-family: "Fira Code", Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: 0.9em;
   padding: 1px;
   white-space: pre;
