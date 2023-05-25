@@ -82,6 +82,8 @@ nav a {
   }
 
   main .post-content,
+  main .post-footer,
+  main .post-comments,
   main .post-list,
   main .pagination {
     @apply mx-auto max-w-4xl;
@@ -181,6 +183,265 @@ footer nav a {
 
 .dark .pagination p {
   color: rgb(51 65 85);
+}
+
+/*
+  -----------------------------------------
+  Post Styles
+  -----------------------------------------
+ */
+
+/* Post Content */
+
+main .post-content {
+  grid-template-rows: auto 1fr
+}
+
+/* Blockquote */
+
+main blockquote {
+  background-color: #eef9ff;
+  border-left: 5px solid #38bdf8;
+  padding: 1.25em 2.25em;
+  margin: 0.5em 0;
+  font-style: normal;
+  position: relative;
+}
+
+main blockquote p {
+  margin: 0;
+}
+
+.dark main blockquote {
+  background-color: #334;
+}
+
+main blockquote::before {
+  font-family: Arial, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  content: "\201C";
+  color: #7fd1fe;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+
+main blockquote::after {
+  content: '';
+}
+
+/* Github Button */
+
+a.github {
+  @apply py-2 px-4 border-gray-200 border rounded;
+}
+
+a.github {
+  color: #111;
+  background-color: #eff3f6;
+  background-image: -webkit-linear-gradient(top, #fafbfc, #eff3f6 90%);
+  background-image: -moz-linear-gradient(top, #fafbfc, #eff3f6 90%);
+  background-image: linear-gradient(180deg, #fafbfc, #eff3f6 90%);
+  background-position: -1px -1px;
+  background-repeat: repeat-x;
+  background-size: 110% 110%;
+}
+
+a.github i {
+  font: normal normal normal 1.4rem/1 ForkAwesome;
+  padding-right: 5px;
+}
+
+
+a.github:focus,
+a.github:hover {
+  color: #111;
+  background-color: #e6ebf1;
+  background-image: -webkit-linear-gradient(top, #f0f3f6, #e6ebf1 90%);
+  background-image: -moz-linear-gradient(top, #f0f3f6, #e6ebf1 90%);
+  background-image: linear-gradient(180deg, #f0f3f6, #e6ebf1 90%);
+  border-color: #a5a9ac;
+  border-color: rgba(27, 31, 35, 0.35);
+}
+
+/* Language Circle */
+
+.language-color {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  margin-left: 0.3em;
+}
+
+.language-color.js {
+  background-color: #f1e05a;
+}
+
+.language-color.ps {
+  background-color: #012456;
+}
+
+.language-color.py {
+  background-color: #3572A5;
+}
+
+.language-color.go {
+  background-color: #00ADD8;
+}
+
+.language-color.php {
+  background-color: #4F5D95;
+}
+
+.language-color.sh {
+  background-color: #89e051;
+}
+
+.language-color.c {
+  background-color: #555555;
+}
+
+.language-color.rust {
+  background-color: #dea584;
+}
+
+.language-color.ts {
+  background-color: #2b7489;
+}
+
+/* Color Highlight */
+
+.git-fork {
+  color: #6f42c1;
+}
+
+.yt-red {
+  color: #ff0000;
+}
+
+/* Invert Dark Images in Dark Mode */
+
+.dark img.dark-logo {
+  filter: invert(1);
+}
+
+/* Alignment Helpers */
+
+.post-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-content img.inline {
+  display: inline;
+}
+
+/* Message Blocks */
+
+.message-header {
+  @apply bg-black text-white font-bold rounded-t px-4 py-2;
+  background-color: #1a252f;
+  color: #fff;
+  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.message-header p,
+.message-body p {
+  margin: 0;
+}
+
+.message-body {
+  @apply border border-t-0 border-gray-400 rounded-b bg-gray-100 px-6 py-6 text-gray-700;
+  margin-bottom: 1em;
+}
+
+.message.is-warning>div {
+  @apply border-0 border-yellow-200 border-l-4 rounded bg-yellow-50 text-yellow-600;
+}
+
+.message.is-danger>div {
+  @apply border-0 border-red-400 border-l-4 rounded bg-red-50 text-red-600;
+}
+
+.message.is-info>div {
+  @apply border-0 border-sky-400 border-l-4 rounded bg-sky-50 text-sky-600;
+}
+
+.message-body i {
+  font-size: 1.2em;
+  padding: 0 10px;
+}
+
+/* Task Lists */
+
+li.task-list-item {
+  list-style: none;
+  margin-left: 0px;
+}
+
+/* inline code */
+
+:not(pre)>code {
+  background-color: #eef9ff !important;
+  border-radius: 0.3125rem !important;
+  color: #0282c9 !important;
+  padding: 0.2rem 0.4rem !important;
+  font-weight: normal !important;
+}
+
+.dark :not(pre)>code {
+  background-color: #011627 !important;
+  color: #cc99cd !important;
+}
+
+/* Wide Elements */
+
+@media only screen and (min-width: 960px) {
+
+  .wide-img,
+  blockquote,
+  pre,
+  article.message {
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px);
+    max-width: none !important;
+    width: 1016px;
+  }
+}
+
+.wide-img {
+  border: 1px solid #e5e7eb;
+}
+
+/* Button */
+
+.btn {
+  @apply py-2 px-4 rounded;
+}
+
+/* Tags List */
+
+.post-tags a {
+  display: inline-block;
+  margin: 0 .625rem 0 0
+}
+
+.post-tags a:before {
+  content: "\0023"
+}
+
+.taglist li {
+  display: inline-block;
+  list-style: none
+}
+
+ul.taglist {
+  margin: 0;
+  padding: 0
 }
 
 /*
