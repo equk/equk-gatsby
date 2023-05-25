@@ -231,3 +231,24 @@ li.task-list-item {
 .btn {
   @apply py-2 px-4 rounded;
 }
+
+/* Tags List */
+
+.post-tags a {
+  display: inline-block;
+  margin: 0 .625rem 0 0
+}
+
+.post-tags a:before {
+  content: "\0023"
+}
+
+.taglist li {
+  display: inline-block;
+  list-style: none
+}
+
+ul.taglist {
+  margin: 0;
+  padding: 0
+}
