@@ -1,7 +1,6 @@
 import type { GatsbyConfig } from 'gatsby'
 import path from 'path'
 import { siteConfig } from './config'
-import { postCssPlugins } from './postcss-config'
 
 const { url, title, subtitle, copyright, disqusShortname, menu, author, backgroundColor, themeColor, logo } = siteConfig
 
@@ -192,52 +191,6 @@ const config: GatsbyConfig = {
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
-    /**
-     *  SASS Style Plugins
-     */
-    {
-      resolve: 'gatsby-plugin-sass',
-      options: {
-        postCssPlugins: [...postCssPlugins],
-        cssLoaderOptions: {
-          camelCase: false,
-        },
-      },
-    },
-    /**
-     *  Remove Unused Styles On Build
-     */
-    {
-      resolve: 'gatsby-plugin-purgecss',
-      options: {
-        ignore: ['prism/', 'fa/', 'gitalk/', 'themes/'],
-        whitelistPatterns: [
-          /fa/,
-          /button/,
-          /language/,
-          /gatsby/,
-          /git/,
-          /width-full/,
-          /image-card/,
-          /message/,
-          /is-warning/,
-          /is-danger/,
-          /is-success/,
-          /is-info/,
-          /is-primary/,
-          /is-link/,
-          /columns/,
-          /column/,
-          /dark-mode/,
-          /light-mode/,
-          /box/,
-          /is-128x128/,
-          /media-left/,
-          /media-content/,
-          /is-dark/,
-        ],
-      },
-    },
     /**
      *  Netlify CMS Plugins
      */
