@@ -82,7 +82,8 @@ nav a {
   }
 
   main .post-content,
-  main .post-list {
+  main .post-list,
+  main .pagination {
     @apply mx-auto max-w-4xl;
   }
 
@@ -173,6 +174,146 @@ footer nav a {
   color: rgb(51 65 85);
 }
 
-/* Import Typography */
+/*
+  -----------------------------------------
+  Typography Styles
+  -----------------------------------------
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  font-family: Open Sans, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
 
-@import 'typography.css';
+p,
+ul,
+ol,
+pre {
+  margin: 1em 0;
+  line-height: 1.5rem;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding-left: 1em;
+  font-style: italic;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.25em;
+}
+
+h2 {
+  margin: 1.75em 0 0.5em;
+  font-size: 1.75em;
+}
+
+h3 {
+  margin: 1.5em 0 0.5em;
+  font-size: 1.375em;
+}
+
+h4 {
+  margin: 1em 0;
+  font-size: 1.125em;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+figure,
+picture {
+  margin: 1em 0;
+}
+
+figcaption {
+  font-size: 0.875em;
+}
+
+code {
+  font-size: 0.875em;
+  font-weight: 600;
+}
+
+pre {
+  padding: 1.25rem 1.5rem;
+  overflow-x: auto;
+  border-radius: 0.375rem;
+}
+
+pre,
+code {
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  hyphens: none;
+  background: transparent;
+}
+
+pre code {
+  font-weight: inherit;
+}
+
+ol,
+ul {
+  padding-left: 1.25em;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+hr {
+  margin: 2em 0;
+}
+
+table {
+  display: block;
+  margin: 1em 0;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+td,
+th {
+  padding: 0.625em 1em;
+}
+
+abbr {
+  cursor: help;
+}
+
+kbd {
+  border: 1px solid;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875em;
+  border-radius: 0.25rem;
+}
+
+details {
+  margin: 1em 0;
+  padding: 1.25rem 1.5rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+main ul {
+  list-style-type: disc;
+}
