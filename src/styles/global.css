@@ -46,8 +46,8 @@ nav a {
   :root {
     color-scheme: light;
     --theme-bg: #fff;
-    --theme-link: #0282c9;
-    --theme-hover: #d14;
+    --theme-link: #d14;
+    --theme-hover: #0282c9;
     --theme-text: #2c3e50;
     --theme-accent: #cc2a42;
     --theme-accent-2: #111;
@@ -100,6 +100,15 @@ nav a {
   a:hover {
     color: var(--theme-hover);
     transition: color 0.7s ease;
+  }
+
+  main a.post-title-link:hover,
+  main a.post-title-link:focus {
+    color: var(--theme-link);
+  }
+
+  main a.post-title-link {
+    color: var(--theme-text);
   }
 }
 
