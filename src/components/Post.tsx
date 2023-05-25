@@ -19,21 +19,38 @@ function Post({ post }: PostProps) {
   return (
     <main>
       <article className="content">
-        <header className="post-full-header">
-          <h1 className="content-title">{title}</h1>
-          <div className="post-date">
-            <div className="meta">
-              <p className="meta__date">{moment(date).format('MMM D, YYYY')}</p>
-            </div>
+        <header className="pb-16 pt-24">
+          <div className="space-y-4">
+            <h1 className="text-center text-5xl font-bold dark:text-gray-100">{title}</h1>
+            <dl>
+              <div>
+                <dl>
+                  <div>
+                    <div className="text-center leading-6 text-gray-500 dark:text-gray-400">
+                      {date && <time dateTime={moment(date).toISOString()}>{moment(date).format('MMM D, YYYY')}</time>}
+                    </div>
+                  </div>
+                </dl>
+              </div>
+            </dl>
           </div>
         </header>
+
         {image && (
-          <div className="post-feature-image">
-            <GatsbyImage image={image.childImageSharp.gatsbyImageData} objectFit="contain" alt="" />
+          <div className="hero-image">
+            <div className="hero-w">
+              <GatsbyImage image={image.childImageSharp.gatsbyImageData} objectFit="contain" alt="" />
+            </div>
           </div>
         )}
         <section className="post-full-content">
-          <div className="content-body" dangerouslySetInnerHTML={{ __html: html }} />
+          <div className="post-content">
+            <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
+              <div className="prose lg:prose-lg mx-auto max-w-none">
+                <div className="content-body" dangerouslySetInnerHTML={{ __html: html }} />
+              </div>
+            </div>
+          </div>
           <div className="post-footer">
             <div className="author">
               <div className="authorimage">
