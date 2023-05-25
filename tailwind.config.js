@@ -5,6 +5,15 @@ const { fontFamily } = require('tailwindcss/defaultTheme')
 module.exports = {
   content: ['./src/templates/**/*.{js,jsx,ts,tsx}', './src/components/**/*.{js,jsx,ts,tsx}', './content/**/*.md'],
   darkMode: 'class',
+  corePlugins: {
+    touchAction: false,
+    ringOffsetWidth: false,
+    ringOffsetColor: false,
+    scrollSnapType: false,
+    borderOpacity: false,
+    textOpacity: false,
+    fontVariantNumeric: false,
+  },
   theme: {
     extend: {
       colors: {
