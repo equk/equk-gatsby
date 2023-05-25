@@ -184,3 +184,50 @@ a.github:hover {
   font-size: 1.2em;
   padding: 0 10px;
 }
+
+/* Task Lists */
+
+li.task-list-item {
+  list-style: none;
+  margin-left: 0px;
+}
+
+/* inline code */
+
+:not(pre)>code {
+  background-color: #eef9ff !important;
+  border-radius: 0.3125rem !important;
+  color: #0282c9 !important;
+  padding: 0.2rem 0.4rem !important;
+  font-weight: normal !important;
+}
+
+.dark :not(pre)>code {
+  background-color: #011627 !important;
+  color: #cc99cd !important;
+}
+
+/* Wide Elements */
+
+@media only screen and (min-width: 960px) {
+
+  .wide-img,
+  blockquote,
+  pre,
+  article.message {
+    -webkit-transform: translateX(-60px);
+    transform: translateX(-60px);
+    max-width: none !important;
+    width: 1016px;
+  }
+}
+
+.wide-img {
+  border: 1px solid #e5e7eb;
+}
+
+/* Button */
+
+.btn {
+  @apply py-2 px-4 rounded;
+}
