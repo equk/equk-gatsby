@@ -1,3 +1,73 @@
+/*
+  -----------------------------------------
+  Global CSS Styles
+  -----------------------------------------
+  equk gatsby blog
+  https://github.com/equk/
+ */
+
+/* TailwindCSS Styles */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    --theme-bg: #fff;
+    --theme-link: #0282c9;
+    --theme-hover: #d14;
+    --theme-text: #2c3e50;
+    --theme-accent: #cc2a42;
+    --theme-accent-2: #111;
+    --theme-quote: #cc2a42;
+    --theme-menu-bg: rgb(250 250 250 / 0.85);
+    --theme-footer-bg: #e5e7eb;
+  }
+
+  :root.dark {
+    color-scheme: dark;
+    --theme-bg: #080d17;
+    --theme-link: #0282c9;
+    --theme-hover: #d14;
+    --theme-text: #efefef;
+    --theme-accent: #0282c9;
+    --theme-accent-2: #eee;
+    --theme-quote: #0282c9;
+    --theme-menu-bg: rgb(29 31 33 / 0.85);
+    --theme-footer-bg: #020204;
+  }
+
+  html {
+    @apply h-full scroll-smooth;
+  }
+
+  html body {
+    @apply bg-bgColor font-normal text-textColor antialiased;
+  }
+
+  main {
+    @apply mx-auto;
+  }
+
+  main .post-content,
+  main .post-list {
+    @apply mx-auto max-w-4xl;
+  }
+
+  main .post-content,
+  main .hero-image {
+    @apply pb-8;
+  }
+
+  a {
+    color: var(--theme-link);
+    transition: color 0.7s ease;
+  }
+
+  a:hover {
+    color: var(--theme-hover);
+    transition: color 0.7s ease;
+  }
+}
