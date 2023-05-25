@@ -6,6 +6,35 @@
   https://github.com/equk/
  */
 
+/* imports */
+
+@import 'prism/prism-nord.css';
+@import 'prism/language-tabs.css';
+@import 'fa/fork-awesome.css';
+@import 'fonts.css';
+@import 'posts.css';
+
+:not(pre)>code[class*='language-'],
+code,
+pre,
+pre[class*='language-'] {
+  background: #011627;
+}
+
+/* Base Styles */
+
+body {
+  margin: auto;
+  padding: 0;
+  text-align: left;
+  font-size: 1.12rem;
+  line-height: 1.5rem;
+}
+
+nav a {
+  margin-right: 10px;
+}
+
 /* TailwindCSS Styles */
 
 @tailwind base;
