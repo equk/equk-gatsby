@@ -14,7 +14,7 @@ function Hero() {
           <div className="flex h-full items-center justify-center">
             <div className="px-6 text-center text-white md:px-12">
               <h1 className="text-5xl font-bold uppercase tracking-tight md:text-6xl">
-                <Link className="title-link" to="/">
+                <Link className="title-link text-white" to="/">
                   {title}
                 </Link>
               </h1>
