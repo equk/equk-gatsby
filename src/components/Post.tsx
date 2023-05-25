@@ -17,7 +17,7 @@ function Post({ post }: PostProps) {
   const { author } = useSiteMetadata()
 
   return (
-    <div className="container">
+    <main>
       <article className="content">
         <header className="post-full-header">
           <h1 className="content-title">{title}</h1>
@@ -60,7 +60,7 @@ function Post({ post }: PostProps) {
       <div className="post-comments">
         <Comments postSlug={slug} />
       </div>
-    </div>
+    </main>
   )
 }
 
