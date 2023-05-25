@@ -192,6 +192,10 @@ const config: GatsbyConfig = {
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',
     /**
+     *  Gatsby CSS Plugins
+     */
+    'gatsby-plugin-postcss',
+    /**
      *  Netlify CMS Plugins
      */
     // disabling plugin and am using prebuilt netlify-cms
