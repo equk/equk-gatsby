@@ -10,22 +10,21 @@ interface PaginationProps {
 
 function Pagination({ prevPagePath, nextPagePath, hasNextPage, hasPrevPage }: PaginationProps) {
   return (
-    <nav className="pagination" role="navigation">
-      <div>
+    <div className="pagination flex justify-center border-t-2 border-slate-200 px-3 py-2 dark:border-slate-700/40">
+      <nav className="pagination flex items-center gap-x-8" role="navigation">
         {hasPrevPage && (
-          <Link to={prevPagePath} rel="prev">
+          <Link to={prevPagePath} rel="prev" className="mr-auto py-2 sm:hover:text-accent">
             Previous
           </Link>
         )}
-      </div>
-      <div>
+
         {hasNextPage && (
-          <Link to={nextPagePath} rel="next">
-            Next Page
+          <Link to={nextPagePath} rel="next" className="mr-auto py-2 sm:hover:text-accent">
+            Next
           </Link>
         )}
-      </div>
-    </nav>
+      </nav>
+    </div>
   )
 }
 
