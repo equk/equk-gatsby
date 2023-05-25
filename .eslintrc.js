@@ -51,6 +51,7 @@ module.exports = {
     // Imports
     'import/prefer-default-export': 0,
     'import/extensions': 0,
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
     // Typescript
     // 'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
