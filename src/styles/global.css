@@ -11,8 +11,8 @@
 @import 'prism/prism-nord.css';
 @import 'prism/language-tabs.css';
 @import 'fa/fork-awesome.css';
+@import 'gitalk/gitalk.css';
 @import 'fonts.css';
-@import 'posts.css';
 @import 'hero.css';
 
 :not(pre)>code[class*='language-'],
