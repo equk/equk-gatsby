@@ -9,7 +9,7 @@ interface PageProps {
 
 function Page({ title, children, image }: PageProps) {
   return (
-    <div className="container">
+    <main>
       <article className="content">
         <header className="page-full-header">
           <h1 className="content-title">{title}</h1>
@@ -23,7 +23,7 @@ function Page({ title, children, image }: PageProps) {
           <div className="content-body">{children}</div>
         </section>
       </article>
-    </div>
+    </main>
   )
 }
 
