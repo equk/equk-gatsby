@@ -13,7 +13,7 @@ function ToggleDark() {
 
   return (
     <div className="navbar-item dark-toggle">
-      <button className="toggle-darkmode" onClick={darkMode.toggle} type="submit">
+      <button className="toggle-darkmode inline-flex items-center p-2.5" onClick={darkMode.toggle} type="submit">
         {darkMode.value ? (
           <img src={sun} className="sun-icon" alt="sun-icon" width="25px" height="25px" />
         ) : (
