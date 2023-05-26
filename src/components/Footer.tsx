@@ -4,10 +4,9 @@ import { Link } from 'gatsby'
 import { useSiteMetadata } from '../hooks'
 
 function Footer() {
-  const { menu, author } = useSiteMetadata()
+  const { menu, author, copyright } = useSiteMetadata()
   const GithubLink = `https://github.com/${author.contacts.github}`
   const MastodonLink = `https://${author.contacts.mastodon_url}`
-  const year = new Date().getFullYear()
 
   return (
     <footer className="border-t border-gray-300 text-gray-800 dark:border-gray-900 dark:text-gray-100">
@@ -40,11 +39,9 @@ function Footer() {
       </div>
       <div>
         <div className="mx-auto grid max-w-6xl border-t border-gray-300 p-1 dark:border-gray-900 md:grid-cols-2">
-          <div className="copyright text-center text-sm md:text-left">
-            Copyright &copy; {year} equk.co.uk all rights reserved.
-          </div>
+          <div className="copyright text-center text-sm md:text-left">{copyright}</div>
           <div className="powered-by hidden text-right text-sm md:block">
-            Powered by{' '}
+            Powered by
             <a
               href="https://reactjs.org/"
               title="React"
