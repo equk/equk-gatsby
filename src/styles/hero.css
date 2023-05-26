@@ -107,6 +107,11 @@ main .hero-w {
   box-shadow: 5px 5px 20px rgba(39, 44, 49, .6), 1px 3px 8px rgba(39, 44, 49, .3);
 }
 
+main .hero-w {
+  -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, .6), 1px 3px 8px rgba(0, 0, 0, .3);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .6), 1px 3px 8px rgba(0, 0, 0, .3);
+}
+
 main .hero-w .gatsby-image-wrapper {
   background-color: #333;
 }
