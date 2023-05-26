@@ -11,11 +11,13 @@ function Page({ title, children, image }: PageProps) {
   return (
     <main>
       <article className="content">
-        <header className="pb-16 pt-24">
-          <div className="space-y-4">
-            <h1 className="text-center text-5xl font-bold dark:text-gray-100">{title}</h1>
-          </div>
-        </header>
+        {title && (
+          <header className="pb-16 pt-24">
+            <div className="space-y-4">
+              <h1 className="text-center text-5xl font-bold dark:text-gray-100">{title}</h1>
+            </div>
+          </header>
+        )}
 
         {image && (
           <div className="hero-image">
