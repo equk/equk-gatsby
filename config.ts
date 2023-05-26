@@ -6,7 +6,7 @@ export const siteConfig = {
   subtitle: 'writings of a coder + sysadmin',
   copyright: `© ${new Date().getFullYear()} equk.co.uk all rights reserved.`,
   disqusShortname: 'equk',
-  postsPerPage: 9,
+  postsPerPage: 6,
   googleAnalyticsId: '',
   themeColor: '#dd1144',
   backgroundColor: '#ffffff',
