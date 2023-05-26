@@ -12,17 +12,17 @@ function Pagination({ prevPagePath, nextPagePath, hasNextPage, hasPrevPage }: Pa
   return (
     <div className="pagination flex justify-center border-t-2 border-slate-200 px-3 py-2 dark:border-slate-700/40">
       <nav className="pagination flex items-center gap-x-8" role="navigation">
-        {hasPrevPage && (
+        {(hasPrevPage && (
           <Link to={prevPagePath} rel="prev" className="mr-auto py-2 sm:hover:text-accent">
             Previous
           </Link>
-        )}
+        )) || <p>Previous</p>}
 
-        {hasNextPage && (
+        {(hasNextPage && (
           <Link to={nextPagePath} rel="next" className="mr-auto py-2 sm:hover:text-accent">
             Next
           </Link>
-        )}
+        )) || <p>Next</p>}
       </nav>
     </div>
   )
