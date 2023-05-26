@@ -5,7 +5,11 @@ const sun = '/media/icons/sun.svg'
 const moon = '/media/icons/moon.svg'
 
 function ToggleDark() {
-  const darkMode = useDarkMode(false)
+  const darkMode = useDarkMode(false, {
+    classNameDark: 'dark',
+    classNameLight: 'light',
+    element: document.documentElement,
+  })
 
   return (
     <div className="navbar-item dark-toggle">
