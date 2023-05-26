@@ -51,22 +51,26 @@ function Post({ post }: PostProps) {
               </div>
             </div>
           </div>
-          <div className="post-footer">
-            <div className="author">
-              <div className="authorimage">
-                <img src={author.photo} alt={author.name} />
+          <div className="post-footer border-t border-b border-slate-200 px-3 py-2 dark:border-slate-700/40">
+            <div className="flex items-center">
+              <div className="flex items-center">
+                <img className="object-cover h-20 rounded-full" src={author.photo} alt={author.name} />
               </div>
-              <h4>
-                <a href="/about">{author.name}</a>
-              </h4>
-              <p className="bio">{author.bio}</p>
-              <div className="post-meta">
-                <time dateTime={moment(date).format('DD MMM YYYY')}>{moment(date).format('DD MMM YYYY')}</time>
+              <div className="mx-5 flex-1 items-center text-left">
+                <a href="/about" className="mx-2 text-2xl font-semibold text-gray-700 dark:text-gray-200">
+                  {author.name}
+                </a>
+                <br />
+                <span className="mx-2 text-sm">{author.bio}</span>
+                <br />
+                <time
+                  className="mx-2 text-sm text-gray-600 dark:text-gray-300"
+                  dateTime={moment(date).format('DD MMM YYYY')}
+                >
+                  {moment(date).format('DD MMM YYYY')}
+                </time>
               </div>
-            </div>
-
-            <div className="footer-tag hide-for-small">
-              <div className="post-meta">
+              <div className="hidden md:flex items-center text-sm text-right">
                 <div className="post-tags">{tags && tagSlugs && <Tags tags={tags} tagSlugs={tagSlugs} />}</div>
               </div>
             </div>
