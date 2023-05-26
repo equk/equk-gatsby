@@ -1,86 +1,97 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable no-unused-expressions */
 import React from 'react'
 import { Link } from 'gatsby'
 import ToggleDark from './common/ToggleDark'
 
-interface TopbarProps {}
+export default function Topbar() {
+  const [isNavOpen, setIsNavOpen] = React.useState(false)
 
-interface TopbarState {
-  active: boolean
-  navBarActiveClass: string
-}
-
-class Topbar extends React.Component<TopbarProps, TopbarState> {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false,
-      navBarActiveClass: '',
-    }
-  }
-
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    const { active } = this.state
-    this.setState(
-      { active: !active },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        // eslint-disable-next-line react/destructuring-assignment
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
-  }
-
-  render() {
-    const { navBarActiveClass } = this.state
-    return (
-      <div className="top">
-        <div className="topbar">
-          <nav className="navbar container" role="navigation" aria-label="main navigation">
-            <div className="navbar-brand">
-              <p className="site-title navbar-item">
-                <Link className="title-link" to="/">
-                  equk
-                </Link>
-                <span className="cursor" />
-              </p>
-              <div
-                className={`navbar-burger burger ${navBarActiveClass}`}
-                data-target="navMenu"
-                onClick={() => this.toggleHamburger()}
-                onKeyDown={() => this.toggleHamburger()}
+  return (
+    <header className="mx-auto w-full flex-none duration-100 ease-in">
+      <div className="topbar mx-auto w-full max-w-6xl md:flex md:justify-between">
+        <div className="flex justify-between">
+          <a className="flex items-center" href="/">
+            <span className="site-title text-gray-900 dark:text-white">equk</span>
+          </a>
+          <div className="flex items-center md:hidden">
+            <button
+              onClick={() => setIsNavOpen(!isNavOpen)}
+              className="ml-1.5 inline-flex items-center rounded-lg p-2.5 text-sm text-gray-500 transition hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-800 dark:focus:ring-gray-700"
+              id="toggle-navigation-menu"
+              aria-label="Toggle Menu"
+              type="button"
+              data-aw-toggle-menu=""
+            >
+              <svg
+                className="h-6 w-6"
+                viewBox="0 0 24 24"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <span />
-                <span />
-                <span />
-              </div>
-            </div>
-            <div id="navMenu" className={`navbar-menu navbar-end ${navBarActiveClass}`}>
+                <g
+                  fill="none"
+                  className="icon-tabler"
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                >
+                  <path d="M4 8h16" />
+                  <path d="M4 16h16" />
+                </g>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <nav
+          aria-label="Mobile navigation"
+          id="mobile-nav"
+          className={`${isNavOpen ? 'block' : 'hidden'}
+          md:hidden w-full items-center overflow-y-auto dark:text-slate-200 md:mx-5 md:h-auto md:w-auto md:overflow-visible`}
+        >
+          <ul className="flex w-full flex-col text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base">
+            <li>
               <Link className="navbar-item" to="/">
                 Home
               </Link>
+            </li>
+            <li>
               <Link className="navbar-item" to="/about">
                 About
               </Link>
+            </li>
+            <li>
               <Link className="navbar-item" to="/projects">
                 Projects
               </Link>
-              <ToggleDark />
-            </div>
-          </nav>
-        </div>
+            </li>
+          </ul>
+          <ToggleDark />
+        </nav>
+        <nav
+          aria-label="Main navigation"
+          id="main-nav"
+          className="hidden w-full items-center overflow-y-auto dark:text-slate-200 md:mx-5 md:flex md:h-auto md:w-auto md:overflow-visible"
+        >
+          <ul className="flex w-full flex-col text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base">
+            <li>
+              <Link className="navbar-item" to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link className="navbar-item" to="/about">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link className="navbar-item" to="/projects">
+                Projects
+              </Link>
+            </li>
+          </ul>
+          <ToggleDark />
+        </nav>
       </div>
-    )
-  }
+    </header>
+  )
 }
-
-export default Topbar
