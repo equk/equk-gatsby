@@ -73,7 +73,7 @@ const config: GatsbyConfig = {
             query: `
               {
                 allMarkdownRemark(
-                  limit: 1000
+                  limit: 20
                   sort: {frontmatter: {date: DESC}}
                   filter: {frontmatter: {template: {ne: "page"}, draft: {ne: true}}}
                 ) {
