@@ -18,8 +18,7 @@
   "private": true,
   "license": "MIT",
   "browserslist": [
-    "last 2 versions",
-    "not ie <= 12"
+    "defaults"
   ],
   "dependencies": {
     "@types/node": "^18.11.18",
@@ -60,7 +59,7 @@
     "@typescript-eslint/eslint-plugin": "^5.53.0",
     "@typescript-eslint/parser": "^5.53.0",
     "autoprefixer": "10.4.13",
-    "browserslist": "4.21.4",
+    "browserslist": "^4.21.6",
     "eslint": "^8.35.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "15.0.0",
