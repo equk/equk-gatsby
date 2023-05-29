@@ -37,8 +37,8 @@ function Feed({ edges }: FeedProps) {
                   </span>
                 </div>
                 <div className="flex items-center space-x-2 uppercase">
-                  <time className="published" dateTime={moment(edge.node.frontmatter.date).format('MMMM D, YYYY')}>
-                    {moment(edge.node.frontmatter.date).format('DD MMMM YYYY')}
+                  <time className="published" dateTime={edge.node.frontmatter.date}>
+                    {moment(edge.node.frontmatter.date).format('DD MMM YYYY')}
                   </time>
                 </div>
               </li>
