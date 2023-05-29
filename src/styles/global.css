@@ -425,6 +425,12 @@ li.task-list-item {
   @apply py-2 px-4 rounded;
 }
 
+/* Post List */
+
+.post-list h2 {
+  margin-bottom: 0;
+}
+
 /* Tags List */
 
 .post-tags a {
