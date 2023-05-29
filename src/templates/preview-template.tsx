@@ -1,5 +1,4 @@
 import React from 'react'
-import moment from 'moment'
 
 interface PreviewTemplateProps {
   body: React.ReactNode
@@ -16,7 +15,7 @@ function PreviewTemplate({ title, date, body, image }: PreviewTemplateProps) {
           <h1 className="content-title">{title}</h1>
           <div className="post-date">
             <div className="meta">
-              <p className="meta__date">{moment(date).format('MMM D, YYYY')}</p>
+              <p className="meta__date">{date}</p>
             </div>
           </div>
         </header>
