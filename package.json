@@ -11,8 +11,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx .",
     "newpost": "node newpost.js",
     "serve": "gatsby serve",
-    "types": "tsc --noEmit",
-    "prepare": "husky install"
+    "types": "tsc --noEmit"
   },
   "author": "equk <equk@users.noreply.github.com>",
   "private": true,
