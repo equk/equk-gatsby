@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import moment from 'moment'
 import { kebabCase } from 'lodash'
 
 interface FeedProps {
@@ -38,7 +37,11 @@ function Feed({ edges }: FeedProps) {
                 </div>
                 <div className="flex items-center space-x-2 uppercase">
                   <time className="published" dateTime={edge.node.frontmatter.date}>
-                    {moment(edge.node.frontmatter.date).format('DD MMM YYYY')}
+                    {new Date(edge.node.frontmatter.date).toLocaleDateString('en-gb', {
+                      day: 'numeric',
+                      month: 'short',
+                      year: 'numeric',
+                    })}
                   </time>
                 </div>
               </li>
