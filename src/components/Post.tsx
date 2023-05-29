@@ -1,7 +1,6 @@
 /* eslint-disable react/no-danger */
 import React from 'react'
 import { GatsbyImage } from 'gatsby-plugin-image'
-import moment from 'moment'
 import Comments from './common/Comments'
 import Tags from './common/Tags'
 import { useSiteMetadata } from '../hooks'
@@ -27,7 +26,15 @@ function Post({ post }: PostProps) {
                 <dl>
                   <div>
                     <div className="text-center leading-6 text-gray-500 dark:text-gray-400">
-                      {date && <time dateTime={moment(date).toISOString()}>{moment(date).format('MMM D, YYYY')}</time>}
+                      {date && (
+                        <time dateTime={date}>
+                          {new Date(date).toLocaleDateString('en-us', {
+                            day: 'numeric',
+                            month: 'short',
+                            year: 'numeric',
+                          })}
+                        </time>
+                      )}
                     </div>
                   </div>
                 </dl>
@@ -63,8 +70,12 @@ function Post({ post }: PostProps) {
                 <br />
                 <span className="mx-2 text-sm">{author.bio}</span>
                 <br />
-                <time className="mx-2 text-sm text-gray-600 dark:text-gray-300" dateTime={date}>
-                  {moment(date).format('DD MMM YYYY')}
+                <time className="mx-2 text-sm text-gray-600 dark:text-gray-300 uppercase" dateTime={date}>
+                  {new Date(date).toLocaleDateString('en-gb', {
+                    day: 'numeric',
+                    month: 'short',
+                    year: 'numeric',
+                  })}
                 </time>
               </div>
               <div className="hidden md:flex items-center text-sm text-right">
