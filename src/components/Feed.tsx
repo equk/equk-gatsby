@@ -22,7 +22,7 @@ function Feed({ edges }: FeedProps) {
                 </h2>
                 <div className="post-meta">
                   <span className="post-meta-divider" />
-                  <span className="post-tags uppercase text-sm">
+                  <span className="post-tags lowercase text-sm hidden md:block">
                     {edge.node.frontmatter.tags ? (
                       <div className="tags-container">
                         <ul className="taglist">
