@@ -63,10 +63,7 @@ function Post({ post }: PostProps) {
                 <br />
                 <span className="mx-2 text-sm">{author.bio}</span>
                 <br />
-                <time
-                  className="mx-2 text-sm text-gray-600 dark:text-gray-300"
-                  dateTime={moment(date).format('DD MMM YYYY')}
-                >
+                <time className="mx-2 text-sm text-gray-600 dark:text-gray-300" dateTime={date}>
                   {moment(date).format('DD MMM YYYY')}
                 </time>
               </div>
