@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import { Layout, Topbar, Footer, Post } from '../components'
 import { useSiteMetadata } from '../hooks'
@@ -27,12 +28,16 @@ function PostTemplate({ data }: PostTemplateProps) {
   const { title: siteTitle } = useSiteMetadata()
   const { title: postTitle } = data.markdownRemark.frontmatter
   const metaDescription = data.markdownRemark.excerpt
+  const ogType = 'article'
 
   return (
     <Layout title={`${postTitle} - ${siteTitle}`} description={metaDescription}>
       <Topbar />
       <Post post={data.markdownRemark} />
       <Footer />
+      <Helmet>
+        <meta property="og:type" content={ogType} />
+      </Helmet>
     </Layout>
   )
 }
