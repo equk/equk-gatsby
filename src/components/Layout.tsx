@@ -24,6 +24,8 @@ function Layout({ children, title, description }: LayoutProps) {
         <meta property="og:image" content={ogImage} />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="512" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={url} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content={TwitterCreator} />
       </Helmet>
