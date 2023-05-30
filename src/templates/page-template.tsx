@@ -1,6 +1,5 @@
 /* eslint-disable react/no-danger */
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import { Layout, Topbar, Footer, Page } from '../components'
 import { useSiteMetadata } from '../hooks'
@@ -33,15 +32,12 @@ function PageTemplate({ data }: PageTemplateProps) {
   const ogType = 'article'
 
   return (
-    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription}>
+    <Layout title={`${pageTitle} - ${siteTitle}`} description={metaDescription} ogtype={ogType}>
       <Topbar />
       <Page title={pageTitle} image={pageImage}>
         <div dangerouslySetInnerHTML={{ __html: pageBody }} />
       </Page>
       <Footer />
-      <Helmet>
-        <meta property="og:type" content={ogType} />
-      </Helmet>
     </Layout>
   )
 }
