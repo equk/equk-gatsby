@@ -9,8 +9,9 @@ interface LayoutProps {
 }
 
 function Layout({ children, title, description }: LayoutProps) {
-  const { author } = useSiteMetadata()
+  const { author, url } = useSiteMetadata()
   const TwitterCreator = `@${author.contacts.twitter}`
+  const ogImage = `${url}/media/social.png`
   return (
     <div className="page-wrapper">
       <Helmet>
@@ -20,7 +21,7 @@ function Layout({ children, title, description }: LayoutProps) {
         <meta name="description" content={description} />
         <meta property="og:description" content={description} />
         <meta property="og:title" content={title} />
-        <meta property="og:image" content="https://equk.co.uk/media/social.png" />
+        <meta property="og:image" content={ogImage} />
         <meta property="og:image:width" content="1024" />
         <meta property="og:image:height" content="512" />
         <meta name="twitter:card" content="summary_large_image" />
