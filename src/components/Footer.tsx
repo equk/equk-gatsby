@@ -17,12 +17,12 @@ function Footer() {
           </div>
           <div className="hidden md:block" />
           <div className="footer-nav hidden md:block">
-            <nav aria-label="More on this site" className="gap-x-2 text-center sm:gap-x-0">
+            <nav aria-label="Footer navigation" className="gap-x-2 text-center sm:gap-x-0">
               <ul className="md:self-center">
                 {menu.map((item) => (
-                  <Link to={item.path} className="footer-link">
-                    {item.label}
-                  </Link>
+                  <li>
+                    <Link to={item.path}>{item.label}</Link>
+                  </li>
                 ))}
               </ul>
             </nav>

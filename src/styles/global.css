@@ -168,6 +168,11 @@ footer nav a {
   color: var(--theme-text);
 }
 
+footer nav li {
+  display: inline-block;
+  list-style: none
+}
+
 /* Pagination */
 
 .pagination p {
