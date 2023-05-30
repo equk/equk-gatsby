@@ -1,9 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import ToggleDark from './common/ToggleDark'
+import { useSiteMetadata } from '../hooks'
 
 export default function Topbar() {
   const [isNavOpen, setIsNavOpen] = React.useState(false)
+  const { menu } = useSiteMetadata()
 
   return (
     <header className="mx-auto w-full flex-none duration-100 ease-in">
@@ -49,21 +51,11 @@ export default function Topbar() {
           md:hidden w-full items-center overflow-y-auto dark:text-slate-200 md:mx-5 md:h-auto md:w-auto md:overflow-visible`}
         >
           <ul className="flex w-full flex-col text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base">
-            <li>
-              <Link className="navbar-item" to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link className="navbar-item" to="/projects">
-                Projects
-              </Link>
-            </li>
+            {menu.map((item) => (
+              <li>
+                <Link to={item.path}>{item.label}</Link>
+              </li>
+            ))}
           </ul>
           <ToggleDark />
         </nav>
@@ -73,21 +65,11 @@ export default function Topbar() {
           className="hidden w-full items-center overflow-y-auto dark:text-slate-200 md:mx-5 md:flex md:h-auto md:w-auto md:overflow-visible"
         >
           <ul className="flex w-full flex-col text-xl md:w-auto md:flex-row md:self-center md:pt-0 md:text-base">
-            <li>
-              <Link className="navbar-item" to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link className="navbar-item" to="/projects">
-                Projects
-              </Link>
-            </li>
+            {menu.map((item) => (
+              <li>
+                <Link to={item.path}>{item.label}</Link>
+              </li>
+            ))}
           </ul>
           <ToggleDark />
         </nav>
