@@ -31,7 +31,7 @@ function Footer() {
             <a href={GithubLink} target="_blank" aria-label="go to github" rel="noopener noreferrer">
               <i className="fa fa-github" />
             </a>
-            <a href={MastodonLink} target="_blank" aria-label="go to mastodon" rel="noopener noreferrer">
+            <a href={MastodonLink} target="_blank" aria-label="go to mastodon" rel="me noopener noreferrer">
               <i className="fa fa-mastodon" />
             </a>
           </div>
