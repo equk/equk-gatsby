@@ -1,1 +1,1 @@
-exports.onRenderBody = require('./lib/onRenderBody').onRenderBody
+exports.wrapPageElement = require('./lib/wrapPageElement').wrapPageElement
