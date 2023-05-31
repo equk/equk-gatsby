@@ -30,7 +30,6 @@ I have made the site open source and available on github for others to learn fro
 - [x] Syntax Highlighting with `prismjs`
 - [x] Pagination
 - [x] Netlify CMS
-- [x] Github Pages
 - [x] Netlify
 - [x] Subresource Integrity (SRI)
 
@@ -44,9 +43,8 @@ Performance: 100%    Accessibility: 100%     Best Practices: 100%    SEO: 100%  
 
 - [x] ESLint with plugins
 - [x] Typescript
-- [x] `SASS` for styles
+- [x] `tailwindcss` CSS framework
 - [x] `postcss` with plugins
-- [x] `PurgeCSS` on `build`
 - [x] `gatsby-image`
 - [x] react `hooks`
 - [x] `react-helmet`
@@ -80,13 +78,11 @@ Performance: 100%    Accessibility: 100%     Best Practices: 100%    SEO: 100%  
 
 # Notes
 
-## Dependencies on Hold
-
-- [ ] `gatsby-plugin-purgecss`: `^5.0.0`
-
 # Contact
 
 Website: https://equk.co.uk
+
+Mastodon: [@equilibriumuk@hachyderm.io](https://hachyderm.io/@equilibriumuk)
 
 Twitter: [@equilibriumuk](https://twitter.com/equilibriumuk)
 
