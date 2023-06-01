@@ -410,6 +410,7 @@ li.task-list-item {
 @media only screen and (min-width: 960px) {
 
   .wide-img,
+  span.gatsby-resp-image-wrapper,
   blockquote,
   pre,
   article.message {
@@ -420,8 +421,23 @@ li.task-list-item {
   }
 }
 
-.wide-img {
-  border: 1px solid #e5e7eb;
+.width-full img {
+  border-radius: 0;
+  clear: both;
+  display: block;
+  margin-left: 50%;
+  max-width: none;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100vw;
+}
+
+/* Image Borders */
+
+.wide-img,
+span.gatsby-resp-image-wrapper,
+.post-content img.border {
+  border: 1px solid var(--theme-text);
 }
 
 /* Button */
