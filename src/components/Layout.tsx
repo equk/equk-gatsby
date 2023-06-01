@@ -14,6 +14,7 @@ function Layout({ children, title, description, ogtype }: LayoutProps) {
   const TwitterCreator = `@${author.contacts.twitter}`
   const ogImage = `${url}/media/social.png`
   const ogType = ogtype || 'website'
+  const atomFeed = `${url}/atom.xml`
   return (
     <div className="page-wrapper">
       <Helmet>
@@ -29,6 +30,8 @@ function Layout({ children, title, description, ogtype }: LayoutProps) {
         <meta property="og:type" content={ogType} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content={TwitterCreator} />
+        <link rel="alternate" type="application/rss+xml" href={atomFeed} />
+        <link rel="alternate" type="application/atom+xml" href={atomFeed} />
       </Helmet>
       {children}
     </div>
