@@ -10,6 +10,10 @@ description: projects
 <br/><i class="fa fa-code"></i> Software
 <br/><i class="fa fa-github"></i> Opensource
 
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `nodejs` atom feed generation script
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `astro` based blog
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> windows `firefox` profile script rework (`userChrome` & `prefs`)
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> linux `firefox` profile scripts (`userChrome` & `prefs`)
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> unsplash_svkit - `sveltekit` image api search
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> logout_rs - `rust` shutdown menu
 <br/><i class="fa fa-code"></i> nftables attack logging (`prometheus` & `grafana`)
@@ -96,6 +100,17 @@ Allows automated installation of windows applications or games on linux by setti
 Created as an alternative to GUI apps which have a lot of dependencies.<br/>
 There are some GUI tools which do the same but are dependant on gnome-desktop & do not work on tiling window managers like i3.
 
+## Unlocking Plusnet Hub One
+
+<a href="/2022/04/11/unlocking-plusnet-hub-one/" target="_blank" rel="noopener noreferrer">
+
+![hh5a_img](../../static/media/images/2022/plusnet_hub_one_top.jpg)
+
+</a>
+
+Hardware modifications to allow booting over serial connection.<br/>
+Requires custom LEDE boot image to unlock `u-boot` bootloader to allow OpenWRT install.
+
 ## Postfix Postscreen Whitelist
 
 CLI app to automate whitelisting (or blacklisting) of known email servers by iterating over `spf` records.
@@ -111,9 +126,9 @@ App whitelists `IPV4` & `IPV6` ranges using `CIDR` blocks.
 
 ## BT HomeHub 5a OpenWrt
 
-<a href="/2016/10/04/unlocking-bt-homehub-5a/">
+<a href="/2016/10/04/unlocking-bt-homehub-5a/" target="_blank" rel="noopener noreferrer">
 
-![hh5a_img](/media/images/2016/10/bt_hh5a_banner.jpg)
+![hh5a_img](../../static/media/images/2016/10/bt_hh5a_banner.jpg)
 
 </a>
 
@@ -158,7 +173,7 @@ Just make sure you know what you are doing as you could brick your chromebook.
 
 For more info on building coreboot read my blog post [Building Coreboot in 2020](/2020/04/19/building-coreboot-2020)
 
-I have a <a href="https://github.com/equk/c710" target="_blank">repo on <i class="fa fa-github-alt"></i> github for my linux configs specific to the c710.</a>
+I have a <a href="https://github.com/equk/c710" target="_blank" rel="noopener noreferrer">repo on <i class="fa fa-github-alt"></i> github for my linux configs specific to the c710.</a>
 
 ## Android Testing Tools
 
@@ -182,7 +197,7 @@ Testing `U-Boot` related security on specific ARM64 implementations & debugging 
 It is possible read & write to `U-Boot` from within android without any need for root on many of these devices (not just development boards).
 It is also possible to inject custom scripts & binaries directly to the bootloader.
 
-<p class="text-center"><a href="https://twitter.com/equilibriumuk/status/717669326489313280" target="_blank"><img class="border" src="/media/images/2016/05/arm64_cpuinfo.jpg" alt="arm64_cpuinfo"></a></p>
+<p class="text-center"><a href="https://twitter.com/equilibriumuk/status/717669326489313280" target="_blank" rel="noopener noreferrer"><img class="border" src="/media/images/2016/05/arm64_cpuinfo.jpg" alt="arm64_cpuinfo"></a></p>
 
 Some simple examples of this are injecting scripts into `preboot` or `bootcmd`.
 Both result in scripts being run before the target OS.
@@ -193,7 +208,7 @@ Both result in scripts being run before the target OS.
 
 This is a C program which sends the init code from Razer windows proprietary drivers to initialize the 'macro' keys on Razer BlackWidow keyboards on Linux.
 
-Initialization code was obtained using <a href="https://wiki.wireshark.org/CaptureSetup/USB" target="_blank">Wireshark USB Capture</a>.
+Initialization code was obtained using <a href="https://wiki.wireshark.org/CaptureSetup/USB" target="_blank" rel="noopener noreferrer">Wireshark USB Capture</a>.
 
 ```bash
 Razer BlackWidow Macro Keys v1
@@ -214,7 +229,7 @@ Sending data:
 Transmitted: 90
 ```
 
-Source code is available on <a href="https://github.com/equk/blackwidow_macro" target="_blank"><i class="fa fa-github-alt"></i> github</a> under MIT license.
+Source code is available on <a href="https://github.com/equk/blackwidow_macro" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-alt"></i> github</a> under MIT license.
 
 <br />
 
@@ -238,7 +253,7 @@ Download, verify & run torbrowser in a sandbox utilizing seccomp policies and Xe
 
 <a href="/2016/01/13/torjail-sandboxed-torbrowser/"><img class="border" src="/media/images/2016/01/tor_screen_sm.jpg" alt="tor_screen"></a>
 
-Source code available on <a href="https://github.com/equk/torjail" target="_blank"><i class="fa fa-github-alt"></i> github</a> under MIT license.
+Source code available on <a href="https://github.com/equk/torjail" target="_blank" rel="noopener noreferrer"><i class="fa fa-github-alt"></i> github</a> under MIT license.
 
 <br />
 
