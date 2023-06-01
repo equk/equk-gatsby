@@ -15,12 +15,12 @@
     Cache-Control = "public, max-age=2592000"
 [[redirects]]
   from = "/rss"
-  to = "/rss.xml"
+  to = "/atom.xml"
   status = 301
   force = true
 [[redirects]]
   from = "/feed"
-  to = "/rss.xml"
+  to = "/atom.xml"
   status = 301
   force = true
 [[redirects]]
