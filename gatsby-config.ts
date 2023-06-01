@@ -40,67 +40,6 @@ const config: GatsbyConfig = {
         path: path.resolve(`static`),
       },
     },
-    /**
-     *  Generate RSS Feed Using excerpt
-     */
-    {
-      resolve: 'gatsby-plugin-feed',
-      options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                site_url: url
-                title
-                description: subtitle
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) =>
-              allMarkdownRemark.edges.map((edge) =>
-                // eslint-disable-next-line prefer-object-spread
-                Object.assign({}, edge.node.frontmatter, {
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: `${site.siteMetadata.site_url}/${edge.node.fields.slug}`,
-                  guid: `${site.siteMetadata.site_url}/${edge.node.fields.slug}`,
-                  custom_elements: [],
-                })
-              ),
-            query: `
-              {
-                allMarkdownRemark(
-                  limit: 20
-                  sort: {frontmatter: {date: DESC}}
-                  filter: {frontmatter: {template: {ne: "page"}, draft: {ne: true}}}
-                ) {
-                  edges {
-                    node {
-                      fields {
-                        slug
-                      }
-                      excerpt(format: PLAIN, pruneLength: 450, truncate: false)
-                      frontmatter {
-                        title
-                        date
-                        template
-                        draft
-                        description
-                      }
-                    }
-                  }
-                }
-              }
-            `,
-            output: '/rss.xml',
-            title,
-          },
-        ],
-      },
-    },
     'gatsby-plugin-image',
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
