@@ -1,9 +1,10 @@
 /* eslint-disable react/no-danger */
 import React from 'react'
 import { GatsbyImage } from 'gatsby-plugin-image'
-import Comments from './common/Comments'
 import Tags from './common/Tags'
 import { useSiteMetadata } from '../hooks'
+
+const Comments = React.lazy(() => import('./common/Comments'))
 
 interface PostProps {
   post: any
@@ -87,7 +88,9 @@ function Post({ post }: PostProps) {
       </article>
 
       <div className="post-comments">
-        <Comments postSlug={slug} />
+        <React.Suspense fallback={<div>Loading Comments...</div>}>
+          <Comments postSlug={slug} />
+        </React.Suspense>
       </div>
     </main>
   )
