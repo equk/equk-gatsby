@@ -11,7 +11,7 @@ interface PostProps {
 }
 
 function Post({ post }: PostProps) {
-  const { html } = post
+  const { html, tableOfContents } = post
   const { tagSlugs, slug } = post.fields
   const { tags, title, date, image } = post.frontmatter
   const { author } = useSiteMetadata()
@@ -51,7 +51,15 @@ function Post({ post }: PostProps) {
             </div>
           </div>
         )}
-        <section className="post-full-content">
+        <section className="post-full-content xl:relative">
+          <div className="toc hidden xl:absolute xl:h-full xl:right-10 xl:top-2 xl:z-10">
+            <div className="xl:sticky xl:top-10">
+              <div className="flex justify-center items-center xl:flex-col xl:mt-0 xl:text-sm">
+                <h4>On This Page</h4>
+                <div className="text-left" dangerouslySetInnerHTML={{ __html: tableOfContents }} />
+              </div>
+            </div>
+          </div>
           <div className="post-content">
             <div className="xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose lg:prose-lg mx-auto max-w-none">
