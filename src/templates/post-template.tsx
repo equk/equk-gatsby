@@ -18,6 +18,7 @@ interface PostTemplateProps {
         title: string
       }
       html: string
+      tableOfContents: string
       id: string
     }
   }
@@ -44,6 +45,7 @@ export const query = graphql`
       id
       excerpt(pruneLength: 150)
       html
+      tableOfContents
       fields {
         slug
         tagSlugs
