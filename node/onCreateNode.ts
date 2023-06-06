@@ -1,5 +1,4 @@
 const _ = require('lodash')
-const moment = require('moment')
 
 /**
  * This is the main function for creating nodes using the onCreateNode
@@ -15,6 +14,30 @@ const moment = require('moment')
 
 let slugVal = ''
 
+function dateLink(dateInput) {
+  const date = new Date(dateInput)
+  const year = date.getFullYear()
+  const mnth = date.getMonth() + 1
+  const dy = date.getDate()
+  let month = ''
+  let day = ''
+
+  if (mnth < 10) {
+    month = `0${mnth}`
+  } else {
+    month = `${mnth}`
+  }
+
+  if (dy < 10) {
+    day = `0${dy}`
+  } else {
+    day = `${dy}`
+  }
+
+  const dateLinkOut = `${year}/${month}/${day}`
+  return dateLinkOut
+}
+
 export const onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
 
@@ -24,11 +47,11 @@ export const onCreateNode = ({ node, actions }) => {
      *
      * If slug does not exist generate URL using post title
      */
-    const m = moment(node.frontmatter.date)
+    const dateURL = dateLink(node.frontmatter.date)
     if (node.frontmatter.slug) {
-      slugVal = `${m.format('YYYY')}/${m.format('MM')}/${m.format('DD')}/${node.frontmatter.slug}`
+      slugVal = `${dateURL}/${node.frontmatter.slug}`
     } else {
-      slugVal = `${m.format('YYYY')}/${m.format('MM')}/${m.format('DD')}/${_.kebabCase(node.frontmatter.title)}`
+      slugVal = `${dateURL}/${_.kebabCase(node.frontmatter.title)}`
     }
 
     /**
