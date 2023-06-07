@@ -4,15 +4,13 @@ import { GatsbyImage } from 'gatsby-plugin-image'
 import Tags from './common/Tags'
 import { useSiteMetadata } from '../hooks'
 
-const Comments = React.lazy(() => import('./common/Comments'))
-
 interface PostProps {
   post: any
 }
 
 function Post({ post }: PostProps) {
   const { html, tableOfContents } = post
-  const { tagSlugs, slug } = post.fields
+  const { tagSlugs } = post.fields
   const { tags, title, date, image } = post.frontmatter
   const { author } = useSiteMetadata()
 
@@ -96,9 +94,11 @@ function Post({ post }: PostProps) {
       </article>
 
       <div className="post-comments">
-        <React.Suspense fallback={<div>Loading Comments...</div>}>
-          <Comments postSlug={slug} />
-        </React.Suspense>
+        <div className="comments">
+          <p className="p-6 text-center border-2 border-gray-100 rounded-lg dark:border-slate-700/40">
+            <i className="fa fa-commenting" /> Comments are currently disabled
+          </p>
+        </div>
       </div>
     </main>
   )
