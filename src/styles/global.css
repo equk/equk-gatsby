@@ -437,7 +437,7 @@ li.task-list-item {
 .wide-img,
 span.gatsby-resp-image-wrapper,
 .post-content img.border {
-  border: 1px solid var(--theme-text);
+  border: 1px solid #020204;
 }
 
 /* Button */
