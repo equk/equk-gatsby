@@ -20,25 +20,21 @@ function Post({ post }: PostProps) {
         <header className="pb-16 pt-24">
           <div className="space-y-4">
             <h1 className="text-center text-5xl font-bold dark:text-gray-100">{title}</h1>
-            <dl>
+            <div>
               <div>
-                <dl>
-                  <div>
-                    <div className="text-center leading-6 text-gray-500 dark:text-gray-400">
-                      {date && (
-                        <time dateTime={date}>
-                          {new Date(date).toLocaleDateString('en-us', {
-                            day: 'numeric',
-                            month: 'short',
-                            year: 'numeric',
-                          })}
-                        </time>
-                      )}
-                    </div>
-                  </div>
-                </dl>
+                <div className="text-center leading-6 text-gray-500 dark:text-gray-400">
+                  {date && (
+                    <time dateTime={date}>
+                      {new Date(date).toLocaleDateString('en-us', {
+                        day: 'numeric',
+                        month: 'short',
+                        year: 'numeric',
+                      })}
+                    </time>
+                  )}
+                </div>
               </div>
-            </dl>
+            </div>
           </div>
         </header>
 
@@ -53,7 +49,7 @@ function Post({ post }: PostProps) {
           <div className="toc hidden xl:absolute xl:h-full xl:right-10 xl:top-2 xl:z-10">
             <div className="xl:sticky xl:top-10">
               <div className="flex justify-center items-center xl:flex-col xl:mt-0 xl:text-sm">
-                <h4>On This Page</h4>
+                <p className="text-lg font-bold pb-2">On This Page</p>
                 <div className="text-left" dangerouslySetInnerHTML={{ __html: tableOfContents }} />
               </div>
             </div>
