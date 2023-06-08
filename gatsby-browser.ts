@@ -4,3 +4,4 @@ require('./src/styles/global.css')
 exports.onClientEntry = () => {}
 
 exports.wrapPageElement = require('./lib/wrapPageElement').wrapPageElement
+exports.onRouteUpdate = require('./lib/onRouteUpdate').onRouteUpdate
