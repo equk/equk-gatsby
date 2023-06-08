@@ -10,8 +10,9 @@ description: projects
 <br/><i class="fa fa-code"></i> Software
 <br/><i class="fa fa-github"></i> Opensource
 
-<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `nodejs` atom feed generation script
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `gatsby` atom feed generation
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `astro` based blog
+<br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> `nodejs` atom feed generation script
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> windows `firefox` profile script rework (`userChrome` & `prefs`)
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> linux `firefox` profile scripts (`userChrome` & `prefs`)
 <br/><i class="fa fa-code"></i> <i class="fa fa-github"></i> unsplash_svkit - `sveltekit` image api search
@@ -142,15 +143,15 @@ Custom firmware built from development/testing branch of OpenWrt
 I'm using the Raspberry Pi Zero as it has low power usage & has the GPIO required.
 <br /><a href="http://blog.pimoroni.com/raspberry-pi-3/" target="_blank">The Raspberry Pi Zero draws 120mA under load which is a huge difference to the Raspberry Pi 3 which draws 750mA</a>
 
-<div class="columns">
-    <div class="column">
+<div class="grid grid-cols-2 gap-4 px-6">
+    <div>
         <ul>
         <li>SPI</li>
         <li>I2C</li>
         <li>UART</li>
         </ul>
     </div>
-    <div class="column">
+    <div>
         <ul>
         <li>JTAG</li>
         <li>3.3V Power</li>
