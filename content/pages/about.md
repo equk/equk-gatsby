@@ -4,22 +4,22 @@ template: "page"
 slug: "about"
 ---
 
-<div class="bg-gray-100 border border-gray-400 shadow rounded-lg p-10 dark:bg-gray-900 dark:border-gray-800">
+<div class="bg-gray-100 border border-gray-400 shadow rounded-lg p-5 dark:bg-gray-900 dark:border-gray-800">
     <div class="flex flex-col gap-1 text-center items-center">
         <img class="h-32 w-32 bg-white p-2 rounded-full shadow mb-4" src="/users/equilibriumuk.jpg" alt="">
         <p class="text-2xl">equilibriumuk</p>
-        <div class="text-gray-500 dark:text-gray-400 flex justify-center items-center">
+        <div class="flex justify-center items-center">
         Web Developer & Site Reliability Engineer
         </div>
     </div>
-    <div class="flex justify-center items-center gap-2 my-3">
+    <div class="flex justify-center items-center gap-2 my-0">
         <p class="text-center"><span class="language-color js"></span> Javascript <span class="language-color py"></span> Python <span class="language-color ts"></span> Typescript <span class="language-color rust"></span> Rust <span class="language-color sh"></span> Bash <span class="language-color go"></span> Go <span class="language-color c"></span> C <span class="language-color ps"></span> Powershell</p>
     </div>
 </div>
 
 ## Interests
 
-<div class="grid grid-cols-3 gap-4">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
     <div>
         <ul>
         <li>Cybersecurity</li>
@@ -105,30 +105,24 @@ I am open to new work opportunities, please contact me using the details below.
 
 ## Contact
 
-<table>
-    <tbody>
-        <tr>
-            <td><i class="fa fa-envelope"></i> <strong>email</strong></td>
-            <td><code class="language-text">equilibriumuk AT protonmail DOT com</code></td>
-        </tr>
-        <tr>
-            <td><i class="fa fa-key-modern"></i> <strong>gpg</strong></td>
-            <td><a href="https://keybase.io/equilibriumuk/pgp_keys.asc?fingerprint=25fc07669118b3b9b79beae40e53a3c22664d113" target="_blank">0E53 A3C2 2664 D113</a></td>
-        </tr>
-        <tr>
-            <td><i class="fa fa-github-alt"></i> <strong>github</strong></td>
-            <td><a href="https://github.com/equk/" target="_blank">equk</a></td>
-        </tr>
-        <tr>
-            <td><i class="fa fa-twitter"></i> <strong>twitter</strong></td>
-            <td><a href="https://twitter.com/equilibriumuk/" target="_blank">equilibriumuk</a></td>
-        </tr>
-        <tr>
-            <td><i class="fa fa-keybase"></i> <strong>keybase</strong></td>
-            <td><a href="https://keybase.io/equilibriumuk/" target="_blank">equilibriumuk</a></td>
-        </tr>
-    </tbody>
-</table>
+<div class="grid grid-cols-2 gap-4">
+<div>
+    <p class="mt-1 text-xl font-bold">Email Address</p>
+    <p class="text-body-color text-base">
+    <code class="language-text">equilibriumuk AT protonmail DOT com</code>
+    </p>
+</div>
+<div>
+    <p class="mt-1 text-xl font-bold">GPG Key</p>
+    <p class="text-body-color text-base">
+    <a href="https://keybase.io/equilibriumuk/pgp_keys.asc?fingerprint=25fc07669118b3b9b79beae40e53a3c22664d113" target="_blank">0E53 A3C2 2664 D113</a>
+    </p>
+</div>
+<div>
+    <p class="mt-1 text-xl font-bold">Social Media</p>
+    <div class="social-blocks text-left"><a href="https://twitter.com/equilibriumuk" target="_blank" aria-label="go to twitter" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/equk" target="_blank" aria-label="go to github" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a href="https://hachyderm.io/@equilibriumuk" target="_blank" aria-label="go to mastodon" rel="me noopener noreferrer"><i class="fa fa-mastodon"></i></a></div>
+</div>
+</div>
 
 ---
 
@@ -143,20 +137,16 @@ The source code can be found on github & the site is hosted on netlify.
 <img class="inline gatsby_logo" src="/media/logos/gatsby.svg" alt="gatsby-logo" width="80px">
 <img class="inline netlify_logo" src="/media/logos/netlify.svg" alt="netlify-logo" width="80px">
 
-### Main Features
+More info:
 
-- [x] PWA
-- [x] Google Workbox Service Worker
-- [x] Sitemap
-- [x] OpenGraph & Twitter Meta Tags
-- [x] Feature Image
-- [x] RSS Feed
-- [x] Sitemap
-- [x] Typescript Type Checking
-- [x] Gitalk Comments
-- [x] Syntax Highlighting with `prismjs`
-- [x] Pagination
-- [x] JAMstack with Netlify CMS
-- [x] Netlify Continuous Deployment
-
-More information can be found in my blog post [Site Updates & Opensource](/2020/03/17/site-updates-opensource)
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+    <div>
+        <i class="fa fa-link"></i> <a href="https://github.com/equk/equk-gatsby" target="_blank" rel="noopener noreferrer">View Site Source on Github</a>
+    </div>
+    <div>
+        📝 <a href="/2020/03/17/site-updates-opensource">Site Updates &amp; Opensource</a>
+    </div>
+    <div>
+        📝 <a href="/tag/gatsby">Posts Tagged gatsby</a>
+    </div>
+</div>
