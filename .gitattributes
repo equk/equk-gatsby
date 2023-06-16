@@ -1,3 +1,3 @@
-*.scss linguist-language=TypeScript
-*.sass linguist-language=TypeScript
-*.less linguist-language=TypeScript
+src/styles/fa/** linguist-vendored
+src/styles/gitalk/** linguist-vendored
+src/styles/prism/** linguist-vendored
