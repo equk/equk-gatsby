@@ -16,25 +16,7 @@ let slugVal = ''
 
 function dateLink(dateInput) {
   const date = new Date(dateInput)
-  const year = date.getFullYear()
-  const mnth = date.getMonth() + 1
-  const dy = date.getDate()
-  let month = ''
-  let day = ''
-
-  if (mnth < 10) {
-    month = `0${mnth}`
-  } else {
-    month = `${mnth}`
-  }
-
-  if (dy < 10) {
-    day = `0${dy}`
-  } else {
-    day = `${dy}`
-  }
-
-  const dateLinkOut = `${year}/${month}/${day}`
+  const dateLinkOut = date.toISOString().split('T')[0].split('-').join('/')
   return dateLinkOut
 }
 
@@ -46,12 +28,16 @@ export const onCreateNode = ({ node, actions }) => {
      * Create Post URLs Using YYYY/MM/DD/slug
      *
      * If slug does not exist generate URL using post title
+     *
+     * Don't set slugVal for pages
      */
-    const dateURL = dateLink(node.frontmatter.date)
-    if (node.frontmatter.slug) {
-      slugVal = `${dateURL}/${node.frontmatter.slug}`
-    } else {
-      slugVal = `${dateURL}/${_.kebabCase(node.frontmatter.title)}`
+    if (node.frontmatter.date) {
+      const dateURL = dateLink(node.frontmatter.date)
+      if (node.frontmatter.slug) {
+        slugVal = `${dateURL}/${node.frontmatter.slug}`
+      } else {
+        slugVal = `${dateURL}/${_.kebabCase(node.frontmatter.title)}`
+      }
     }
 
     /**
