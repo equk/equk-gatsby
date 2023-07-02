@@ -128,14 +128,16 @@ I am open to new work opportunities, please contact me using the details below.
 
 ## About This Site
 
-This site is powered by React & GraphQL using Gatsby.<br />
-The source code can be found on github & the site is hosted on netlify.
+This site is powered by React & GraphQL using Gatsby.
 
 <img class="inline typescript_logo" src="/media/logos/typescript.svg" alt="typescript-logo" width="80px">
 <img class="inline reactjs_logo" src="/media/logos/reactsq.svg" alt="reactjs-logo" width="90px">
 <img class="inline graphql_logo" src="/media/images/2019/06/graphql.svg" alt="graphql-logo" width="80px">
 <img class="inline gatsby_logo" src="/media/logos/gatsby.svg" alt="gatsby-logo" width="80px">
-<img class="inline netlify_logo" src="/media/logos/netlify.svg" alt="netlify-logo" width="80px">
+
+The source code can be found on github & the site is hosted on netlify.
+
+<a href="https://www.netlify.com"><img src="/media/logos/netlify-color-bg.svg" alt="Deploys by Netlify" class="inline" /> </a>
 
 More info:
 
