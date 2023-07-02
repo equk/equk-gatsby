@@ -29,7 +29,24 @@ I personally don't have any mdx content in posts so using `post.body` with `mark
 
 - [ ] Majority of fields are missing
 
-There are a large number of RSS fields completely missing in `@astrojs/rss`.
+There are a large number of RSS fields completely missing in `@astrojs/rss`.<br/>
+Example missing fields: author, copyright, image, id ...
+
+`astro/astro-rss/src/schema.ts`
+
+```ts
+import { z } from 'astro/zod';
+
+export const rssSchema = z.object({
+  title: z.string(),
+  pubDate: z.union([z.string(), z.number(), z.date()]).transform((value) => new Date(value)),
+  description: z.string().optional(),
+  customData: z.string().optional(),
+  draft: z.boolean().optional(),
+});
+```
+
+<i class="fa fa-link"></i> <a href="https://github.com/withastro/astro/blob/81dce94f2a6db598bd9e47fc2a4b9d713e58f286/packages/astro-rss/src/schema.ts" target="_blank" rel="noopener noreferrer">withastro/astro/packages/astro-rss/src/schema.ts on Github</a>
 
 - [ ] Output has no CDATA for HTML
 
@@ -128,8 +145,11 @@ Update February 22, 2023
 
 📝 [Atom Feed Generation Script](/2023/02/22/atom-feed-generation-script/)
 
-## Source
+---
 
-The source for my astro blog is available on github.
-
-<a class="github" href="https://github.com/equk/blog-astro" aria-label="View on GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i> blog-astro</a>
+<article class="message is-info">
+  <div class="message-body">
+    <i class="fa fa-info-circle"></i> April 26, 2023 - More fields were added to the astro-rss schema & the documentation was updated<br/>
+    <i class="fa fa-link"></i> <a href="https://github.com/withastro/astro/commit/4ea716e5692d23361e9301330ce52733b3d05b01" target="_blank" rel="noopener noreferrer">Commit 4ea716e - withastro/astro on Github</a>
+  </div>
+</article>
