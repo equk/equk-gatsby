@@ -115,12 +115,12 @@ I am open to new work opportunities, please contact me using the details below.
 <div>
     <p class="mt-1 text-xl font-bold">GPG Key</p>
     <p class="text-body-color text-base">
-    <a href="https://keybase.io/equilibriumuk/pgp_keys.asc?fingerprint=25fc07669118b3b9b79beae40e53a3c22664d113" target="_blank">0E53 A3C2 2664 D113</a>
+    <a href="https://keybase.io/equilibriumuk/pgp_keys.asc?fingerprint=25fc07669118b3b9b79beae40e53a3c22664d113" target="_blank" rel="noopener noreferrer">0E53 A3C2 2664 D113</a>
     </p>
 </div>
 <div>
     <p class="mt-1 text-xl font-bold">Social Media</p>
-    <div class="social-blocks text-left"><a href="https://twitter.com/equilibriumuk" target="_blank" aria-label="go to twitter" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/equk" target="_blank" aria-label="go to github" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a href="https://hachyderm.io/@equilibriumuk" target="_blank" aria-label="go to mastodon" rel="me noopener noreferrer"><i class="fa fa-mastodon"></i></a></div>
+    <div class="social-blocks text-left"><a href="https://twitter.com/equilibriumuk" target="_blank" aria-label="go to twitter" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a href="https://github.com/equk" target="_blank" aria-label="go to github" rel="noopener noreferrer"><i class="fa fa-github"></i></a><a href="https://hachyderm.io/@equilibriumuk" target="_blank" aria-label="go to mastodon" rel="noopener noreferrer"><i class="fa fa-mastodon"></i></a></div>
 </div>
 </div>
 
@@ -137,7 +137,7 @@ This site is powered by React & GraphQL using Gatsby.
 
 The source code can be found on github & the site is hosted on netlify.
 
-<a href="https://www.netlify.com"><img src="/media/logos/netlify-color-bg.svg" alt="Deploys by Netlify" class="inline" /> </a>
+<a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer"><img src="/media/logos/netlify-color-bg.svg" alt="Deploys by Netlify" class="inline" /> </a>
 
 More info:
 
