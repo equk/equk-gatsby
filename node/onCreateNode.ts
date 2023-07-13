@@ -1,4 +1,4 @@
-const _ = require('lodash')
+const slugify = require('slugify')
 
 /**
  * This is the main function for creating nodes using the onCreateNode
@@ -13,6 +13,11 @@ const _ = require('lodash')
  */
 
 let slugVal = ''
+
+function slugifyStr(inputStr: string) {
+  const slugifyStrOut = slugify(inputStr, { lower: true })
+  return slugifyStrOut
+}
 
 function dateLink(dateInput) {
   const date = new Date(dateInput)
@@ -36,7 +41,7 @@ export const onCreateNode = ({ node, actions }) => {
       if (node.frontmatter.slug) {
         slugVal = `${dateURL}/${node.frontmatter.slug}`
       } else {
-        slugVal = `${dateURL}/${_.kebabCase(node.frontmatter.title)}`
+        slugVal = `${dateURL}/${slugifyStr(node.frontmatter.title)}`
       }
     }
 
@@ -58,14 +63,14 @@ export const onCreateNode = ({ node, actions }) => {
       createNodeField({
         node,
         name: 'slug',
-        value: `/${_.kebabCase(node.frontmatter.slug)}/`,
+        value: `/${slugifyStr(node.frontmatter.slug)}/`,
       })
     }
     /**
      * Create Tag URLs Using /tagslug
      */
     if (node.frontmatter.tags) {
-      const tagSlugs = node.frontmatter.tags.map((tag) => `/tag/${_.kebabCase(tag)}/`)
+      const tagSlugs = node.frontmatter.tags.map((tag) => `/tag/${slugifyStr(tag)}/`)
       createNodeField({ node, name: 'tagSlugs', value: tagSlugs })
     }
   }
