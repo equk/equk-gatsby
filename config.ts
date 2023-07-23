@@ -1,7 +1,7 @@
 const path = require('path')
 
 export const siteConfig = {
-  url: 'https://equk.co.uk',
+  url: 'https://g.equk.co.uk',
   title: "equk's blog",
   subtitle: 'writings of a coder + sysadmin',
   copyright: `© ${new Date().getFullYear()} equk.co.uk all rights reserved.`,
